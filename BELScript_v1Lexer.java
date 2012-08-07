@@ -1,4 +1,4 @@
-// $ANTLR 3.4 BELScript_v1.g 2012-08-07 11:00:57
+// $ANTLR 3.4 BELScript_v1.g 2012-08-07 11:09:32
 
 import org.antlr.runtime.*;
 import java.util.Stack;
