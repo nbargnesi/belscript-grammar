@@ -1,4 +1,18 @@
-// $ANTLR 3.4 BELScript_v1.g 2012-08-07 11:09:31
+// $ANTLR 3.4 BELScript_v1.g 2012-08-13 14:33:01
+
+/**
+ * Copyright (c) 2012 Selventa.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+
+ * Contributors:
+ *     Selventa - initial API and implementation
+ */
+
+// See https://github.com/nbargnesi/belscript-grammar.git
+
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -197,7 +211,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "document"
-    // BELScript_v1.g:67:1: document : ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF -> ^( DOCDEF ( record )+ ) ;
+    // BELScript_v1.g:82:1: document : ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF -> ^( DOCDEF ( record )+ ) ;
     public final BELScript_v1Parser.document_return document() throws RecognitionException {
         BELScript_v1Parser.document_return retval = new BELScript_v1Parser.document_return();
         retval.start = input.LT(1);
@@ -219,10 +233,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_EOF=new RewriteRuleTokenStream(adaptor,"token EOF");
         RewriteRuleSubtreeStream stream_record=new RewriteRuleSubtreeStream(adaptor,"rule record");
         try {
-            // BELScript_v1.g:68:5: ( ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF -> ^( DOCDEF ( record )+ ) )
-            // BELScript_v1.g:68:9: ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF
+            // BELScript_v1.g:83:5: ( ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF -> ^( DOCDEF ( record )+ ) )
+            // BELScript_v1.g:83:9: ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF
             {
-            // BELScript_v1.g:68:9: ( NEWLINE | DOCUMENT_COMMENT | record )+
+            // BELScript_v1.g:83:9: ( NEWLINE | DOCUMENT_COMMENT | record )+
             int cnt1=0;
             loop1:
             do {
@@ -309,27 +323,27 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // BELScript_v1.g:68:10: NEWLINE
+            	    // BELScript_v1.g:83:10: NEWLINE
             	    {
-            	    NEWLINE1=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_document327);  
+            	    NEWLINE1=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_document333);  
             	    stream_NEWLINE.add(NEWLINE1);
 
 
             	    }
             	    break;
             	case 2 :
-            	    // BELScript_v1.g:68:20: DOCUMENT_COMMENT
+            	    // BELScript_v1.g:83:20: DOCUMENT_COMMENT
             	    {
-            	    DOCUMENT_COMMENT2=(Token)match(input,DOCUMENT_COMMENT,FOLLOW_DOCUMENT_COMMENT_in_document331);  
+            	    DOCUMENT_COMMENT2=(Token)match(input,DOCUMENT_COMMENT,FOLLOW_DOCUMENT_COMMENT_in_document337);  
             	    stream_DOCUMENT_COMMENT.add(DOCUMENT_COMMENT2);
 
 
             	    }
             	    break;
             	case 3 :
-            	    // BELScript_v1.g:68:39: record
+            	    // BELScript_v1.g:83:39: record
             	    {
-            	    pushFollow(FOLLOW_record_in_document335);
+            	    pushFollow(FOLLOW_record_in_document341);
             	    record3=record();
 
             	    state._fsp--;
@@ -349,7 +363,7 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            EOF4=(Token)match(input,EOF,FOLLOW_EOF_in_document339);  
+            EOF4=(Token)match(input,EOF,FOLLOW_EOF_in_document345);  
             stream_EOF.add(EOF4);
 
 
@@ -364,9 +378,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (Object)adaptor.nil();
-            // 68:52: -> ^( DOCDEF ( record )+ )
+            // 83:52: -> ^( DOCDEF ( record )+ )
             {
-                // BELScript_v1.g:69:9: ^( DOCDEF ( record )+ )
+                // BELScript_v1.g:84:9: ^( DOCDEF ( record )+ )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -421,7 +435,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "record"
-    // BELScript_v1.g:72:1: record : ( define_namespace | define_annotation | set_annotation | set_document | set_statement_group | unset_statement_group | unset | statement );
+    // BELScript_v1.g:87:1: record : ( define_namespace | define_annotation | set_annotation | set_document | set_statement_group | unset_statement_group | unset | statement );
     public final BELScript_v1Parser.record_return record() throws RecognitionException {
         BELScript_v1Parser.record_return retval = new BELScript_v1Parser.record_return();
         retval.start = input.LT(1);
@@ -448,17 +462,17 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // BELScript_v1.g:73:5: ( define_namespace | define_annotation | set_annotation | set_document | set_statement_group | unset_statement_group | unset | statement )
+            // BELScript_v1.g:88:5: ( define_namespace | define_annotation | set_annotation | set_document | set_statement_group | unset_statement_group | unset | statement )
             int alt2=8;
             alt2 = dfa2.predict(input);
             switch (alt2) {
                 case 1 :
-                    // BELScript_v1.g:73:9: define_namespace
+                    // BELScript_v1.g:88:9: define_namespace
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_define_namespace_in_record375);
+                    pushFollow(FOLLOW_define_namespace_in_record381);
                     define_namespace5=define_namespace();
 
                     state._fsp--;
@@ -468,12 +482,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:74:9: define_annotation
+                    // BELScript_v1.g:89:9: define_annotation
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_define_annotation_in_record385);
+                    pushFollow(FOLLOW_define_annotation_in_record391);
                     define_annotation6=define_annotation();
 
                     state._fsp--;
@@ -483,12 +497,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // BELScript_v1.g:75:9: set_annotation
+                    // BELScript_v1.g:90:9: set_annotation
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_set_annotation_in_record395);
+                    pushFollow(FOLLOW_set_annotation_in_record401);
                     set_annotation7=set_annotation();
 
                     state._fsp--;
@@ -498,12 +512,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // BELScript_v1.g:76:9: set_document
+                    // BELScript_v1.g:91:9: set_document
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_set_document_in_record405);
+                    pushFollow(FOLLOW_set_document_in_record411);
                     set_document8=set_document();
 
                     state._fsp--;
@@ -513,12 +527,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // BELScript_v1.g:77:9: set_statement_group
+                    // BELScript_v1.g:92:9: set_statement_group
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_set_statement_group_in_record415);
+                    pushFollow(FOLLOW_set_statement_group_in_record421);
                     set_statement_group9=set_statement_group();
 
                     state._fsp--;
@@ -528,12 +542,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // BELScript_v1.g:78:9: unset_statement_group
+                    // BELScript_v1.g:93:9: unset_statement_group
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_unset_statement_group_in_record425);
+                    pushFollow(FOLLOW_unset_statement_group_in_record431);
                     unset_statement_group10=unset_statement_group();
 
                     state._fsp--;
@@ -543,12 +557,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // BELScript_v1.g:79:9: unset
+                    // BELScript_v1.g:94:9: unset
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_unset_in_record435);
+                    pushFollow(FOLLOW_unset_in_record441);
                     unset11=unset();
 
                     state._fsp--;
@@ -558,12 +572,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // BELScript_v1.g:80:9: statement
+                    // BELScript_v1.g:95:9: statement
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_statement_in_record445);
+                    pushFollow(FOLLOW_statement_in_record451);
                     statement12=statement();
 
                     state._fsp--;
@@ -603,7 +617,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "set_doc_expr"
-    // BELScript_v1.g:83:1: set_doc_expr : KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )* ;
+    // BELScript_v1.g:98:1: set_doc_expr : KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )* ;
     public final BELScript_v1Parser.set_doc_expr_return set_doc_expr() throws RecognitionException {
         BELScript_v1Parser.set_doc_expr_return retval = new BELScript_v1Parser.set_doc_expr_return();
         retval.start = input.LT(1);
@@ -622,20 +636,20 @@ public TreeAdaptor getTreeAdaptor() {
         Object WS16_tree=null;
 
         try {
-            // BELScript_v1.g:84:5: ( KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )* )
-            // BELScript_v1.g:84:9: KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )*
+            // BELScript_v1.g:99:5: ( KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )* )
+            // BELScript_v1.g:99:9: KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )*
             {
             root_0 = (Object)adaptor.nil();
 
 
-            KWRD_SET13=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_doc_expr464); 
+            KWRD_SET13=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_doc_expr470); 
             KWRD_SET13_tree = 
             (Object)adaptor.create(KWRD_SET13)
             ;
             adaptor.addChild(root_0, KWRD_SET13_tree);
 
 
-            // BELScript_v1.g:84:18: ( WS )*
+            // BELScript_v1.g:99:18: ( WS )*
             loop3:
             do {
                 int alt3=2;
@@ -648,9 +662,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // BELScript_v1.g:84:18: WS
+            	    // BELScript_v1.g:99:18: WS
             	    {
-            	    WS14=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr466); 
+            	    WS14=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr472); 
             	    WS14_tree = 
             	    (Object)adaptor.create(WS14)
             	    ;
@@ -666,14 +680,14 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            KWRD_DOCUMENT15=(Token)match(input,KWRD_DOCUMENT,FOLLOW_KWRD_DOCUMENT_in_set_doc_expr469); 
+            KWRD_DOCUMENT15=(Token)match(input,KWRD_DOCUMENT,FOLLOW_KWRD_DOCUMENT_in_set_doc_expr475); 
             KWRD_DOCUMENT15_tree = 
             (Object)adaptor.create(KWRD_DOCUMENT15)
             ;
             adaptor.addChild(root_0, KWRD_DOCUMENT15_tree);
 
 
-            // BELScript_v1.g:84:36: ( WS )*
+            // BELScript_v1.g:99:36: ( WS )*
             loop4:
             do {
                 int alt4=2;
@@ -686,9 +700,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt4) {
             	case 1 :
-            	    // BELScript_v1.g:84:36: WS
+            	    // BELScript_v1.g:99:36: WS
             	    {
-            	    WS16=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr471); 
+            	    WS16=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr477); 
             	    WS16_tree = 
             	    (Object)adaptor.create(WS16)
             	    ;
@@ -735,7 +749,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "set_document"
-    // BELScript_v1.g:87:1: set_document : ( set_doc_expr document_property eq_clause val= QUOTED_VALUE -> ^( DOCSET_QV document_property $val) | set_doc_expr document_property eq_clause val= VALUE_LIST -> ^( DOCSET_LIST document_property $val) | set_doc_expr document_property eq_clause val= OBJECT_IDENT -> ^( DOCSET_ID document_property $val) );
+    // BELScript_v1.g:102:1: set_document : ( set_doc_expr document_property eq_clause val= QUOTED_VALUE -> ^( DOCSET_QV document_property $val) | set_doc_expr document_property eq_clause val= VALUE_LIST -> ^( DOCSET_LIST document_property $val) | set_doc_expr document_property eq_clause val= OBJECT_IDENT -> ^( DOCSET_ID document_property $val) );
     public final BELScript_v1Parser.set_document_return set_document() throws RecognitionException {
         BELScript_v1Parser.set_document_return retval = new BELScript_v1Parser.set_document_return();
         retval.start = input.LT(1);
@@ -771,35 +785,35 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_eq_clause=new RewriteRuleSubtreeStream(adaptor,"rule eq_clause");
         RewriteRuleSubtreeStream stream_document_property=new RewriteRuleSubtreeStream(adaptor,"rule document_property");
         try {
-            // BELScript_v1.g:88:5: ( set_doc_expr document_property eq_clause val= QUOTED_VALUE -> ^( DOCSET_QV document_property $val) | set_doc_expr document_property eq_clause val= VALUE_LIST -> ^( DOCSET_LIST document_property $val) | set_doc_expr document_property eq_clause val= OBJECT_IDENT -> ^( DOCSET_ID document_property $val) )
+            // BELScript_v1.g:103:5: ( set_doc_expr document_property eq_clause val= QUOTED_VALUE -> ^( DOCSET_QV document_property $val) | set_doc_expr document_property eq_clause val= VALUE_LIST -> ^( DOCSET_LIST document_property $val) | set_doc_expr document_property eq_clause val= OBJECT_IDENT -> ^( DOCSET_ID document_property $val) )
             int alt5=3;
             alt5 = dfa5.predict(input);
             switch (alt5) {
                 case 1 :
-                    // BELScript_v1.g:88:9: set_doc_expr document_property eq_clause val= QUOTED_VALUE
+                    // BELScript_v1.g:103:9: set_doc_expr document_property eq_clause val= QUOTED_VALUE
                     {
-                    pushFollow(FOLLOW_set_doc_expr_in_set_document491);
+                    pushFollow(FOLLOW_set_doc_expr_in_set_document497);
                     set_doc_expr17=set_doc_expr();
 
                     state._fsp--;
 
                     stream_set_doc_expr.add(set_doc_expr17.getTree());
 
-                    pushFollow(FOLLOW_document_property_in_set_document493);
+                    pushFollow(FOLLOW_document_property_in_set_document499);
                     document_property18=document_property();
 
                     state._fsp--;
 
                     stream_document_property.add(document_property18.getTree());
 
-                    pushFollow(FOLLOW_eq_clause_in_set_document495);
+                    pushFollow(FOLLOW_eq_clause_in_set_document501);
                     eq_clause19=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause19.getTree());
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_document499);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_document505);  
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -815,9 +829,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 88:67: -> ^( DOCSET_QV document_property $val)
+                    // 103:67: -> ^( DOCSET_QV document_property $val)
                     {
-                        // BELScript_v1.g:89:9: ^( DOCSET_QV document_property $val)
+                        // BELScript_v1.g:104:9: ^( DOCSET_QV document_property $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -839,35 +853,35 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:90:9: set_doc_expr document_property eq_clause val= VALUE_LIST
+                    // BELScript_v1.g:105:9: set_doc_expr document_property eq_clause val= VALUE_LIST
                     {
-                    pushFollow(FOLLOW_set_doc_expr_in_set_document528);
+                    pushFollow(FOLLOW_set_doc_expr_in_set_document534);
                     set_doc_expr20=set_doc_expr();
 
                     state._fsp--;
 
                     stream_set_doc_expr.add(set_doc_expr20.getTree());
 
-                    pushFollow(FOLLOW_document_property_in_set_document530);
+                    pushFollow(FOLLOW_document_property_in_set_document536);
                     document_property21=document_property();
 
                     state._fsp--;
 
                     stream_document_property.add(document_property21.getTree());
 
-                    pushFollow(FOLLOW_eq_clause_in_set_document532);
+                    pushFollow(FOLLOW_eq_clause_in_set_document538);
                     eq_clause22=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause22.getTree());
 
-                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_document536);  
+                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_document542);  
                     stream_VALUE_LIST.add(val);
 
 
                     // AST REWRITE
-                    // elements: document_property, val
+                    // elements: val, document_property
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -878,9 +892,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 90:65: -> ^( DOCSET_LIST document_property $val)
+                    // 105:65: -> ^( DOCSET_LIST document_property $val)
                     {
-                        // BELScript_v1.g:91:9: ^( DOCSET_LIST document_property $val)
+                        // BELScript_v1.g:106:9: ^( DOCSET_LIST document_property $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -902,35 +916,35 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // BELScript_v1.g:92:9: set_doc_expr document_property eq_clause val= OBJECT_IDENT
+                    // BELScript_v1.g:107:9: set_doc_expr document_property eq_clause val= OBJECT_IDENT
                     {
-                    pushFollow(FOLLOW_set_doc_expr_in_set_document565);
+                    pushFollow(FOLLOW_set_doc_expr_in_set_document571);
                     set_doc_expr23=set_doc_expr();
 
                     state._fsp--;
 
                     stream_set_doc_expr.add(set_doc_expr23.getTree());
 
-                    pushFollow(FOLLOW_document_property_in_set_document567);
+                    pushFollow(FOLLOW_document_property_in_set_document573);
                     document_property24=document_property();
 
                     state._fsp--;
 
                     stream_document_property.add(document_property24.getTree());
 
-                    pushFollow(FOLLOW_eq_clause_in_set_document569);
+                    pushFollow(FOLLOW_eq_clause_in_set_document575);
                     eq_clause25=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause25.getTree());
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_document573);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_document579);  
                     stream_OBJECT_IDENT.add(val);
 
 
                     // AST REWRITE
-                    // elements: val, document_property
+                    // elements: document_property, val
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -941,9 +955,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 92:67: -> ^( DOCSET_ID document_property $val)
+                    // 107:67: -> ^( DOCSET_ID document_property $val)
                     {
-                        // BELScript_v1.g:93:9: ^( DOCSET_ID document_property $val)
+                        // BELScript_v1.g:108:9: ^( DOCSET_ID document_property $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -995,7 +1009,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "set_sg_expr"
-    // BELScript_v1.g:96:1: set_sg_expr : KWRD_SET ( WS )* KWRD_STMT_GROUP ;
+    // BELScript_v1.g:111:1: set_sg_expr : KWRD_SET ( WS )* KWRD_STMT_GROUP ;
     public final BELScript_v1Parser.set_sg_expr_return set_sg_expr() throws RecognitionException {
         BELScript_v1Parser.set_sg_expr_return retval = new BELScript_v1Parser.set_sg_expr_return();
         retval.start = input.LT(1);
@@ -1012,20 +1026,20 @@ public TreeAdaptor getTreeAdaptor() {
         Object KWRD_STMT_GROUP28_tree=null;
 
         try {
-            // BELScript_v1.g:97:5: ( KWRD_SET ( WS )* KWRD_STMT_GROUP )
-            // BELScript_v1.g:97:9: KWRD_SET ( WS )* KWRD_STMT_GROUP
+            // BELScript_v1.g:112:5: ( KWRD_SET ( WS )* KWRD_STMT_GROUP )
+            // BELScript_v1.g:112:9: KWRD_SET ( WS )* KWRD_STMT_GROUP
             {
             root_0 = (Object)adaptor.nil();
 
 
-            KWRD_SET26=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_sg_expr611); 
+            KWRD_SET26=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_sg_expr617); 
             KWRD_SET26_tree = 
             (Object)adaptor.create(KWRD_SET26)
             ;
             adaptor.addChild(root_0, KWRD_SET26_tree);
 
 
-            // BELScript_v1.g:97:18: ( WS )*
+            // BELScript_v1.g:112:18: ( WS )*
             loop6:
             do {
                 int alt6=2;
@@ -1038,9 +1052,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt6) {
             	case 1 :
-            	    // BELScript_v1.g:97:18: WS
+            	    // BELScript_v1.g:112:18: WS
             	    {
-            	    WS27=(Token)match(input,WS,FOLLOW_WS_in_set_sg_expr613); 
+            	    WS27=(Token)match(input,WS,FOLLOW_WS_in_set_sg_expr619); 
             	    WS27_tree = 
             	    (Object)adaptor.create(WS27)
             	    ;
@@ -1056,7 +1070,7 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            KWRD_STMT_GROUP28=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_set_sg_expr616); 
+            KWRD_STMT_GROUP28=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_set_sg_expr622); 
             KWRD_STMT_GROUP28_tree = 
             (Object)adaptor.create(KWRD_STMT_GROUP28)
             ;
@@ -1094,7 +1108,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "set_statement_group"
-    // BELScript_v1.g:100:1: set_statement_group : ( set_sg_expr eq_clause val= QUOTED_VALUE -> ^( SG_SET_QV $val) | set_sg_expr eq_clause val= OBJECT_IDENT -> ^( SG_SET_ID $val) );
+    // BELScript_v1.g:115:1: set_statement_group : ( set_sg_expr eq_clause val= QUOTED_VALUE -> ^( SG_SET_QV $val) | set_sg_expr eq_clause val= OBJECT_IDENT -> ^( SG_SET_ID $val) );
     public final BELScript_v1Parser.set_statement_group_return set_statement_group() throws RecognitionException {
         BELScript_v1Parser.set_statement_group_return retval = new BELScript_v1Parser.set_statement_group_return();
         retval.start = input.LT(1);
@@ -1118,28 +1132,28 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_eq_clause=new RewriteRuleSubtreeStream(adaptor,"rule eq_clause");
         RewriteRuleSubtreeStream stream_set_sg_expr=new RewriteRuleSubtreeStream(adaptor,"rule set_sg_expr");
         try {
-            // BELScript_v1.g:101:5: ( set_sg_expr eq_clause val= QUOTED_VALUE -> ^( SG_SET_QV $val) | set_sg_expr eq_clause val= OBJECT_IDENT -> ^( SG_SET_ID $val) )
+            // BELScript_v1.g:116:5: ( set_sg_expr eq_clause val= QUOTED_VALUE -> ^( SG_SET_QV $val) | set_sg_expr eq_clause val= OBJECT_IDENT -> ^( SG_SET_ID $val) )
             int alt7=2;
             alt7 = dfa7.predict(input);
             switch (alt7) {
                 case 1 :
-                    // BELScript_v1.g:101:9: set_sg_expr eq_clause val= QUOTED_VALUE
+                    // BELScript_v1.g:116:9: set_sg_expr eq_clause val= QUOTED_VALUE
                     {
-                    pushFollow(FOLLOW_set_sg_expr_in_set_statement_group635);
+                    pushFollow(FOLLOW_set_sg_expr_in_set_statement_group641);
                     set_sg_expr29=set_sg_expr();
 
                     state._fsp--;
 
                     stream_set_sg_expr.add(set_sg_expr29.getTree());
 
-                    pushFollow(FOLLOW_eq_clause_in_set_statement_group637);
+                    pushFollow(FOLLOW_eq_clause_in_set_statement_group643);
                     eq_clause30=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause30.getTree());
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_statement_group641);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_statement_group647);  
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -1155,9 +1169,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 101:48: -> ^( SG_SET_QV $val)
+                    // 116:48: -> ^( SG_SET_QV $val)
                     {
-                        // BELScript_v1.g:101:51: ^( SG_SET_QV $val)
+                        // BELScript_v1.g:116:51: ^( SG_SET_QV $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1177,23 +1191,23 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:102:9: set_sg_expr eq_clause val= OBJECT_IDENT
+                    // BELScript_v1.g:117:9: set_sg_expr eq_clause val= OBJECT_IDENT
                     {
-                    pushFollow(FOLLOW_set_sg_expr_in_set_statement_group660);
+                    pushFollow(FOLLOW_set_sg_expr_in_set_statement_group666);
                     set_sg_expr31=set_sg_expr();
 
                     state._fsp--;
 
                     stream_set_sg_expr.add(set_sg_expr31.getTree());
 
-                    pushFollow(FOLLOW_eq_clause_in_set_statement_group662);
+                    pushFollow(FOLLOW_eq_clause_in_set_statement_group668);
                     eq_clause32=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause32.getTree());
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_statement_group666);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_statement_group672);  
                     stream_OBJECT_IDENT.add(val);
 
 
@@ -1209,9 +1223,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 102:48: -> ^( SG_SET_ID $val)
+                    // 117:48: -> ^( SG_SET_ID $val)
                     {
-                        // BELScript_v1.g:102:51: ^( SG_SET_ID $val)
+                        // BELScript_v1.g:117:51: ^( SG_SET_ID $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1261,7 +1275,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "set_annotation"
-    // BELScript_v1.g:105:1: set_annotation : ( KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE -> ^( ANNO_SET_QV OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST -> ^( ANNO_SET_LIST OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT -> ^( ANNO_SET_ID OBJECT_IDENT $val) );
+    // BELScript_v1.g:120:1: set_annotation : ( KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE -> ^( ANNO_SET_QV OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST -> ^( ANNO_SET_LIST OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT -> ^( ANNO_SET_ID OBJECT_IDENT $val) );
     public final BELScript_v1Parser.set_annotation_return set_annotation() throws RecognitionException {
         BELScript_v1Parser.set_annotation_return retval = new BELScript_v1Parser.set_annotation_return();
         retval.start = input.LT(1);
@@ -1296,29 +1310,29 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_KWRD_SET=new RewriteRuleTokenStream(adaptor,"token KWRD_SET");
         RewriteRuleSubtreeStream stream_eq_clause=new RewriteRuleSubtreeStream(adaptor,"rule eq_clause");
         try {
-            // BELScript_v1.g:106:5: ( KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE -> ^( ANNO_SET_QV OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST -> ^( ANNO_SET_LIST OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT -> ^( ANNO_SET_ID OBJECT_IDENT $val) )
+            // BELScript_v1.g:121:5: ( KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE -> ^( ANNO_SET_QV OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST -> ^( ANNO_SET_LIST OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT -> ^( ANNO_SET_ID OBJECT_IDENT $val) )
             int alt8=3;
             alt8 = dfa8.predict(input);
             switch (alt8) {
                 case 1 :
-                    // BELScript_v1.g:106:9: KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE
+                    // BELScript_v1.g:121:9: KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE
                     {
-                    KWRD_SET33=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation694);  
+                    KWRD_SET33=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation700);  
                     stream_KWRD_SET.add(KWRD_SET33);
 
 
-                    OBJECT_IDENT34=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation696);  
+                    OBJECT_IDENT34=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation702);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT34);
 
 
-                    pushFollow(FOLLOW_eq_clause_in_set_annotation698);
+                    pushFollow(FOLLOW_eq_clause_in_set_annotation704);
                     eq_clause35=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause35.getTree());
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_annotation702);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_annotation708);  
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -1334,9 +1348,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 106:58: -> ^( ANNO_SET_QV OBJECT_IDENT $val)
+                    // 121:58: -> ^( ANNO_SET_QV OBJECT_IDENT $val)
                     {
-                        // BELScript_v1.g:107:9: ^( ANNO_SET_QV OBJECT_IDENT $val)
+                        // BELScript_v1.g:122:9: ^( ANNO_SET_QV OBJECT_IDENT $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1360,24 +1374,24 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:108:9: KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST
+                    // BELScript_v1.g:123:9: KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST
                     {
-                    KWRD_SET36=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation731);  
+                    KWRD_SET36=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation737);  
                     stream_KWRD_SET.add(KWRD_SET36);
 
 
-                    OBJECT_IDENT37=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation733);  
+                    OBJECT_IDENT37=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation739);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT37);
 
 
-                    pushFollow(FOLLOW_eq_clause_in_set_annotation735);
+                    pushFollow(FOLLOW_eq_clause_in_set_annotation741);
                     eq_clause38=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause38.getTree());
 
-                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_annotation739);  
+                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_annotation745);  
                     stream_VALUE_LIST.add(val);
 
 
@@ -1393,9 +1407,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 108:56: -> ^( ANNO_SET_LIST OBJECT_IDENT $val)
+                    // 123:56: -> ^( ANNO_SET_LIST OBJECT_IDENT $val)
                     {
-                        // BELScript_v1.g:109:9: ^( ANNO_SET_LIST OBJECT_IDENT $val)
+                        // BELScript_v1.g:124:9: ^( ANNO_SET_LIST OBJECT_IDENT $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1419,24 +1433,24 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // BELScript_v1.g:110:9: KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT
+                    // BELScript_v1.g:125:9: KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT
                     {
-                    KWRD_SET39=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation768);  
+                    KWRD_SET39=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation774);  
                     stream_KWRD_SET.add(KWRD_SET39);
 
 
-                    OBJECT_IDENT40=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation770);  
+                    OBJECT_IDENT40=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation776);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT40);
 
 
-                    pushFollow(FOLLOW_eq_clause_in_set_annotation772);
+                    pushFollow(FOLLOW_eq_clause_in_set_annotation778);
                     eq_clause41=eq_clause();
 
                     state._fsp--;
 
                     stream_eq_clause.add(eq_clause41.getTree());
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation776);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation782);  
                     stream_OBJECT_IDENT.add(val);
 
 
@@ -1452,9 +1466,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 110:58: -> ^( ANNO_SET_ID OBJECT_IDENT $val)
+                    // 125:58: -> ^( ANNO_SET_ID OBJECT_IDENT $val)
                     {
-                        // BELScript_v1.g:111:9: ^( ANNO_SET_ID OBJECT_IDENT $val)
+                        // BELScript_v1.g:126:9: ^( ANNO_SET_ID OBJECT_IDENT $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1508,7 +1522,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "unset_statement_group"
-    // BELScript_v1.g:114:1: unset_statement_group : KWRD_UNSET KWRD_STMT_GROUP -> ^( UNSET_SG ) ;
+    // BELScript_v1.g:129:1: unset_statement_group : KWRD_UNSET KWRD_STMT_GROUP -> ^( UNSET_SG ) ;
     public final BELScript_v1Parser.unset_statement_group_return unset_statement_group() throws RecognitionException {
         BELScript_v1Parser.unset_statement_group_return retval = new BELScript_v1Parser.unset_statement_group_return();
         retval.start = input.LT(1);
@@ -1525,14 +1539,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_KWRD_STMT_GROUP=new RewriteRuleTokenStream(adaptor,"token KWRD_STMT_GROUP");
 
         try {
-            // BELScript_v1.g:115:5: ( KWRD_UNSET KWRD_STMT_GROUP -> ^( UNSET_SG ) )
-            // BELScript_v1.g:115:9: KWRD_UNSET KWRD_STMT_GROUP
+            // BELScript_v1.g:130:5: ( KWRD_UNSET KWRD_STMT_GROUP -> ^( UNSET_SG ) )
+            // BELScript_v1.g:130:9: KWRD_UNSET KWRD_STMT_GROUP
             {
-            KWRD_UNSET42=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset_statement_group814);  
+            KWRD_UNSET42=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset_statement_group820);  
             stream_KWRD_UNSET.add(KWRD_UNSET42);
 
 
-            KWRD_STMT_GROUP43=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group816);  
+            KWRD_STMT_GROUP43=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group822);  
             stream_KWRD_STMT_GROUP.add(KWRD_STMT_GROUP43);
 
 
@@ -1547,9 +1561,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (Object)adaptor.nil();
-            // 115:36: -> ^( UNSET_SG )
+            // 130:36: -> ^( UNSET_SG )
             {
-                // BELScript_v1.g:115:39: ^( UNSET_SG )
+                // BELScript_v1.g:130:39: ^( UNSET_SG )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -1595,7 +1609,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "unset"
-    // BELScript_v1.g:118:1: unset : ( KWRD_UNSET val= OBJECT_IDENT -> ^( UNSET_ID $val) | KWRD_UNSET val= IDENT_LIST -> ^( UNSET_ID_LIST $val) );
+    // BELScript_v1.g:133:1: unset : ( KWRD_UNSET val= OBJECT_IDENT -> ^( UNSET_ID $val) | KWRD_UNSET val= IDENT_LIST -> ^( UNSET_ID_LIST $val) );
     public final BELScript_v1Parser.unset_return unset() throws RecognitionException {
         BELScript_v1Parser.unset_return retval = new BELScript_v1Parser.unset_return();
         retval.start = input.LT(1);
@@ -1615,7 +1629,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_IDENT_LIST=new RewriteRuleTokenStream(adaptor,"token IDENT_LIST");
 
         try {
-            // BELScript_v1.g:119:5: ( KWRD_UNSET val= OBJECT_IDENT -> ^( UNSET_ID $val) | KWRD_UNSET val= IDENT_LIST -> ^( UNSET_ID_LIST $val) )
+            // BELScript_v1.g:134:5: ( KWRD_UNSET val= OBJECT_IDENT -> ^( UNSET_ID $val) | KWRD_UNSET val= IDENT_LIST -> ^( UNSET_ID_LIST $val) )
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -1645,13 +1659,13 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // BELScript_v1.g:119:9: KWRD_UNSET val= OBJECT_IDENT
+                    // BELScript_v1.g:134:9: KWRD_UNSET val= OBJECT_IDENT
                     {
-                    KWRD_UNSET44=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset841);  
+                    KWRD_UNSET44=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset847);  
                     stream_KWRD_UNSET.add(KWRD_UNSET44);
 
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_unset845);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_unset851);  
                     stream_OBJECT_IDENT.add(val);
 
 
@@ -1667,9 +1681,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 119:37: -> ^( UNSET_ID $val)
+                    // 134:37: -> ^( UNSET_ID $val)
                     {
-                        // BELScript_v1.g:119:40: ^( UNSET_ID $val)
+                        // BELScript_v1.g:134:40: ^( UNSET_ID $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1689,13 +1703,13 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:120:9: KWRD_UNSET val= IDENT_LIST
+                    // BELScript_v1.g:135:9: KWRD_UNSET val= IDENT_LIST
                     {
-                    KWRD_UNSET45=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset864);  
+                    KWRD_UNSET45=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset870);  
                     stream_KWRD_UNSET.add(KWRD_UNSET45);
 
 
-                    val=(Token)match(input,IDENT_LIST,FOLLOW_IDENT_LIST_in_unset868);  
+                    val=(Token)match(input,IDENT_LIST,FOLLOW_IDENT_LIST_in_unset874);  
                     stream_IDENT_LIST.add(val);
 
 
@@ -1711,9 +1725,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 120:35: -> ^( UNSET_ID_LIST $val)
+                    // 135:35: -> ^( UNSET_ID_LIST $val)
                     {
-                        // BELScript_v1.g:120:38: ^( UNSET_ID_LIST $val)
+                        // BELScript_v1.g:135:38: ^( UNSET_ID_LIST $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1763,7 +1777,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "define_namespace"
-    // BELScript_v1.g:123:1: define_namespace : ( KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE ) | KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( NSDEF OBJECT_IDENT QUOTED_VALUE ) );
+    // BELScript_v1.g:138:1: define_namespace : ( KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE ) | KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( NSDEF OBJECT_IDENT QUOTED_VALUE ) );
     public final BELScript_v1Parser.define_namespace_return define_namespace() throws RecognitionException {
         BELScript_v1Parser.define_namespace_return retval = new BELScript_v1Parser.define_namespace_return();
         retval.start = input.LT(1);
@@ -1807,7 +1821,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_KWRD_AS=new RewriteRuleTokenStream(adaptor,"token KWRD_AS");
 
         try {
-            // BELScript_v1.g:124:5: ( KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE ) | KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( NSDEF OBJECT_IDENT QUOTED_VALUE ) )
+            // BELScript_v1.g:139:5: ( KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE ) | KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE -> ^( NSDEF OBJECT_IDENT QUOTED_VALUE ) )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1837,33 +1851,33 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt10) {
                 case 1 :
-                    // BELScript_v1.g:124:9: KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
+                    // BELScript_v1.g:139:9: KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
                     {
-                    KWRD_DEFINE46=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace896);  
+                    KWRD_DEFINE46=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace902);  
                     stream_KWRD_DEFINE.add(KWRD_DEFINE46);
 
 
-                    KWRD_DFLT47=(Token)match(input,KWRD_DFLT,FOLLOW_KWRD_DFLT_in_define_namespace898);  
+                    KWRD_DFLT47=(Token)match(input,KWRD_DFLT,FOLLOW_KWRD_DFLT_in_define_namespace904);  
                     stream_KWRD_DFLT.add(KWRD_DFLT47);
 
 
-                    KWRD_NS48=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace900);  
+                    KWRD_NS48=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace906);  
                     stream_KWRD_NS.add(KWRD_NS48);
 
 
-                    OBJECT_IDENT49=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace902);  
+                    OBJECT_IDENT49=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace908);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT49);
 
 
-                    KWRD_AS50=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace904);  
+                    KWRD_AS50=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace910);  
                     stream_KWRD_AS.add(KWRD_AS50);
 
 
-                    KWRD_URL51=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace906);  
+                    KWRD_URL51=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace912);  
                     stream_KWRD_URL.add(KWRD_URL51);
 
 
-                    QUOTED_VALUE52=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace908);  
+                    QUOTED_VALUE52=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace914);  
                     stream_QUOTED_VALUE.add(QUOTED_VALUE52);
 
 
@@ -1878,9 +1892,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 124:82: -> ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE )
+                    // 139:82: -> ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE )
                     {
-                        // BELScript_v1.g:125:9: ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE )
+                        // BELScript_v1.g:140:9: ^( DFLT_NSDEF OBJECT_IDENT QUOTED_VALUE )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1906,29 +1920,29 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:126:9: KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
+                    // BELScript_v1.g:141:9: KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
                     {
-                    KWRD_DEFINE53=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace936);  
+                    KWRD_DEFINE53=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace942);  
                     stream_KWRD_DEFINE.add(KWRD_DEFINE53);
 
 
-                    KWRD_NS54=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace938);  
+                    KWRD_NS54=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace944);  
                     stream_KWRD_NS.add(KWRD_NS54);
 
 
-                    OBJECT_IDENT55=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace940);  
+                    OBJECT_IDENT55=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace946);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT55);
 
 
-                    KWRD_AS56=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace942);  
+                    KWRD_AS56=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace948);  
                     stream_KWRD_AS.add(KWRD_AS56);
 
 
-                    KWRD_URL57=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace944);  
+                    KWRD_URL57=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace950);  
                     stream_KWRD_URL.add(KWRD_URL57);
 
 
-                    QUOTED_VALUE58=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace946);  
+                    QUOTED_VALUE58=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace952);  
                     stream_QUOTED_VALUE.add(QUOTED_VALUE58);
 
 
@@ -1943,9 +1957,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 126:72: -> ^( NSDEF OBJECT_IDENT QUOTED_VALUE )
+                    // 141:72: -> ^( NSDEF OBJECT_IDENT QUOTED_VALUE )
                     {
-                        // BELScript_v1.g:127:9: ^( NSDEF OBJECT_IDENT QUOTED_VALUE )
+                        // BELScript_v1.g:142:9: ^( NSDEF OBJECT_IDENT QUOTED_VALUE )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2001,7 +2015,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "define_anno_expr"
-    // BELScript_v1.g:130:1: define_anno_expr : KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )* ;
+    // BELScript_v1.g:145:1: define_anno_expr : KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )* ;
     public final BELScript_v1Parser.define_anno_expr_return define_anno_expr() throws RecognitionException {
         BELScript_v1Parser.define_anno_expr_return retval = new BELScript_v1Parser.define_anno_expr_return();
         retval.start = input.LT(1);
@@ -2020,20 +2034,20 @@ public TreeAdaptor getTreeAdaptor() {
         Object WS62_tree=null;
 
         try {
-            // BELScript_v1.g:131:5: ( KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )* )
-            // BELScript_v1.g:131:9: KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )*
+            // BELScript_v1.g:146:5: ( KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )* )
+            // BELScript_v1.g:146:9: KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )*
             {
             root_0 = (Object)adaptor.nil();
 
 
-            KWRD_DEFINE59=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_anno_expr983); 
+            KWRD_DEFINE59=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_anno_expr989); 
             KWRD_DEFINE59_tree = 
             (Object)adaptor.create(KWRD_DEFINE59)
             ;
             adaptor.addChild(root_0, KWRD_DEFINE59_tree);
 
 
-            // BELScript_v1.g:131:21: ( WS )*
+            // BELScript_v1.g:146:21: ( WS )*
             loop11:
             do {
                 int alt11=2;
@@ -2046,9 +2060,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt11) {
             	case 1 :
-            	    // BELScript_v1.g:131:21: WS
+            	    // BELScript_v1.g:146:21: WS
             	    {
-            	    WS60=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr985); 
+            	    WS60=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr991); 
             	    WS60_tree = 
             	    (Object)adaptor.create(WS60)
             	    ;
@@ -2064,14 +2078,14 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            KWRD_ANNO61=(Token)match(input,KWRD_ANNO,FOLLOW_KWRD_ANNO_in_define_anno_expr988); 
+            KWRD_ANNO61=(Token)match(input,KWRD_ANNO,FOLLOW_KWRD_ANNO_in_define_anno_expr994); 
             KWRD_ANNO61_tree = 
             (Object)adaptor.create(KWRD_ANNO61)
             ;
             adaptor.addChild(root_0, KWRD_ANNO61_tree);
 
 
-            // BELScript_v1.g:131:35: ( WS )*
+            // BELScript_v1.g:146:35: ( WS )*
             loop12:
             do {
                 int alt12=2;
@@ -2084,9 +2098,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt12) {
             	case 1 :
-            	    // BELScript_v1.g:131:35: WS
+            	    // BELScript_v1.g:146:35: WS
             	    {
-            	    WS62=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr990); 
+            	    WS62=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr996); 
             	    WS62_tree = 
             	    (Object)adaptor.create(WS62)
             	    ;
@@ -2133,7 +2147,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "define_annotation"
-    // BELScript_v1.g:134:1: define_annotation : ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) );
+    // BELScript_v1.g:149:1: define_annotation : ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) );
     public final BELScript_v1Parser.define_annotation_return define_annotation() throws RecognitionException {
         BELScript_v1Parser.define_annotation_return retval = new BELScript_v1Parser.define_annotation_return();
         retval.start = input.LT(1);
@@ -2177,38 +2191,38 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_VALUE_LIST=new RewriteRuleTokenStream(adaptor,"token VALUE_LIST");
         RewriteRuleSubtreeStream stream_define_anno_expr=new RewriteRuleSubtreeStream(adaptor,"rule define_anno_expr");
         try {
-            // BELScript_v1.g:135:5: ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) )
+            // BELScript_v1.g:150:5: ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) )
             int alt13=3;
             alt13 = dfa13.predict(input);
             switch (alt13) {
                 case 1 :
-                    // BELScript_v1.g:135:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST
+                    // BELScript_v1.g:150:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST
                     {
-                    pushFollow(FOLLOW_define_anno_expr_in_define_annotation1010);
+                    pushFollow(FOLLOW_define_anno_expr_in_define_annotation1016);
                     define_anno_expr63=define_anno_expr();
 
                     state._fsp--;
 
                     stream_define_anno_expr.add(define_anno_expr63.getTree());
 
-                    OBJECT_IDENT64=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1012);  
+                    OBJECT_IDENT64=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1018);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT64);
 
 
-                    KWRD_AS65=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1014);  
+                    KWRD_AS65=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1020);  
                     stream_KWRD_AS.add(KWRD_AS65);
 
 
-                    KWRD_LIST66=(Token)match(input,KWRD_LIST,FOLLOW_KWRD_LIST_in_define_annotation1016);  
+                    KWRD_LIST66=(Token)match(input,KWRD_LIST,FOLLOW_KWRD_LIST_in_define_annotation1022);  
                     stream_KWRD_LIST.add(KWRD_LIST66);
 
 
-                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_define_annotation1020);  
+                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_define_annotation1026);  
                     stream_VALUE_LIST.add(val);
 
 
                     // AST REWRITE
-                    // elements: OBJECT_IDENT, val
+                    // elements: val, OBJECT_IDENT
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -2219,9 +2233,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 135:72: -> ^( ANNO_DEF_LIST OBJECT_IDENT $val)
+                    // 150:72: -> ^( ANNO_DEF_LIST OBJECT_IDENT $val)
                     {
-                        // BELScript_v1.g:136:9: ^( ANNO_DEF_LIST OBJECT_IDENT $val)
+                        // BELScript_v1.g:151:9: ^( ANNO_DEF_LIST OBJECT_IDENT $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2245,28 +2259,28 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:137:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE
+                    // BELScript_v1.g:152:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE
                     {
-                    pushFollow(FOLLOW_define_anno_expr_in_define_annotation1049);
+                    pushFollow(FOLLOW_define_anno_expr_in_define_annotation1055);
                     define_anno_expr67=define_anno_expr();
 
                     state._fsp--;
 
                     stream_define_anno_expr.add(define_anno_expr67.getTree());
 
-                    OBJECT_IDENT68=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1051);  
+                    OBJECT_IDENT68=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1057);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT68);
 
 
-                    KWRD_AS69=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1053);  
+                    KWRD_AS69=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1059);  
                     stream_KWRD_AS.add(KWRD_AS69);
 
 
-                    KWRD_URL70=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_annotation1055);  
+                    KWRD_URL70=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_annotation1061);  
                     stream_KWRD_URL.add(KWRD_URL70);
 
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1059);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1065);  
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -2282,9 +2296,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 137:73: -> ^( ANNO_DEF_URL OBJECT_IDENT $val)
+                    // 152:73: -> ^( ANNO_DEF_URL OBJECT_IDENT $val)
                     {
-                        // BELScript_v1.g:138:9: ^( ANNO_DEF_URL OBJECT_IDENT $val)
+                        // BELScript_v1.g:153:9: ^( ANNO_DEF_URL OBJECT_IDENT $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2308,33 +2322,33 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // BELScript_v1.g:139:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE
+                    // BELScript_v1.g:154:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE
                     {
-                    pushFollow(FOLLOW_define_anno_expr_in_define_annotation1088);
+                    pushFollow(FOLLOW_define_anno_expr_in_define_annotation1094);
                     define_anno_expr71=define_anno_expr();
 
                     state._fsp--;
 
                     stream_define_anno_expr.add(define_anno_expr71.getTree());
 
-                    OBJECT_IDENT72=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1090);  
+                    OBJECT_IDENT72=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1096);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT72);
 
 
-                    KWRD_AS73=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1092);  
+                    KWRD_AS73=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1098);  
                     stream_KWRD_AS.add(KWRD_AS73);
 
 
-                    KWRD_PATTERN74=(Token)match(input,KWRD_PATTERN,FOLLOW_KWRD_PATTERN_in_define_annotation1094);  
+                    KWRD_PATTERN74=(Token)match(input,KWRD_PATTERN,FOLLOW_KWRD_PATTERN_in_define_annotation1100);  
                     stream_KWRD_PATTERN.add(KWRD_PATTERN74);
 
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1098);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1104);  
                     stream_QUOTED_VALUE.add(val);
 
 
                     // AST REWRITE
-                    // elements: OBJECT_IDENT, val
+                    // elements: val, OBJECT_IDENT
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -2345,9 +2359,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 139:77: -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val)
+                    // 154:77: -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val)
                     {
-                        // BELScript_v1.g:140:9: ^( ANNO_DEF_PTRN OBJECT_IDENT $val)
+                        // BELScript_v1.g:155:9: ^( ANNO_DEF_PTRN OBJECT_IDENT $val)
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2401,7 +2415,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "document_property"
-    // BELScript_v1.g:143:1: document_property : ( KWRD_AUTHORS | KWRD_CONTACTINFO | KWRD_COPYRIGHT | KWRD_DESC | KWRD_DISCLAIMER | KWRD_LICENSES | KWRD_NAME | KWRD_VERSION );
+    // BELScript_v1.g:158:1: document_property : ( KWRD_AUTHORS | KWRD_CONTACTINFO | KWRD_COPYRIGHT | KWRD_DESC | KWRD_DISCLAIMER | KWRD_LICENSES | KWRD_NAME | KWRD_VERSION );
     public final BELScript_v1Parser.document_property_return document_property() throws RecognitionException {
         BELScript_v1Parser.document_property_return retval = new BELScript_v1Parser.document_property_return();
         retval.start = input.LT(1);
@@ -2414,7 +2428,7 @@ public TreeAdaptor getTreeAdaptor() {
         Object set75_tree=null;
 
         try {
-            // BELScript_v1.g:144:5: ( KWRD_AUTHORS | KWRD_CONTACTINFO | KWRD_COPYRIGHT | KWRD_DESC | KWRD_DISCLAIMER | KWRD_LICENSES | KWRD_NAME | KWRD_VERSION )
+            // BELScript_v1.g:159:5: ( KWRD_AUTHORS | KWRD_CONTACTINFO | KWRD_COPYRIGHT | KWRD_DESC | KWRD_DISCLAIMER | KWRD_LICENSES | KWRD_NAME | KWRD_VERSION )
             // BELScript_v1.g:
             {
             root_0 = (Object)adaptor.nil();
@@ -2466,7 +2480,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "argument"
-    // BELScript_v1.g:154:1: argument : ( ( COMMA )? term -> term | ( COMMA )? param -> param );
+    // BELScript_v1.g:169:1: argument : ( ( COMMA )? term -> term | ( COMMA )? param -> param );
     public final BELScript_v1Parser.argument_return argument() throws RecognitionException {
         BELScript_v1Parser.argument_return retval = new BELScript_v1Parser.argument_return();
         retval.start = input.LT(1);
@@ -2487,7 +2501,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_param=new RewriteRuleSubtreeStream(adaptor,"rule param");
         RewriteRuleSubtreeStream stream_term=new RewriteRuleSubtreeStream(adaptor,"rule term");
         try {
-            // BELScript_v1.g:155:5: ( ( COMMA )? term -> term | ( COMMA )? param -> param )
+            // BELScript_v1.g:170:5: ( ( COMMA )? term -> term | ( COMMA )? param -> param )
             int alt16=2;
             switch ( input.LA(1) ) {
             case COMMA:
@@ -2588,9 +2602,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt16) {
                 case 1 :
-                    // BELScript_v1.g:155:9: ( COMMA )? term
+                    // BELScript_v1.g:170:9: ( COMMA )? term
                     {
-                    // BELScript_v1.g:155:9: ( COMMA )?
+                    // BELScript_v1.g:170:9: ( COMMA )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -2599,9 +2613,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt14) {
                         case 1 :
-                            // BELScript_v1.g:155:9: COMMA
+                            // BELScript_v1.g:170:9: COMMA
                             {
-                            COMMA76=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1225);  
+                            COMMA76=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1231);  
                             stream_COMMA.add(COMMA76);
 
 
@@ -2611,7 +2625,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    pushFollow(FOLLOW_term_in_argument1228);
+                    pushFollow(FOLLOW_term_in_argument1234);
                     term77=term();
 
                     state._fsp--;
@@ -2629,7 +2643,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 155:21: -> term
+                    // 170:21: -> term
                     {
                         adaptor.addChild(root_0, stream_term.nextTree());
 
@@ -2641,9 +2655,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:156:9: ( COMMA )? param
+                    // BELScript_v1.g:171:9: ( COMMA )? param
                     {
-                    // BELScript_v1.g:156:9: ( COMMA )?
+                    // BELScript_v1.g:171:9: ( COMMA )?
                     int alt15=2;
                     int LA15_0 = input.LA(1);
 
@@ -2652,9 +2666,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt15) {
                         case 1 :
-                            // BELScript_v1.g:156:9: COMMA
+                            // BELScript_v1.g:171:9: COMMA
                             {
-                            COMMA78=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1242);  
+                            COMMA78=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1248);  
                             stream_COMMA.add(COMMA78);
 
 
@@ -2664,7 +2678,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    pushFollow(FOLLOW_param_in_argument1245);
+                    pushFollow(FOLLOW_param_in_argument1251);
                     param79=param();
 
                     state._fsp--;
@@ -2682,7 +2696,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 156:22: -> param
+                    // 171:22: -> param
                     {
                         adaptor.addChild(root_0, stream_param.nextTree());
 
@@ -2724,7 +2738,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "term"
-    // BELScript_v1.g:159:1: term : function LP ( argument )* RP -> ^( TERMDEF function ( argument )* ) ;
+    // BELScript_v1.g:174:1: term : function LP ( argument )* RP -> ^( TERMDEF function ( argument )* ) ;
     public final BELScript_v1Parser.term_return term() throws RecognitionException {
         BELScript_v1Parser.term_return retval = new BELScript_v1Parser.term_return();
         retval.start = input.LT(1);
@@ -2746,21 +2760,21 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_argument=new RewriteRuleSubtreeStream(adaptor,"rule argument");
         RewriteRuleSubtreeStream stream_function=new RewriteRuleSubtreeStream(adaptor,"rule function");
         try {
-            // BELScript_v1.g:160:5: ( function LP ( argument )* RP -> ^( TERMDEF function ( argument )* ) )
-            // BELScript_v1.g:160:9: function LP ( argument )* RP
+            // BELScript_v1.g:175:5: ( function LP ( argument )* RP -> ^( TERMDEF function ( argument )* ) )
+            // BELScript_v1.g:175:9: function LP ( argument )* RP
             {
-            pushFollow(FOLLOW_function_in_term1268);
+            pushFollow(FOLLOW_function_in_term1274);
             function80=function();
 
             state._fsp--;
 
             stream_function.add(function80.getTree());
 
-            LP81=(Token)match(input,LP,FOLLOW_LP_in_term1270);  
+            LP81=(Token)match(input,LP,FOLLOW_LP_in_term1276);  
             stream_LP.add(LP81);
 
 
-            // BELScript_v1.g:160:21: ( argument )*
+            // BELScript_v1.g:175:21: ( argument )*
             loop17:
             do {
                 int alt17=2;
@@ -2773,9 +2787,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt17) {
             	case 1 :
-            	    // BELScript_v1.g:160:22: argument
+            	    // BELScript_v1.g:175:22: argument
             	    {
-            	    pushFollow(FOLLOW_argument_in_term1273);
+            	    pushFollow(FOLLOW_argument_in_term1279);
             	    argument82=argument();
 
             	    state._fsp--;
@@ -2791,7 +2805,7 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            RP83=(Token)match(input,RP,FOLLOW_RP_in_term1277);  
+            RP83=(Token)match(input,RP,FOLLOW_RP_in_term1283);  
             stream_RP.add(RP83);
 
 
@@ -2806,9 +2820,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (Object)adaptor.nil();
-            // 160:36: -> ^( TERMDEF function ( argument )* )
+            // 175:36: -> ^( TERMDEF function ( argument )* )
             {
-                // BELScript_v1.g:161:9: ^( TERMDEF function ( argument )* )
+                // BELScript_v1.g:176:9: ^( TERMDEF function ( argument )* )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2817,7 +2831,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_function.nextTree());
 
-                // BELScript_v1.g:161:28: ( argument )*
+                // BELScript_v1.g:176:28: ( argument )*
                 while ( stream_argument.hasNext() ) {
                     adaptor.addChild(root_1, stream_argument.nextTree());
 
@@ -2863,7 +2877,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statement"
-    // BELScript_v1.g:166:1: statement : subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )? -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? ) ;
+    // BELScript_v1.g:181:1: statement : subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )? -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? ) ;
     public final BELScript_v1Parser.statement_return statement() throws RecognitionException {
         BELScript_v1Parser.statement_return retval = new BELScript_v1Parser.statement_return();
         retval.start = input.LT(1);
@@ -2896,17 +2910,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_relationship=new RewriteRuleSubtreeStream(adaptor,"rule relationship");
         RewriteRuleSubtreeStream stream_term=new RewriteRuleSubtreeStream(adaptor,"rule term");
         try {
-            // BELScript_v1.g:167:5: (subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )? -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? ) )
-            // BELScript_v1.g:167:9: subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )?
+            // BELScript_v1.g:182:5: (subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )? -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? ) )
+            // BELScript_v1.g:182:9: subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )?
             {
-            pushFollow(FOLLOW_term_in_statement1319);
+            pushFollow(FOLLOW_term_in_statement1325);
             subject=term();
 
             state._fsp--;
 
             stream_term.add(subject.getTree());
 
-            // BELScript_v1.g:167:22: (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )?
+            // BELScript_v1.g:182:22: (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -2915,16 +2929,16 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt19) {
                 case 1 :
-                    // BELScript_v1.g:167:23: rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term )
+                    // BELScript_v1.g:182:23: rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term )
                     {
-                    pushFollow(FOLLOW_relationship_in_statement1324);
+                    pushFollow(FOLLOW_relationship_in_statement1330);
                     rel=relationship();
 
                     state._fsp--;
 
                     stream_relationship.add(rel.getTree());
 
-                    // BELScript_v1.g:167:40: ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term )
+                    // BELScript_v1.g:182:40: ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term )
                     int alt18=2;
                     int LA18_0 = input.LA(1);
 
@@ -2943,43 +2957,43 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt18) {
                         case 1 :
-                            // BELScript_v1.g:167:41: LP obj_sub= term obj_rel= relationship obj_obj= term RP
+                            // BELScript_v1.g:182:41: LP obj_sub= term obj_rel= relationship obj_obj= term RP
                             {
-                            LP84=(Token)match(input,LP,FOLLOW_LP_in_statement1327);  
+                            LP84=(Token)match(input,LP,FOLLOW_LP_in_statement1333);  
                             stream_LP.add(LP84);
 
 
-                            pushFollow(FOLLOW_term_in_statement1331);
+                            pushFollow(FOLLOW_term_in_statement1337);
                             obj_sub=term();
 
                             state._fsp--;
 
                             stream_term.add(obj_sub.getTree());
 
-                            pushFollow(FOLLOW_relationship_in_statement1335);
+                            pushFollow(FOLLOW_relationship_in_statement1341);
                             obj_rel=relationship();
 
                             state._fsp--;
 
                             stream_relationship.add(obj_rel.getTree());
 
-                            pushFollow(FOLLOW_term_in_statement1339);
+                            pushFollow(FOLLOW_term_in_statement1345);
                             obj_obj=term();
 
                             state._fsp--;
 
                             stream_term.add(obj_obj.getTree());
 
-                            RP85=(Token)match(input,RP,FOLLOW_RP_in_statement1341);  
+                            RP85=(Token)match(input,RP,FOLLOW_RP_in_statement1347);  
                             stream_RP.add(RP85);
 
 
                             }
                             break;
                         case 2 :
-                            // BELScript_v1.g:167:96: obj= term
+                            // BELScript_v1.g:182:96: obj= term
                             {
-                            pushFollow(FOLLOW_term_in_statement1347);
+                            pushFollow(FOLLOW_term_in_statement1353);
                             obj=term();
 
                             state._fsp--;
@@ -2998,7 +3012,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // BELScript_v1.g:167:115: (comment= STATEMENT_COMMENT )?
+            // BELScript_v1.g:182:115: (comment= STATEMENT_COMMENT )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -3007,9 +3021,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt20) {
                 case 1 :
-                    // BELScript_v1.g:167:115: comment= STATEMENT_COMMENT
+                    // BELScript_v1.g:182:115: comment= STATEMENT_COMMENT
                     {
-                    comment=(Token)match(input,STATEMENT_COMMENT,FOLLOW_STATEMENT_COMMENT_in_statement1354);  
+                    comment=(Token)match(input,STATEMENT_COMMENT,FOLLOW_STATEMENT_COMMENT_in_statement1360);  
                     stream_STATEMENT_COMMENT.add(comment);
 
 
@@ -3020,7 +3034,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: obj, comment, obj_rel, obj_sub, obj_obj, rel, subject
+            // elements: obj_obj, obj_rel, obj_sub, obj, subject, rel, comment
             // token labels: comment
             // rule labels: obj_obj, retval, obj_sub, subject, obj, rel, obj_rel
             // token list labels: 
@@ -3037,16 +3051,16 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_obj_rel=new RewriteRuleSubtreeStream(adaptor,"rule obj_rel",obj_rel!=null?obj_rel.tree:null);
 
             root_0 = (Object)adaptor.nil();
-            // 167:135: -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? )
+            // 182:135: -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? )
             {
-                // BELScript_v1.g:168:9: ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? )
+                // BELScript_v1.g:183:9: ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
                 (Object)adaptor.create(STMTDEF, "STMTDEF")
                 , root_1);
 
-                // BELScript_v1.g:168:20: ( $comment)?
+                // BELScript_v1.g:183:20: ( $comment)?
                 if ( stream_comment.hasNext() ) {
                     adaptor.addChild(root_1, stream_comment.nextNode());
 
@@ -3055,35 +3069,35 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_subject.nextTree());
 
-                // BELScript_v1.g:168:39: ( $rel)?
+                // BELScript_v1.g:183:39: ( $rel)?
                 if ( stream_rel.hasNext() ) {
                     adaptor.addChild(root_1, stream_rel.nextTree());
 
                 }
                 stream_rel.reset();
 
-                // BELScript_v1.g:168:45: ( $obj)?
+                // BELScript_v1.g:183:45: ( $obj)?
                 if ( stream_obj.hasNext() ) {
                     adaptor.addChild(root_1, stream_obj.nextTree());
 
                 }
                 stream_obj.reset();
 
-                // BELScript_v1.g:168:51: ( $obj_sub)?
+                // BELScript_v1.g:183:51: ( $obj_sub)?
                 if ( stream_obj_sub.hasNext() ) {
                     adaptor.addChild(root_1, stream_obj_sub.nextTree());
 
                 }
                 stream_obj_sub.reset();
 
-                // BELScript_v1.g:168:61: ( $obj_rel)?
+                // BELScript_v1.g:183:61: ( $obj_rel)?
                 if ( stream_obj_rel.hasNext() ) {
                     adaptor.addChild(root_1, stream_obj_rel.nextTree());
 
                 }
                 stream_obj_rel.reset();
 
-                // BELScript_v1.g:168:71: ( $obj_obj)?
+                // BELScript_v1.g:183:71: ( $obj_obj)?
                 if ( stream_obj_obj.hasNext() ) {
                     adaptor.addChild(root_1, stream_obj_obj.nextTree());
 
@@ -3129,7 +3143,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ns_prefix"
-    // BELScript_v1.g:171:1: ns_prefix : OBJECT_IDENT COLON !;
+    // BELScript_v1.g:186:1: ns_prefix : OBJECT_IDENT COLON !;
     public final BELScript_v1Parser.ns_prefix_return ns_prefix() throws RecognitionException {
         BELScript_v1Parser.ns_prefix_return retval = new BELScript_v1Parser.ns_prefix_return();
         retval.start = input.LT(1);
@@ -3144,20 +3158,20 @@ public TreeAdaptor getTreeAdaptor() {
         Object COLON87_tree=null;
 
         try {
-            // BELScript_v1.g:172:5: ( OBJECT_IDENT COLON !)
-            // BELScript_v1.g:172:9: OBJECT_IDENT COLON !
+            // BELScript_v1.g:187:5: ( OBJECT_IDENT COLON !)
+            // BELScript_v1.g:187:9: OBJECT_IDENT COLON !
             {
             root_0 = (Object)adaptor.nil();
 
 
-            OBJECT_IDENT86=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_ns_prefix1415); 
+            OBJECT_IDENT86=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_ns_prefix1421); 
             OBJECT_IDENT86_tree = 
             (Object)adaptor.create(OBJECT_IDENT86)
             ;
             adaptor.addChild(root_0, OBJECT_IDENT86_tree);
 
 
-            COLON87=(Token)match(input,COLON,FOLLOW_COLON_in_ns_prefix1417); 
+            COLON87=(Token)match(input,COLON,FOLLOW_COLON_in_ns_prefix1423); 
 
             }
 
@@ -3190,7 +3204,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "param"
-    // BELScript_v1.g:175:1: param : ( ( ns_prefix )? OBJECT_IDENT -> ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT ) | ( ns_prefix )? QUOTED_VALUE -> ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE ) );
+    // BELScript_v1.g:190:1: param : ( ( ns_prefix )? OBJECT_IDENT -> ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT ) | ( ns_prefix )? QUOTED_VALUE -> ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE ) );
     public final BELScript_v1Parser.param_return param() throws RecognitionException {
         BELScript_v1Parser.param_return retval = new BELScript_v1Parser.param_return();
         retval.start = input.LT(1);
@@ -3211,7 +3225,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_QUOTED_VALUE=new RewriteRuleTokenStream(adaptor,"token QUOTED_VALUE");
         RewriteRuleSubtreeStream stream_ns_prefix=new RewriteRuleSubtreeStream(adaptor,"rule ns_prefix");
         try {
-            // BELScript_v1.g:176:5: ( ( ns_prefix )? OBJECT_IDENT -> ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT ) | ( ns_prefix )? QUOTED_VALUE -> ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE ) )
+            // BELScript_v1.g:191:5: ( ( ns_prefix )? OBJECT_IDENT -> ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT ) | ( ns_prefix )? QUOTED_VALUE -> ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE ) )
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -3258,9 +3272,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt23) {
                 case 1 :
-                    // BELScript_v1.g:176:9: ( ns_prefix )? OBJECT_IDENT
+                    // BELScript_v1.g:191:9: ( ns_prefix )? OBJECT_IDENT
                     {
-                    // BELScript_v1.g:176:9: ( ns_prefix )?
+                    // BELScript_v1.g:191:9: ( ns_prefix )?
                     int alt21=2;
                     int LA21_0 = input.LA(1);
 
@@ -3273,9 +3287,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt21) {
                         case 1 :
-                            // BELScript_v1.g:176:9: ns_prefix
+                            // BELScript_v1.g:191:9: ns_prefix
                             {
-                            pushFollow(FOLLOW_ns_prefix_in_param1437);
+                            pushFollow(FOLLOW_ns_prefix_in_param1443);
                             ns_prefix88=ns_prefix();
 
                             state._fsp--;
@@ -3288,12 +3302,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    OBJECT_IDENT89=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_param1440);  
+                    OBJECT_IDENT89=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_param1446);  
                     stream_OBJECT_IDENT.add(OBJECT_IDENT89);
 
 
                     // AST REWRITE
-                    // elements: ns_prefix, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, ns_prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3303,16 +3317,16 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 176:33: -> ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT )
+                    // 191:33: -> ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT )
                     {
-                        // BELScript_v1.g:176:36: ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT )
+                        // BELScript_v1.g:191:36: ^( PARAM_DEF_ID ( ns_prefix )? OBJECT_IDENT )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
                         (Object)adaptor.create(PARAM_DEF_ID, "PARAM_DEF_ID")
                         , root_1);
 
-                        // BELScript_v1.g:176:51: ( ns_prefix )?
+                        // BELScript_v1.g:191:51: ( ns_prefix )?
                         if ( stream_ns_prefix.hasNext() ) {
                             adaptor.addChild(root_1, stream_ns_prefix.nextTree());
 
@@ -3334,9 +3348,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:177:9: ( ns_prefix )? QUOTED_VALUE
+                    // BELScript_v1.g:192:9: ( ns_prefix )? QUOTED_VALUE
                     {
-                    // BELScript_v1.g:177:9: ( ns_prefix )?
+                    // BELScript_v1.g:192:9: ( ns_prefix )?
                     int alt22=2;
                     int LA22_0 = input.LA(1);
 
@@ -3345,9 +3359,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt22) {
                         case 1 :
-                            // BELScript_v1.g:177:9: ns_prefix
+                            // BELScript_v1.g:192:9: ns_prefix
                             {
-                            pushFollow(FOLLOW_ns_prefix_in_param1461);
+                            pushFollow(FOLLOW_ns_prefix_in_param1467);
                             ns_prefix90=ns_prefix();
 
                             state._fsp--;
@@ -3360,7 +3374,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    QUOTED_VALUE91=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_param1464);  
+                    QUOTED_VALUE91=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_param1470);  
                     stream_QUOTED_VALUE.add(QUOTED_VALUE91);
 
 
@@ -3375,16 +3389,16 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (Object)adaptor.nil();
-                    // 177:33: -> ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE )
+                    // 192:33: -> ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE )
                     {
-                        // BELScript_v1.g:177:36: ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE )
+                        // BELScript_v1.g:192:36: ^( PARAM_DEF_QV ( ns_prefix )? QUOTED_VALUE )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
                         (Object)adaptor.create(PARAM_DEF_QV, "PARAM_DEF_QV")
                         , root_1);
 
-                        // BELScript_v1.g:177:51: ( ns_prefix )?
+                        // BELScript_v1.g:192:51: ( ns_prefix )?
                         if ( stream_ns_prefix.hasNext() ) {
                             adaptor.addChild(root_1, stream_ns_prefix.nextTree());
 
@@ -3437,7 +3451,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "function"
-    // BELScript_v1.g:180:1: function returns [String r] : (fv= 'proteinAbundance' |fv= 'p' |fv= 'rnaAbundance' |fv= 'r' |fv= 'abundance' |fv= 'a' |fv= 'microRNAAbundance' |fv= 'm' |fv= 'geneAbundance' |fv= 'g' |fv= 'biologicalProcess' |fv= 'bp' |fv= 'pathology' |fv= 'path' |fv= 'complexAbundance' |fv= 'complex' |fv= 'translocation' |fv= 'tloc' |fv= 'cellSecretion' |fv= 'sec' |fv= 'cellSurfaceExpression' |fv= 'surf' |fv= 'reaction' |fv= 'rxn' |fv= 'compositeAbundance' |fv= 'composite' |fv= 'fusion' |fv= 'fus' |fv= 'degradation' |fv= 'deg' |fv= 'molecularActivity' |fv= 'act' |fv= 'catalyticActivity' |fv= 'cat' |fv= 'kinaseActivity' |fv= 'kin' |fv= 'phosphataseActivity' |fv= 'phos' |fv= 'peptidaseActivity' |fv= 'pep' |fv= 'ribosylationActivity' |fv= 'ribo' |fv= 'transcriptionalActivity' |fv= 'tscript' |fv= 'transportActivity' |fv= 'tport' |fv= 'gtpBoundActivity' |fv= 'gtp' |fv= 'chaperoneActivity' |fv= 'chap' |fv= 'proteinModification' |fv= 'pmod' |fv= 'substitution' |fv= 'sub' |fv= 'truncation' |fv= 'trunc' |fv= 'reactants' |fv= 'products' |fv= 'list' );
+    // BELScript_v1.g:195:1: function returns [String r] : (fv= 'proteinAbundance' |fv= 'p' |fv= 'rnaAbundance' |fv= 'r' |fv= 'abundance' |fv= 'a' |fv= 'microRNAAbundance' |fv= 'm' |fv= 'geneAbundance' |fv= 'g' |fv= 'biologicalProcess' |fv= 'bp' |fv= 'pathology' |fv= 'path' |fv= 'complexAbundance' |fv= 'complex' |fv= 'translocation' |fv= 'tloc' |fv= 'cellSecretion' |fv= 'sec' |fv= 'cellSurfaceExpression' |fv= 'surf' |fv= 'reaction' |fv= 'rxn' |fv= 'compositeAbundance' |fv= 'composite' |fv= 'fusion' |fv= 'fus' |fv= 'degradation' |fv= 'deg' |fv= 'molecularActivity' |fv= 'act' |fv= 'catalyticActivity' |fv= 'cat' |fv= 'kinaseActivity' |fv= 'kin' |fv= 'phosphataseActivity' |fv= 'phos' |fv= 'peptidaseActivity' |fv= 'pep' |fv= 'ribosylationActivity' |fv= 'ribo' |fv= 'transcriptionalActivity' |fv= 'tscript' |fv= 'transportActivity' |fv= 'tport' |fv= 'gtpBoundActivity' |fv= 'gtp' |fv= 'chaperoneActivity' |fv= 'chap' |fv= 'proteinModification' |fv= 'pmod' |fv= 'substitution' |fv= 'sub' |fv= 'truncation' |fv= 'trunc' |fv= 'reactants' |fv= 'products' |fv= 'list' );
     public final BELScript_v1Parser.function_return function() throws RecognitionException {
         BELScript_v1Parser.function_return retval = new BELScript_v1Parser.function_return();
         retval.start = input.LT(1);
@@ -3450,7 +3464,7 @@ public TreeAdaptor getTreeAdaptor() {
         Object fv_tree=null;
 
         try {
-            // BELScript_v1.g:181:5: (fv= 'proteinAbundance' |fv= 'p' |fv= 'rnaAbundance' |fv= 'r' |fv= 'abundance' |fv= 'a' |fv= 'microRNAAbundance' |fv= 'm' |fv= 'geneAbundance' |fv= 'g' |fv= 'biologicalProcess' |fv= 'bp' |fv= 'pathology' |fv= 'path' |fv= 'complexAbundance' |fv= 'complex' |fv= 'translocation' |fv= 'tloc' |fv= 'cellSecretion' |fv= 'sec' |fv= 'cellSurfaceExpression' |fv= 'surf' |fv= 'reaction' |fv= 'rxn' |fv= 'compositeAbundance' |fv= 'composite' |fv= 'fusion' |fv= 'fus' |fv= 'degradation' |fv= 'deg' |fv= 'molecularActivity' |fv= 'act' |fv= 'catalyticActivity' |fv= 'cat' |fv= 'kinaseActivity' |fv= 'kin' |fv= 'phosphataseActivity' |fv= 'phos' |fv= 'peptidaseActivity' |fv= 'pep' |fv= 'ribosylationActivity' |fv= 'ribo' |fv= 'transcriptionalActivity' |fv= 'tscript' |fv= 'transportActivity' |fv= 'tport' |fv= 'gtpBoundActivity' |fv= 'gtp' |fv= 'chaperoneActivity' |fv= 'chap' |fv= 'proteinModification' |fv= 'pmod' |fv= 'substitution' |fv= 'sub' |fv= 'truncation' |fv= 'trunc' |fv= 'reactants' |fv= 'products' |fv= 'list' )
+            // BELScript_v1.g:196:5: (fv= 'proteinAbundance' |fv= 'p' |fv= 'rnaAbundance' |fv= 'r' |fv= 'abundance' |fv= 'a' |fv= 'microRNAAbundance' |fv= 'm' |fv= 'geneAbundance' |fv= 'g' |fv= 'biologicalProcess' |fv= 'bp' |fv= 'pathology' |fv= 'path' |fv= 'complexAbundance' |fv= 'complex' |fv= 'translocation' |fv= 'tloc' |fv= 'cellSecretion' |fv= 'sec' |fv= 'cellSurfaceExpression' |fv= 'surf' |fv= 'reaction' |fv= 'rxn' |fv= 'compositeAbundance' |fv= 'composite' |fv= 'fusion' |fv= 'fus' |fv= 'degradation' |fv= 'deg' |fv= 'molecularActivity' |fv= 'act' |fv= 'catalyticActivity' |fv= 'cat' |fv= 'kinaseActivity' |fv= 'kin' |fv= 'phosphataseActivity' |fv= 'phos' |fv= 'peptidaseActivity' |fv= 'pep' |fv= 'ribosylationActivity' |fv= 'ribo' |fv= 'transcriptionalActivity' |fv= 'tscript' |fv= 'transportActivity' |fv= 'tport' |fv= 'gtpBoundActivity' |fv= 'gtp' |fv= 'chaperoneActivity' |fv= 'chap' |fv= 'proteinModification' |fv= 'pmod' |fv= 'substitution' |fv= 'sub' |fv= 'truncation' |fv= 'trunc' |fv= 'reactants' |fv= 'products' |fv= 'list' )
             int alt24=59;
             switch ( input.LA(1) ) {
             case 126:
@@ -3758,12 +3772,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt24) {
                 case 1 :
-                    // BELScript_v1.g:181:9: fv= 'proteinAbundance'
+                    // BELScript_v1.g:196:9: fv= 'proteinAbundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,126,FOLLOW_126_in_function1500); 
+                    fv=(Token)match(input,126,FOLLOW_126_in_function1506); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3775,12 +3789,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:182:9: fv= 'p'
+                    // BELScript_v1.g:197:9: fv= 'p'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,115,FOLLOW_115_in_function1524); 
+                    fv=(Token)match(input,115,FOLLOW_115_in_function1530); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3792,12 +3806,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // BELScript_v1.g:183:9: fv= 'rnaAbundance'
+                    // BELScript_v1.g:198:9: fv= 'rnaAbundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,134,FOLLOW_134_in_function1563); 
+                    fv=(Token)match(input,134,FOLLOW_134_in_function1569); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3809,12 +3823,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // BELScript_v1.g:184:9: fv= 'r'
+                    // BELScript_v1.g:199:9: fv= 'r'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,128,FOLLOW_128_in_function1591); 
+                    fv=(Token)match(input,128,FOLLOW_128_in_function1597); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3826,12 +3840,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // BELScript_v1.g:185:9: fv= 'abundance'
+                    // BELScript_v1.g:200:9: fv= 'abundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,72,FOLLOW_72_in_function1630); 
+                    fv=(Token)match(input,72,FOLLOW_72_in_function1636); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3843,12 +3857,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // BELScript_v1.g:186:9: fv= 'a'
+                    // BELScript_v1.g:201:9: fv= 'a'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,71,FOLLOW_71_in_function1661); 
+                    fv=(Token)match(input,71,FOLLOW_71_in_function1667); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3860,12 +3874,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // BELScript_v1.g:187:9: fv= 'microRNAAbundance'
+                    // BELScript_v1.g:202:9: fv= 'microRNAAbundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,111,FOLLOW_111_in_function1700); 
+                    fv=(Token)match(input,111,FOLLOW_111_in_function1706); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3877,12 +3891,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // BELScript_v1.g:188:9: fv= 'm'
+                    // BELScript_v1.g:203:9: fv= 'm'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,110,FOLLOW_110_in_function1723); 
+                    fv=(Token)match(input,110,FOLLOW_110_in_function1729); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3894,12 +3908,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 9 :
-                    // BELScript_v1.g:189:9: fv= 'geneAbundance'
+                    // BELScript_v1.g:204:9: fv= 'geneAbundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,98,FOLLOW_98_in_function1762); 
+                    fv=(Token)match(input,98,FOLLOW_98_in_function1768); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3911,12 +3925,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 10 :
-                    // BELScript_v1.g:190:9: fv= 'g'
+                    // BELScript_v1.g:205:9: fv= 'g'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,97,FOLLOW_97_in_function1789); 
+                    fv=(Token)match(input,97,FOLLOW_97_in_function1795); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3928,12 +3942,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 11 :
-                    // BELScript_v1.g:191:9: fv= 'biologicalProcess'
+                    // BELScript_v1.g:206:9: fv= 'biologicalProcess'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,76,FOLLOW_76_in_function1828); 
+                    fv=(Token)match(input,76,FOLLOW_76_in_function1834); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3945,12 +3959,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 12 :
-                    // BELScript_v1.g:192:9: fv= 'bp'
+                    // BELScript_v1.g:207:9: fv= 'bp'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,78,FOLLOW_78_in_function1851); 
+                    fv=(Token)match(input,78,FOLLOW_78_in_function1857); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3962,12 +3976,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 13 :
-                    // BELScript_v1.g:193:9: fv= 'pathology'
+                    // BELScript_v1.g:208:9: fv= 'pathology'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,117,FOLLOW_117_in_function1889); 
+                    fv=(Token)match(input,117,FOLLOW_117_in_function1895); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3979,12 +3993,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 14 :
-                    // BELScript_v1.g:194:9: fv= 'path'
+                    // BELScript_v1.g:209:9: fv= 'path'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,116,FOLLOW_116_in_function1920); 
+                    fv=(Token)match(input,116,FOLLOW_116_in_function1926); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -3996,12 +4010,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 15 :
-                    // BELScript_v1.g:195:9: fv= 'complexAbundance'
+                    // BELScript_v1.g:210:9: fv= 'complexAbundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,87,FOLLOW_87_in_function1956); 
+                    fv=(Token)match(input,87,FOLLOW_87_in_function1962); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4013,12 +4027,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 16 :
-                    // BELScript_v1.g:196:9: fv= 'complex'
+                    // BELScript_v1.g:211:9: fv= 'complex'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,86,FOLLOW_86_in_function1980); 
+                    fv=(Token)match(input,86,FOLLOW_86_in_function1986); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4030,12 +4044,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 17 :
-                    // BELScript_v1.g:197:9: fv= 'translocation'
+                    // BELScript_v1.g:212:9: fv= 'translocation'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,146,FOLLOW_146_in_function2013); 
+                    fv=(Token)match(input,146,FOLLOW_146_in_function2019); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4047,12 +4061,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 18 :
-                    // BELScript_v1.g:198:9: fv= 'tloc'
+                    // BELScript_v1.g:213:9: fv= 'tloc'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,141,FOLLOW_141_in_function2040); 
+                    fv=(Token)match(input,141,FOLLOW_141_in_function2046); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4064,12 +4078,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 19 :
-                    // BELScript_v1.g:199:9: fv= 'cellSecretion'
+                    // BELScript_v1.g:214:9: fv= 'cellSecretion'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,82,FOLLOW_82_in_function2076); 
+                    fv=(Token)match(input,82,FOLLOW_82_in_function2082); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4081,12 +4095,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 20 :
-                    // BELScript_v1.g:200:9: fv= 'sec'
+                    // BELScript_v1.g:215:9: fv= 'sec'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,136,FOLLOW_136_in_function2103); 
+                    fv=(Token)match(input,136,FOLLOW_136_in_function2109); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4098,12 +4112,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 21 :
-                    // BELScript_v1.g:201:9: fv= 'cellSurfaceExpression'
+                    // BELScript_v1.g:216:9: fv= 'cellSurfaceExpression'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,83,FOLLOW_83_in_function2140); 
+                    fv=(Token)match(input,83,FOLLOW_83_in_function2146); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4115,12 +4129,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 22 :
-                    // BELScript_v1.g:202:9: fv= 'surf'
+                    // BELScript_v1.g:217:9: fv= 'surf'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,140,FOLLOW_140_in_function2159); 
+                    fv=(Token)match(input,140,FOLLOW_140_in_function2165); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4132,12 +4146,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 23 :
-                    // BELScript_v1.g:203:9: fv= 'reaction'
+                    // BELScript_v1.g:218:9: fv= 'reaction'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,131,FOLLOW_131_in_function2195); 
+                    fv=(Token)match(input,131,FOLLOW_131_in_function2201); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4149,12 +4163,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 24 :
-                    // BELScript_v1.g:204:9: fv= 'rxn'
+                    // BELScript_v1.g:219:9: fv= 'rxn'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,135,FOLLOW_135_in_function2227); 
+                    fv=(Token)match(input,135,FOLLOW_135_in_function2233); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4166,12 +4180,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 25 :
-                    // BELScript_v1.g:205:9: fv= 'compositeAbundance'
+                    // BELScript_v1.g:220:9: fv= 'compositeAbundance'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,89,FOLLOW_89_in_function2264); 
+                    fv=(Token)match(input,89,FOLLOW_89_in_function2270); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4183,12 +4197,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 26 :
-                    // BELScript_v1.g:206:9: fv= 'composite'
+                    // BELScript_v1.g:221:9: fv= 'composite'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,88,FOLLOW_88_in_function2286); 
+                    fv=(Token)match(input,88,FOLLOW_88_in_function2292); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4200,12 +4214,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 27 :
-                    // BELScript_v1.g:207:9: fv= 'fusion'
+                    // BELScript_v1.g:222:9: fv= 'fusion'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,96,FOLLOW_96_in_function2317); 
+                    fv=(Token)match(input,96,FOLLOW_96_in_function2323); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4217,12 +4231,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 28 :
-                    // BELScript_v1.g:208:9: fv= 'fus'
+                    // BELScript_v1.g:223:9: fv= 'fus'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,95,FOLLOW_95_in_function2351); 
+                    fv=(Token)match(input,95,FOLLOW_95_in_function2357); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4234,12 +4248,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 29 :
-                    // BELScript_v1.g:209:9: fv= 'degradation'
+                    // BELScript_v1.g:224:9: fv= 'degradation'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,92,FOLLOW_92_in_function2388); 
+                    fv=(Token)match(input,92,FOLLOW_92_in_function2394); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4251,12 +4265,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 30 :
-                    // BELScript_v1.g:210:9: fv= 'deg'
+                    // BELScript_v1.g:225:9: fv= 'deg'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,91,FOLLOW_91_in_function2417); 
+                    fv=(Token)match(input,91,FOLLOW_91_in_function2423); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4268,12 +4282,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 31 :
-                    // BELScript_v1.g:211:9: fv= 'molecularActivity'
+                    // BELScript_v1.g:226:9: fv= 'molecularActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,112,FOLLOW_112_in_function2454); 
+                    fv=(Token)match(input,112,FOLLOW_112_in_function2460); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4285,12 +4299,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 32 :
-                    // BELScript_v1.g:212:9: fv= 'act'
+                    // BELScript_v1.g:227:9: fv= 'act'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,73,FOLLOW_73_in_function2477); 
+                    fv=(Token)match(input,73,FOLLOW_73_in_function2483); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4302,12 +4316,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 33 :
-                    // BELScript_v1.g:213:9: fv= 'catalyticActivity'
+                    // BELScript_v1.g:228:9: fv= 'catalyticActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,80,FOLLOW_80_in_function2514); 
+                    fv=(Token)match(input,80,FOLLOW_80_in_function2520); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4319,12 +4333,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 34 :
-                    // BELScript_v1.g:214:9: fv= 'cat'
+                    // BELScript_v1.g:229:9: fv= 'cat'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,79,FOLLOW_79_in_function2537); 
+                    fv=(Token)match(input,79,FOLLOW_79_in_function2543); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4336,12 +4350,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 35 :
-                    // BELScript_v1.g:215:9: fv= 'kinaseActivity'
+                    // BELScript_v1.g:230:9: fv= 'kinaseActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,108,FOLLOW_108_in_function2574); 
+                    fv=(Token)match(input,108,FOLLOW_108_in_function2580); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4353,12 +4367,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 36 :
-                    // BELScript_v1.g:216:9: fv= 'kin'
+                    // BELScript_v1.g:231:9: fv= 'kin'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,107,FOLLOW_107_in_function2600); 
+                    fv=(Token)match(input,107,FOLLOW_107_in_function2606); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4370,12 +4384,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 37 :
-                    // BELScript_v1.g:217:9: fv= 'phosphataseActivity'
+                    // BELScript_v1.g:232:9: fv= 'phosphataseActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,121,FOLLOW_121_in_function2637); 
+                    fv=(Token)match(input,121,FOLLOW_121_in_function2643); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4387,12 +4401,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 38 :
-                    // BELScript_v1.g:218:9: fv= 'phos'
+                    // BELScript_v1.g:233:9: fv= 'phos'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,120,FOLLOW_120_in_function2658); 
+                    fv=(Token)match(input,120,FOLLOW_120_in_function2664); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4404,12 +4418,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 39 :
-                    // BELScript_v1.g:219:9: fv= 'peptidaseActivity'
+                    // BELScript_v1.g:234:9: fv= 'peptidaseActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,119,FOLLOW_119_in_function2694); 
+                    fv=(Token)match(input,119,FOLLOW_119_in_function2700); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4421,12 +4435,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 40 :
-                    // BELScript_v1.g:220:9: fv= 'pep'
+                    // BELScript_v1.g:235:9: fv= 'pep'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,118,FOLLOW_118_in_function2717); 
+                    fv=(Token)match(input,118,FOLLOW_118_in_function2723); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4438,12 +4452,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 41 :
-                    // BELScript_v1.g:221:9: fv= 'ribosylationActivity'
+                    // BELScript_v1.g:236:9: fv= 'ribosylationActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,133,FOLLOW_133_in_function2754); 
+                    fv=(Token)match(input,133,FOLLOW_133_in_function2760); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4455,12 +4469,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 42 :
-                    // BELScript_v1.g:222:9: fv= 'ribo'
+                    // BELScript_v1.g:237:9: fv= 'ribo'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,132,FOLLOW_132_in_function2774); 
+                    fv=(Token)match(input,132,FOLLOW_132_in_function2780); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4472,12 +4486,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 43 :
-                    // BELScript_v1.g:223:9: fv= 'transcriptionalActivity'
+                    // BELScript_v1.g:238:9: fv= 'transcriptionalActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,144,FOLLOW_144_in_function2810); 
+                    fv=(Token)match(input,144,FOLLOW_144_in_function2816); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4489,12 +4503,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 44 :
-                    // BELScript_v1.g:224:9: fv= 'tscript'
+                    // BELScript_v1.g:239:9: fv= 'tscript'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,150,FOLLOW_150_in_function2827); 
+                    fv=(Token)match(input,150,FOLLOW_150_in_function2833); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4506,12 +4520,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 45 :
-                    // BELScript_v1.g:225:9: fv= 'transportActivity'
+                    // BELScript_v1.g:240:9: fv= 'transportActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,147,FOLLOW_147_in_function2860); 
+                    fv=(Token)match(input,147,FOLLOW_147_in_function2866); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4523,12 +4537,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 46 :
-                    // BELScript_v1.g:226:9: fv= 'tport'
+                    // BELScript_v1.g:241:9: fv= 'tport'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,142,FOLLOW_142_in_function2883); 
+                    fv=(Token)match(input,142,FOLLOW_142_in_function2889); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4540,12 +4554,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 47 :
-                    // BELScript_v1.g:227:9: fv= 'gtpBoundActivity'
+                    // BELScript_v1.g:242:9: fv= 'gtpBoundActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,100,FOLLOW_100_in_function2918); 
+                    fv=(Token)match(input,100,FOLLOW_100_in_function2924); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4557,12 +4571,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 48 :
-                    // BELScript_v1.g:228:9: fv= 'gtp'
+                    // BELScript_v1.g:243:9: fv= 'gtp'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,99,FOLLOW_99_in_function2942); 
+                    fv=(Token)match(input,99,FOLLOW_99_in_function2948); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4574,12 +4588,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 49 :
-                    // BELScript_v1.g:229:9: fv= 'chaperoneActivity'
+                    // BELScript_v1.g:244:9: fv= 'chaperoneActivity'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,85,FOLLOW_85_in_function2979); 
+                    fv=(Token)match(input,85,FOLLOW_85_in_function2985); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4591,12 +4605,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 50 :
-                    // BELScript_v1.g:230:9: fv= 'chap'
+                    // BELScript_v1.g:245:9: fv= 'chap'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,84,FOLLOW_84_in_function3002); 
+                    fv=(Token)match(input,84,FOLLOW_84_in_function3008); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4608,12 +4622,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 51 :
-                    // BELScript_v1.g:231:9: fv= 'proteinModification'
+                    // BELScript_v1.g:246:9: fv= 'proteinModification'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,127,FOLLOW_127_in_function3038); 
+                    fv=(Token)match(input,127,FOLLOW_127_in_function3044); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4625,12 +4639,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 52 :
-                    // BELScript_v1.g:232:9: fv= 'pmod'
+                    // BELScript_v1.g:247:9: fv= 'pmod'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,122,FOLLOW_122_in_function3059); 
+                    fv=(Token)match(input,122,FOLLOW_122_in_function3065); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4642,12 +4656,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 53 :
-                    // BELScript_v1.g:233:9: fv= 'substitution'
+                    // BELScript_v1.g:248:9: fv= 'substitution'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,139,FOLLOW_139_in_function3095); 
+                    fv=(Token)match(input,139,FOLLOW_139_in_function3101); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4659,12 +4673,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 54 :
-                    // BELScript_v1.g:234:9: fv= 'sub'
+                    // BELScript_v1.g:249:9: fv= 'sub'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,137,FOLLOW_137_in_function3123); 
+                    fv=(Token)match(input,137,FOLLOW_137_in_function3129); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4676,12 +4690,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 55 :
-                    // BELScript_v1.g:235:9: fv= 'truncation'
+                    // BELScript_v1.g:250:9: fv= 'truncation'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,149,FOLLOW_149_in_function3160); 
+                    fv=(Token)match(input,149,FOLLOW_149_in_function3166); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4693,12 +4707,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 56 :
-                    // BELScript_v1.g:236:9: fv= 'trunc'
+                    // BELScript_v1.g:251:9: fv= 'trunc'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,148,FOLLOW_148_in_function3190); 
+                    fv=(Token)match(input,148,FOLLOW_148_in_function3196); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4710,12 +4724,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 57 :
-                    // BELScript_v1.g:237:9: fv= 'reactants'
+                    // BELScript_v1.g:252:9: fv= 'reactants'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,130,FOLLOW_130_in_function3225); 
+                    fv=(Token)match(input,130,FOLLOW_130_in_function3231); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4727,12 +4741,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 58 :
-                    // BELScript_v1.g:238:9: fv= 'products'
+                    // BELScript_v1.g:253:9: fv= 'products'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,124,FOLLOW_124_in_function3256); 
+                    fv=(Token)match(input,124,FOLLOW_124_in_function3262); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4744,12 +4758,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 59 :
-                    // BELScript_v1.g:239:9: fv= 'list'
+                    // BELScript_v1.g:254:9: fv= 'list'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,109,FOLLOW_109_in_function3288); 
+                    fv=(Token)match(input,109,FOLLOW_109_in_function3294); 
                     fv_tree = 
                     (Object)adaptor.create(fv)
                     ;
@@ -4792,7 +4806,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "relationship"
-    // BELScript_v1.g:242:1: relationship returns [String r] : (rv= 'increases' |rv= '->' |rv= 'decreases' |rv= '-|' |rv= 'directlyIncreases' |rv= '=>' |rv= 'directlyDecreases' |rv= '=|' |rv= 'causesNoChange' |rv= 'positiveCorrelation' |rv= 'negativeCorrelation' |rv= 'translatedTo' |rv= '>>' |rv= 'transcribedTo' |rv= ':>' |rv= 'isA' |rv= 'subProcessOf' |rv= 'rateLimitingStepOf' |rv= 'biomarkerFor' |rv= 'prognosticBiomarkerFor' |rv= 'orthologous' |rv= 'analogous' |rv= 'association' |rv= '--' |rv= 'hasMembers' |rv= 'hasComponents' |rv= 'hasMember' |rv= 'hasComponent' );
+    // BELScript_v1.g:257:1: relationship returns [String r] : (rv= 'increases' |rv= '->' |rv= 'decreases' |rv= '-|' |rv= 'directlyIncreases' |rv= '=>' |rv= 'directlyDecreases' |rv= '=|' |rv= 'causesNoChange' |rv= 'positiveCorrelation' |rv= 'negativeCorrelation' |rv= 'translatedTo' |rv= '>>' |rv= 'transcribedTo' |rv= ':>' |rv= 'isA' |rv= 'subProcessOf' |rv= 'rateLimitingStepOf' |rv= 'biomarkerFor' |rv= 'prognosticBiomarkerFor' |rv= 'orthologous' |rv= 'analogous' |rv= 'association' |rv= '--' |rv= 'hasMembers' |rv= 'hasComponents' |rv= 'hasMember' |rv= 'hasComponent' );
     public final BELScript_v1Parser.relationship_return relationship() throws RecognitionException {
         BELScript_v1Parser.relationship_return retval = new BELScript_v1Parser.relationship_return();
         retval.start = input.LT(1);
@@ -4805,7 +4819,7 @@ public TreeAdaptor getTreeAdaptor() {
         Object rv_tree=null;
 
         try {
-            // BELScript_v1.g:243:5: (rv= 'increases' |rv= '->' |rv= 'decreases' |rv= '-|' |rv= 'directlyIncreases' |rv= '=>' |rv= 'directlyDecreases' |rv= '=|' |rv= 'causesNoChange' |rv= 'positiveCorrelation' |rv= 'negativeCorrelation' |rv= 'translatedTo' |rv= '>>' |rv= 'transcribedTo' |rv= ':>' |rv= 'isA' |rv= 'subProcessOf' |rv= 'rateLimitingStepOf' |rv= 'biomarkerFor' |rv= 'prognosticBiomarkerFor' |rv= 'orthologous' |rv= 'analogous' |rv= 'association' |rv= '--' |rv= 'hasMembers' |rv= 'hasComponents' |rv= 'hasMember' |rv= 'hasComponent' )
+            // BELScript_v1.g:258:5: (rv= 'increases' |rv= '->' |rv= 'decreases' |rv= '-|' |rv= 'directlyIncreases' |rv= '=>' |rv= 'directlyDecreases' |rv= '=|' |rv= 'causesNoChange' |rv= 'positiveCorrelation' |rv= 'negativeCorrelation' |rv= 'translatedTo' |rv= '>>' |rv= 'transcribedTo' |rv= ':>' |rv= 'isA' |rv= 'subProcessOf' |rv= 'rateLimitingStepOf' |rv= 'biomarkerFor' |rv= 'prognosticBiomarkerFor' |rv= 'orthologous' |rv= 'analogous' |rv= 'association' |rv= '--' |rv= 'hasMembers' |rv= 'hasComponents' |rv= 'hasMember' |rv= 'hasComponent' )
             int alt25=28;
             switch ( input.LA(1) ) {
             case 105:
@@ -4958,12 +4972,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt25) {
                 case 1 :
-                    // BELScript_v1.g:243:9: rv= 'increases'
+                    // BELScript_v1.g:258:9: rv= 'increases'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,105,FOLLOW_105_in_relationship3337); 
+                    rv=(Token)match(input,105,FOLLOW_105_in_relationship3343); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -4975,12 +4989,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // BELScript_v1.g:244:9: rv= '->'
+                    // BELScript_v1.g:259:9: rv= '->'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,65,FOLLOW_65_in_relationship3368); 
+                    rv=(Token)match(input,65,FOLLOW_65_in_relationship3374); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -4992,12 +5006,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // BELScript_v1.g:245:9: rv= 'decreases'
+                    // BELScript_v1.g:260:9: rv= 'decreases'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,90,FOLLOW_90_in_relationship3406); 
+                    rv=(Token)match(input,90,FOLLOW_90_in_relationship3412); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5009,12 +5023,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // BELScript_v1.g:246:9: rv= '-|'
+                    // BELScript_v1.g:261:9: rv= '-|'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,66,FOLLOW_66_in_relationship3437); 
+                    rv=(Token)match(input,66,FOLLOW_66_in_relationship3443); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5026,12 +5040,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // BELScript_v1.g:247:9: rv= 'directlyIncreases'
+                    // BELScript_v1.g:262:9: rv= 'directlyIncreases'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,94,FOLLOW_94_in_relationship3475); 
+                    rv=(Token)match(input,94,FOLLOW_94_in_relationship3481); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5043,12 +5057,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // BELScript_v1.g:248:9: rv= '=>'
+                    // BELScript_v1.g:263:9: rv= '=>'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,68,FOLLOW_68_in_relationship3498); 
+                    rv=(Token)match(input,68,FOLLOW_68_in_relationship3504); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5060,12 +5074,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // BELScript_v1.g:249:9: rv= 'directlyDecreases'
+                    // BELScript_v1.g:264:9: rv= 'directlyDecreases'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,93,FOLLOW_93_in_relationship3536); 
+                    rv=(Token)match(input,93,FOLLOW_93_in_relationship3542); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5077,12 +5091,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // BELScript_v1.g:250:9: rv= '=|'
+                    // BELScript_v1.g:265:9: rv= '=|'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,69,FOLLOW_69_in_relationship3559); 
+                    rv=(Token)match(input,69,FOLLOW_69_in_relationship3565); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5094,12 +5108,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 9 :
-                    // BELScript_v1.g:251:9: rv= 'causesNoChange'
+                    // BELScript_v1.g:266:9: rv= 'causesNoChange'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,81,FOLLOW_81_in_relationship3597); 
+                    rv=(Token)match(input,81,FOLLOW_81_in_relationship3603); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5111,12 +5125,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 10 :
-                    // BELScript_v1.g:252:9: rv= 'positiveCorrelation'
+                    // BELScript_v1.g:267:9: rv= 'positiveCorrelation'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,123,FOLLOW_123_in_relationship3623); 
+                    rv=(Token)match(input,123,FOLLOW_123_in_relationship3629); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5128,12 +5142,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 11 :
-                    // BELScript_v1.g:253:9: rv= 'negativeCorrelation'
+                    // BELScript_v1.g:268:9: rv= 'negativeCorrelation'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,113,FOLLOW_113_in_relationship3644); 
+                    rv=(Token)match(input,113,FOLLOW_113_in_relationship3650); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5145,12 +5159,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 12 :
-                    // BELScript_v1.g:254:9: rv= 'translatedTo'
+                    // BELScript_v1.g:269:9: rv= 'translatedTo'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,145,FOLLOW_145_in_relationship3665); 
+                    rv=(Token)match(input,145,FOLLOW_145_in_relationship3671); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5162,12 +5176,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 13 :
-                    // BELScript_v1.g:255:9: rv= '>>'
+                    // BELScript_v1.g:270:9: rv= '>>'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,70,FOLLOW_70_in_relationship3693); 
+                    rv=(Token)match(input,70,FOLLOW_70_in_relationship3699); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5179,12 +5193,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 14 :
-                    // BELScript_v1.g:256:9: rv= 'transcribedTo'
+                    // BELScript_v1.g:271:9: rv= 'transcribedTo'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,143,FOLLOW_143_in_relationship3731); 
+                    rv=(Token)match(input,143,FOLLOW_143_in_relationship3737); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5196,12 +5210,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 15 :
-                    // BELScript_v1.g:257:9: rv= ':>'
+                    // BELScript_v1.g:272:9: rv= ':>'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,67,FOLLOW_67_in_relationship3758); 
+                    rv=(Token)match(input,67,FOLLOW_67_in_relationship3764); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5213,12 +5227,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 16 :
-                    // BELScript_v1.g:258:9: rv= 'isA'
+                    // BELScript_v1.g:273:9: rv= 'isA'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,106,FOLLOW_106_in_relationship3796); 
+                    rv=(Token)match(input,106,FOLLOW_106_in_relationship3802); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5230,12 +5244,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 17 :
-                    // BELScript_v1.g:259:9: rv= 'subProcessOf'
+                    // BELScript_v1.g:274:9: rv= 'subProcessOf'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,138,FOLLOW_138_in_relationship3833); 
+                    rv=(Token)match(input,138,FOLLOW_138_in_relationship3839); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5247,12 +5261,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 18 :
-                    // BELScript_v1.g:260:9: rv= 'rateLimitingStepOf'
+                    // BELScript_v1.g:275:9: rv= 'rateLimitingStepOf'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,129,FOLLOW_129_in_relationship3861); 
+                    rv=(Token)match(input,129,FOLLOW_129_in_relationship3867); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5264,12 +5278,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 19 :
-                    // BELScript_v1.g:261:9: rv= 'biomarkerFor'
+                    // BELScript_v1.g:276:9: rv= 'biomarkerFor'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,77,FOLLOW_77_in_relationship3883); 
+                    rv=(Token)match(input,77,FOLLOW_77_in_relationship3889); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5281,12 +5295,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 20 :
-                    // BELScript_v1.g:262:9: rv= 'prognosticBiomarkerFor'
+                    // BELScript_v1.g:277:9: rv= 'prognosticBiomarkerFor'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,125,FOLLOW_125_in_relationship3911); 
+                    rv=(Token)match(input,125,FOLLOW_125_in_relationship3917); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5298,12 +5312,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 21 :
-                    // BELScript_v1.g:263:9: rv= 'orthologous'
+                    // BELScript_v1.g:278:9: rv= 'orthologous'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,114,FOLLOW_114_in_relationship3929); 
+                    rv=(Token)match(input,114,FOLLOW_114_in_relationship3935); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5315,12 +5329,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 22 :
-                    // BELScript_v1.g:264:9: rv= 'analogous'
+                    // BELScript_v1.g:279:9: rv= 'analogous'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,74,FOLLOW_74_in_relationship3958); 
+                    rv=(Token)match(input,74,FOLLOW_74_in_relationship3964); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5332,12 +5346,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 23 :
-                    // BELScript_v1.g:265:9: rv= 'association'
+                    // BELScript_v1.g:280:9: rv= 'association'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,75,FOLLOW_75_in_relationship3989); 
+                    rv=(Token)match(input,75,FOLLOW_75_in_relationship3995); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5349,12 +5363,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 24 :
-                    // BELScript_v1.g:266:9: rv= '--'
+                    // BELScript_v1.g:281:9: rv= '--'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,64,FOLLOW_64_in_relationship4018); 
+                    rv=(Token)match(input,64,FOLLOW_64_in_relationship4024); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5366,12 +5380,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 25 :
-                    // BELScript_v1.g:267:9: rv= 'hasMembers'
+                    // BELScript_v1.g:282:9: rv= 'hasMembers'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,104,FOLLOW_104_in_relationship4056); 
+                    rv=(Token)match(input,104,FOLLOW_104_in_relationship4062); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5383,12 +5397,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 26 :
-                    // BELScript_v1.g:268:9: rv= 'hasComponents'
+                    // BELScript_v1.g:283:9: rv= 'hasComponents'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,102,FOLLOW_102_in_relationship4086); 
+                    rv=(Token)match(input,102,FOLLOW_102_in_relationship4092); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5400,12 +5414,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 27 :
-                    // BELScript_v1.g:269:9: rv= 'hasMember'
+                    // BELScript_v1.g:284:9: rv= 'hasMember'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,103,FOLLOW_103_in_relationship4113); 
+                    rv=(Token)match(input,103,FOLLOW_103_in_relationship4119); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5417,12 +5431,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 28 :
-                    // BELScript_v1.g:270:9: rv= 'hasComponent'
+                    // BELScript_v1.g:285:9: rv= 'hasComponent'
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,101,FOLLOW_101_in_relationship4144); 
+                    rv=(Token)match(input,101,FOLLOW_101_in_relationship4150); 
                     rv_tree = 
                     (Object)adaptor.create(rv)
                     ;
@@ -5464,7 +5478,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "eq_clause"
-    // BELScript_v1.g:273:1: eq_clause : ( WS )* EQ ( WS )* ;
+    // BELScript_v1.g:288:1: eq_clause : ( WS )* EQ ( WS )* ;
     public final BELScript_v1Parser.eq_clause_return eq_clause() throws RecognitionException {
         BELScript_v1Parser.eq_clause_return retval = new BELScript_v1Parser.eq_clause_return();
         retval.start = input.LT(1);
@@ -5481,13 +5495,13 @@ public TreeAdaptor getTreeAdaptor() {
         Object WS94_tree=null;
 
         try {
-            // BELScript_v1.g:274:5: ( ( WS )* EQ ( WS )* )
-            // BELScript_v1.g:274:9: ( WS )* EQ ( WS )*
+            // BELScript_v1.g:289:5: ( ( WS )* EQ ( WS )* )
+            // BELScript_v1.g:289:9: ( WS )* EQ ( WS )*
             {
             root_0 = (Object)adaptor.nil();
 
 
-            // BELScript_v1.g:274:9: ( WS )*
+            // BELScript_v1.g:289:9: ( WS )*
             loop26:
             do {
                 int alt26=2;
@@ -5500,9 +5514,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt26) {
             	case 1 :
-            	    // BELScript_v1.g:274:9: WS
+            	    // BELScript_v1.g:289:9: WS
             	    {
-            	    WS92=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4179); 
+            	    WS92=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4185); 
             	    WS92_tree = 
             	    (Object)adaptor.create(WS92)
             	    ;
@@ -5518,14 +5532,14 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            EQ93=(Token)match(input,EQ,FOLLOW_EQ_in_eq_clause4182); 
+            EQ93=(Token)match(input,EQ,FOLLOW_EQ_in_eq_clause4188); 
             EQ93_tree = 
             (Object)adaptor.create(EQ93)
             ;
             adaptor.addChild(root_0, EQ93_tree);
 
 
-            // BELScript_v1.g:274:16: ( WS )*
+            // BELScript_v1.g:289:16: ( WS )*
             loop27:
             do {
                 int alt27=2;
@@ -5538,9 +5552,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt27) {
             	case 1 :
-            	    // BELScript_v1.g:274:16: WS
+            	    // BELScript_v1.g:289:16: WS
             	    {
-            	    WS94=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4184); 
+            	    WS94=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4190); 
             	    WS94_tree = 
             	    (Object)adaptor.create(WS94)
             	    ;
@@ -5648,7 +5662,7 @@ public TreeAdaptor getTreeAdaptor() {
             this.transition = DFA2_transition;
         }
         public String getDescription() {
-            return "72:1: record : ( define_namespace | define_annotation | set_annotation | set_document | set_statement_group | unset_statement_group | unset | statement );";
+            return "87:1: record : ( define_namespace | define_annotation | set_annotation | set_document | set_statement_group | unset_statement_group | unset | statement );";
         }
     }
     static final String DFA5_eotS =
@@ -5710,7 +5724,7 @@ public TreeAdaptor getTreeAdaptor() {
             this.transition = DFA5_transition;
         }
         public String getDescription() {
-            return "87:1: set_document : ( set_doc_expr document_property eq_clause val= QUOTED_VALUE -> ^( DOCSET_QV document_property $val) | set_doc_expr document_property eq_clause val= VALUE_LIST -> ^( DOCSET_LIST document_property $val) | set_doc_expr document_property eq_clause val= OBJECT_IDENT -> ^( DOCSET_ID document_property $val) );";
+            return "102:1: set_document : ( set_doc_expr document_property eq_clause val= QUOTED_VALUE -> ^( DOCSET_QV document_property $val) | set_doc_expr document_property eq_clause val= VALUE_LIST -> ^( DOCSET_LIST document_property $val) | set_doc_expr document_property eq_clause val= OBJECT_IDENT -> ^( DOCSET_ID document_property $val) );";
         }
     }
     static final String DFA7_eotS =
@@ -5767,7 +5781,7 @@ public TreeAdaptor getTreeAdaptor() {
             this.transition = DFA7_transition;
         }
         public String getDescription() {
-            return "100:1: set_statement_group : ( set_sg_expr eq_clause val= QUOTED_VALUE -> ^( SG_SET_QV $val) | set_sg_expr eq_clause val= OBJECT_IDENT -> ^( SG_SET_ID $val) );";
+            return "115:1: set_statement_group : ( set_sg_expr eq_clause val= QUOTED_VALUE -> ^( SG_SET_QV $val) | set_sg_expr eq_clause val= OBJECT_IDENT -> ^( SG_SET_ID $val) );";
         }
     }
     static final String DFA8_eotS =
@@ -5824,7 +5838,7 @@ public TreeAdaptor getTreeAdaptor() {
             this.transition = DFA8_transition;
         }
         public String getDescription() {
-            return "105:1: set_annotation : ( KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE -> ^( ANNO_SET_QV OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST -> ^( ANNO_SET_LIST OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT -> ^( ANNO_SET_ID OBJECT_IDENT $val) );";
+            return "120:1: set_annotation : ( KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE -> ^( ANNO_SET_QV OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST -> ^( ANNO_SET_LIST OBJECT_IDENT $val) | KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT -> ^( ANNO_SET_ID OBJECT_IDENT $val) );";
         }
     }
     static final String DFA13_eotS =
@@ -5882,210 +5896,210 @@ public TreeAdaptor getTreeAdaptor() {
             this.transition = DFA13_transition;
         }
         public String getDescription() {
-            return "134:1: define_annotation : ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) );";
+            return "149:1: define_annotation : ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) );";
         }
     }
  
 
-    public static final BitSet FOLLOW_NEWLINE_in_document327 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_DOCUMENT_COMMENT_in_document331 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_record_in_document335 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_EOF_in_document339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_define_namespace_in_record375 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_define_annotation_in_record385 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_annotation_in_record395 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_document_in_record405 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_statement_group_in_record415 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_unset_statement_group_in_record425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_unset_in_record435 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_statement_in_record445 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_SET_in_set_doc_expr464 = new BitSet(new long[]{0x8000000100000000L});
-    public static final BitSet FOLLOW_WS_in_set_doc_expr466 = new BitSet(new long[]{0x8000000100000000L});
-    public static final BitSet FOLLOW_KWRD_DOCUMENT_in_set_doc_expr469 = new BitSet(new long[]{0x8000000000000002L});
-    public static final BitSet FOLLOW_WS_in_set_doc_expr471 = new BitSet(new long[]{0x8000000000000002L});
-    public static final BitSet FOLLOW_set_doc_expr_in_set_document491 = new BitSet(new long[]{0x0000040AAE000000L});
-    public static final BitSet FOLLOW_document_property_in_set_document493 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_document495 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_set_document499 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_doc_expr_in_set_document528 = new BitSet(new long[]{0x0000040AAE000000L});
-    public static final BitSet FOLLOW_document_property_in_set_document530 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_document532 = new BitSet(new long[]{0x4000000000000000L});
-    public static final BitSet FOLLOW_VALUE_LIST_in_set_document536 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_doc_expr_in_set_document565 = new BitSet(new long[]{0x0000040AAE000000L});
-    public static final BitSet FOLLOW_document_property_in_set_document567 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_document569 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_document573 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_SET_in_set_sg_expr611 = new BitSet(new long[]{0x8000008000000000L});
-    public static final BitSet FOLLOW_WS_in_set_sg_expr613 = new BitSet(new long[]{0x8000008000000000L});
-    public static final BitSet FOLLOW_KWRD_STMT_GROUP_in_set_sg_expr616 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_sg_expr_in_set_statement_group635 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_statement_group637 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_set_statement_group641 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_sg_expr_in_set_statement_group660 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_statement_group662 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_statement_group666 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_SET_in_set_annotation694 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation696 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_annotation698 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_set_annotation702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_SET_in_set_annotation731 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation733 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_annotation735 = new BitSet(new long[]{0x4000000000000000L});
-    public static final BitSet FOLLOW_VALUE_LIST_in_set_annotation739 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_SET_in_set_annotation768 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation770 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_eq_clause_in_set_annotation772 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation776 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_UNSET_in_unset_statement_group814 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group816 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_UNSET_in_unset841 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_unset845 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_UNSET_in_unset864 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_IDENT_LIST_in_unset868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_DEFINE_in_define_namespace896 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_KWRD_DFLT_in_define_namespace898 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_KWRD_NS_in_define_namespace900 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_namespace902 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_KWRD_AS_in_define_namespace904 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_KWRD_URL_in_define_namespace906 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_namespace908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_DEFINE_in_define_namespace936 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_KWRD_NS_in_define_namespace938 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_namespace940 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_KWRD_AS_in_define_namespace942 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_KWRD_URL_in_define_namespace944 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_namespace946 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KWRD_DEFINE_in_define_anno_expr983 = new BitSet(new long[]{0x8000000000800000L});
-    public static final BitSet FOLLOW_WS_in_define_anno_expr985 = new BitSet(new long[]{0x8000000000800000L});
-    public static final BitSet FOLLOW_KWRD_ANNO_in_define_anno_expr988 = new BitSet(new long[]{0x8000000000000002L});
-    public static final BitSet FOLLOW_WS_in_define_anno_expr990 = new BitSet(new long[]{0x8000000000000002L});
-    public static final BitSet FOLLOW_define_anno_expr_in_define_annotation1010 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_annotation1012 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_KWRD_AS_in_define_annotation1014 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_KWRD_LIST_in_define_annotation1016 = new BitSet(new long[]{0x4000000000000000L});
-    public static final BitSet FOLLOW_VALUE_LIST_in_define_annotation1020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_define_anno_expr_in_define_annotation1049 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_annotation1051 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_KWRD_AS_in_define_annotation1053 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_KWRD_URL_in_define_annotation1055 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_annotation1059 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_define_anno_expr_in_define_annotation1088 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_annotation1090 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_KWRD_AS_in_define_annotation1092 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_KWRD_PATTERN_in_define_annotation1094 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_annotation1098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_COMMA_in_argument1225 = new BitSet(new long[]{0x0000000000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_term_in_argument1228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_COMMA_in_argument1242 = new BitSet(new long[]{0x0008800000000000L});
-    public static final BitSet FOLLOW_param_in_argument1245 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_function_in_term1268 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_LP_in_term1270 = new BitSet(new long[]{0x0018800000000800L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_argument_in_term1273 = new BitSet(new long[]{0x0018800000000800L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_RP_in_term1277 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_term_in_statement1319 = new BitSet(new long[]{0x0080000000000002L,0x280607E064022C7FL,0x0000000000028402L});
-    public static final BitSet FOLLOW_relationship_in_statement1324 = new BitSet(new long[]{0x0000100000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_LP_in_statement1327 = new BitSet(new long[]{0x0000000000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_term_in_statement1331 = new BitSet(new long[]{0x0000000000000000L,0x280607E064022C7FL,0x0000000000028402L});
-    public static final BitSet FOLLOW_relationship_in_statement1335 = new BitSet(new long[]{0x0000000000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
-    public static final BitSet FOLLOW_term_in_statement1339 = new BitSet(new long[]{0x0010000000000000L});
-    public static final BitSet FOLLOW_RP_in_statement1341 = new BitSet(new long[]{0x0080000000000002L});
-    public static final BitSet FOLLOW_term_in_statement1347 = new BitSet(new long[]{0x0080000000000002L});
-    public static final BitSet FOLLOW_STATEMENT_COMMENT_in_statement1354 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_ns_prefix1415 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_COLON_in_ns_prefix1417 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ns_prefix_in_param1437 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_OBJECT_IDENT_in_param1440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ns_prefix_in_param1461 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_QUOTED_VALUE_in_param1464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_126_in_function1500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_115_in_function1524 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_134_in_function1563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_128_in_function1591 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_72_in_function1630 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_71_in_function1661 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_111_in_function1700 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_110_in_function1723 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_98_in_function1762 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_97_in_function1789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_76_in_function1828 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_78_in_function1851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_117_in_function1889 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_116_in_function1920 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_87_in_function1956 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_86_in_function1980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_146_in_function2013 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_141_in_function2040 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_82_in_function2076 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_136_in_function2103 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_83_in_function2140 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_140_in_function2159 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_131_in_function2195 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_135_in_function2227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_89_in_function2264 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_88_in_function2286 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_96_in_function2317 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_95_in_function2351 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_92_in_function2388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_91_in_function2417 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_112_in_function2454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_function2477 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_80_in_function2514 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_79_in_function2537 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_108_in_function2574 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_107_in_function2600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_121_in_function2637 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_120_in_function2658 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_119_in_function2694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_118_in_function2717 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_133_in_function2754 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_132_in_function2774 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_144_in_function2810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_150_in_function2827 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_147_in_function2860 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_142_in_function2883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_100_in_function2918 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_99_in_function2942 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_85_in_function2979 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_84_in_function3002 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_127_in_function3038 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_122_in_function3059 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_139_in_function3095 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_137_in_function3123 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_149_in_function3160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_148_in_function3190 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_130_in_function3225 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_124_in_function3256 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_109_in_function3288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_105_in_relationship3337 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_65_in_relationship3368 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_90_in_relationship3406 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_66_in_relationship3437 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_94_in_relationship3475 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_68_in_relationship3498 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_93_in_relationship3536 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_69_in_relationship3559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_81_in_relationship3597 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_123_in_relationship3623 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_113_in_relationship3644 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_145_in_relationship3665 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_70_in_relationship3693 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_143_in_relationship3731 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_relationship3758 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_106_in_relationship3796 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_138_in_relationship3833 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_129_in_relationship3861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_77_in_relationship3883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_125_in_relationship3911 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_114_in_relationship3929 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_74_in_relationship3958 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_75_in_relationship3989 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_64_in_relationship4018 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_104_in_relationship4056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_102_in_relationship4086 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_103_in_relationship4113 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_101_in_relationship4144 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_WS_in_eq_clause4179 = new BitSet(new long[]{0x8000000000080000L});
-    public static final BitSet FOLLOW_EQ_in_eq_clause4182 = new BitSet(new long[]{0x8000000000000002L});
-    public static final BitSet FOLLOW_WS_in_eq_clause4184 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_NEWLINE_in_document333 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_DOCUMENT_COMMENT_in_document337 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_record_in_document341 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_EOF_in_document345 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_define_namespace_in_record381 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_define_annotation_in_record391 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_annotation_in_record401 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_document_in_record411 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_statement_group_in_record421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_unset_statement_group_in_record431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_unset_in_record441 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_statement_in_record451 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_SET_in_set_doc_expr470 = new BitSet(new long[]{0x8000000100000000L});
+    public static final BitSet FOLLOW_WS_in_set_doc_expr472 = new BitSet(new long[]{0x8000000100000000L});
+    public static final BitSet FOLLOW_KWRD_DOCUMENT_in_set_doc_expr475 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_WS_in_set_doc_expr477 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_set_doc_expr_in_set_document497 = new BitSet(new long[]{0x0000040AAE000000L});
+    public static final BitSet FOLLOW_document_property_in_set_document499 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_document501 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_set_document505 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_doc_expr_in_set_document534 = new BitSet(new long[]{0x0000040AAE000000L});
+    public static final BitSet FOLLOW_document_property_in_set_document536 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_document538 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_VALUE_LIST_in_set_document542 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_doc_expr_in_set_document571 = new BitSet(new long[]{0x0000040AAE000000L});
+    public static final BitSet FOLLOW_document_property_in_set_document573 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_document575 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_document579 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_SET_in_set_sg_expr617 = new BitSet(new long[]{0x8000008000000000L});
+    public static final BitSet FOLLOW_WS_in_set_sg_expr619 = new BitSet(new long[]{0x8000008000000000L});
+    public static final BitSet FOLLOW_KWRD_STMT_GROUP_in_set_sg_expr622 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_sg_expr_in_set_statement_group641 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_statement_group643 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_set_statement_group647 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_sg_expr_in_set_statement_group666 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_statement_group668 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_statement_group672 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_SET_in_set_annotation700 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation702 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_annotation704 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_set_annotation708 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_SET_in_set_annotation737 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation739 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_annotation741 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_VALUE_LIST_in_set_annotation745 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_SET_in_set_annotation774 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation776 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_eq_clause_in_set_annotation778 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_set_annotation782 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_UNSET_in_unset_statement_group820 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group822 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_UNSET_in_unset847 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_unset851 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_UNSET_in_unset870 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_IDENT_LIST_in_unset874 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_DEFINE_in_define_namespace902 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_KWRD_DFLT_in_define_namespace904 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_KWRD_NS_in_define_namespace906 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_namespace908 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_KWRD_AS_in_define_namespace910 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_KWRD_URL_in_define_namespace912 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_namespace914 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_DEFINE_in_define_namespace942 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_KWRD_NS_in_define_namespace944 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_namespace946 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_KWRD_AS_in_define_namespace948 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_KWRD_URL_in_define_namespace950 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_namespace952 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KWRD_DEFINE_in_define_anno_expr989 = new BitSet(new long[]{0x8000000000800000L});
+    public static final BitSet FOLLOW_WS_in_define_anno_expr991 = new BitSet(new long[]{0x8000000000800000L});
+    public static final BitSet FOLLOW_KWRD_ANNO_in_define_anno_expr994 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_WS_in_define_anno_expr996 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_define_anno_expr_in_define_annotation1016 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_annotation1018 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_KWRD_AS_in_define_annotation1020 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_KWRD_LIST_in_define_annotation1022 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_VALUE_LIST_in_define_annotation1026 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_define_anno_expr_in_define_annotation1055 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_annotation1057 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_KWRD_AS_in_define_annotation1059 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_KWRD_URL_in_define_annotation1061 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_annotation1065 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_define_anno_expr_in_define_annotation1094 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_define_annotation1096 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_KWRD_AS_in_define_annotation1098 = new BitSet(new long[]{0x0000002000000000L});
+    public static final BitSet FOLLOW_KWRD_PATTERN_in_define_annotation1100 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_define_annotation1104 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_COMMA_in_argument1231 = new BitSet(new long[]{0x0000000000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_term_in_argument1234 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_COMMA_in_argument1248 = new BitSet(new long[]{0x0008800000000000L});
+    public static final BitSet FOLLOW_param_in_argument1251 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_function_in_term1274 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_LP_in_term1276 = new BitSet(new long[]{0x0018800000000800L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_argument_in_term1279 = new BitSet(new long[]{0x0018800000000800L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_RP_in_term1283 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_term_in_statement1325 = new BitSet(new long[]{0x0080000000000002L,0x280607E064022C7FL,0x0000000000028402L});
+    public static final BitSet FOLLOW_relationship_in_statement1330 = new BitSet(new long[]{0x0000100000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_LP_in_statement1333 = new BitSet(new long[]{0x0000000000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_term_in_statement1337 = new BitSet(new long[]{0x0000000000000000L,0x280607E064022C7FL,0x0000000000028402L});
+    public static final BitSet FOLLOW_relationship_in_statement1341 = new BitSet(new long[]{0x0000000000000000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
+    public static final BitSet FOLLOW_term_in_statement1345 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_RP_in_statement1347 = new BitSet(new long[]{0x0080000000000002L});
+    public static final BitSet FOLLOW_term_in_statement1353 = new BitSet(new long[]{0x0080000000000002L});
+    public static final BitSet FOLLOW_STATEMENT_COMMENT_in_statement1360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_ns_prefix1421 = new BitSet(new long[]{0x0000000000000400L});
+    public static final BitSet FOLLOW_COLON_in_ns_prefix1423 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ns_prefix_in_param1443 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_OBJECT_IDENT_in_param1446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ns_prefix_in_param1467 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_QUOTED_VALUE_in_param1470 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_126_in_function1506 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_115_in_function1530 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_134_in_function1569 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_128_in_function1597 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_72_in_function1636 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_71_in_function1667 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_111_in_function1706 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_110_in_function1729 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_98_in_function1768 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_97_in_function1795 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_76_in_function1834 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_78_in_function1857 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_117_in_function1895 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_116_in_function1926 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_87_in_function1962 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_86_in_function1986 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_146_in_function2019 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_141_in_function2046 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_82_in_function2082 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_136_in_function2109 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_83_in_function2146 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_140_in_function2165 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_131_in_function2201 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_135_in_function2233 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_89_in_function2270 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_88_in_function2292 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_96_in_function2323 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_95_in_function2357 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_92_in_function2394 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_91_in_function2423 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_112_in_function2460 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_function2483 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_80_in_function2520 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_79_in_function2543 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_108_in_function2580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_107_in_function2606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_121_in_function2643 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_120_in_function2664 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_119_in_function2700 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_118_in_function2723 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_133_in_function2760 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_132_in_function2780 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_144_in_function2816 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_150_in_function2833 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_147_in_function2866 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_142_in_function2889 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_100_in_function2924 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_99_in_function2948 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_85_in_function2985 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_84_in_function3008 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_127_in_function3044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_122_in_function3065 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_139_in_function3101 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_137_in_function3129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_149_in_function3166 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_148_in_function3196 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_130_in_function3231 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_124_in_function3262 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_109_in_function3294 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_105_in_relationship3343 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_65_in_relationship3374 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_90_in_relationship3412 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_66_in_relationship3443 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_94_in_relationship3481 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_68_in_relationship3504 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_93_in_relationship3542 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_69_in_relationship3565 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_81_in_relationship3603 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_123_in_relationship3629 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_113_in_relationship3650 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_145_in_relationship3671 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_70_in_relationship3699 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_143_in_relationship3737 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_relationship3764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_106_in_relationship3802 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_138_in_relationship3839 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_129_in_relationship3867 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_77_in_relationship3889 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_125_in_relationship3917 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_114_in_relationship3935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_74_in_relationship3964 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_75_in_relationship3995 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_64_in_relationship4024 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_104_in_relationship4062 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_102_in_relationship4092 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_103_in_relationship4119 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_101_in_relationship4150 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_WS_in_eq_clause4185 = new BitSet(new long[]{0x8000000000080000L});
+    public static final BitSet FOLLOW_EQ_in_eq_clause4188 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_WS_in_eq_clause4190 = new BitSet(new long[]{0x8000000000000002L});
 
 }
