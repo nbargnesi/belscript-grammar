@@ -1,4 +1,4 @@
-// $ANTLR 3.4 BELScript_v1.g 2012-08-13 14:33:01
+// $ANTLR 3.4 BELScript_v1.g 2012-08-13 14:39:13
 
 /**
  * Copyright (c) 2012 Selventa.
@@ -818,7 +818,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: val, document_property
+                    // elements: document_property, val
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -881,7 +881,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: val, document_property
+                    // elements: document_property, val
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -944,7 +944,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: document_property, val
+                    // elements: val, document_property
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -1337,7 +1337,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: val, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -1455,7 +1455,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: val, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -1947,7 +1947,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: QUOTED_VALUE, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, QUOTED_VALUE
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2285,7 +2285,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: OBJECT_IDENT, val
+                    // elements: val, OBJECT_IDENT
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -2348,7 +2348,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: val, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
                     // token list labels: 
@@ -2810,7 +2810,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: argument, function
+            // elements: function, argument
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -3034,7 +3034,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: obj_obj, obj_rel, obj_sub, obj, subject, rel, comment
+            // elements: obj_rel, obj_sub, obj, rel, comment, subject, obj_obj
             // token labels: comment
             // rule labels: obj_obj, retval, obj_sub, subject, obj, rel, obj_rel
             // token list labels: 
@@ -3307,7 +3307,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: OBJECT_IDENT, ns_prefix
+                    // elements: ns_prefix, OBJECT_IDENT
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3379,7 +3379,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: ns_prefix, QUOTED_VALUE
+                    // elements: QUOTED_VALUE, ns_prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
