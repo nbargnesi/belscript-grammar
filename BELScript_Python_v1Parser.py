@@ -1,4 +1,4 @@
-# $ANTLR 3.4 BELScript_Python_v1.g 2012-08-13 14:39:17
+# $ANTLR 3.4 BELScript_Python_v1.g 2012-08-13 14:45:36
 
 import sys
 from antlr3 import *
@@ -873,7 +873,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: val, document_property
+                    # elements: document_property, val
                     # token labels: val
                     # rule labels: retval
                     # token list labels: 
@@ -938,7 +938,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: document_property, val
+                    # elements: val, document_property
                     # token labels: val
                     # rule labels: retval
                     # token list labels: 
@@ -1330,7 +1330,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: OBJECT_IDENT, val
+                    # elements: val, OBJECT_IDENT
                     # token labels: val
                     # rule labels: retval
                     # token list labels: 
@@ -1452,7 +1452,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: OBJECT_IDENT, val
+                    # elements: val, OBJECT_IDENT
                     # token labels: val
                     # rule labels: retval
                     # token list labels: 
@@ -1948,7 +1948,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: OBJECT_IDENT, QUOTED_VALUE
+                    # elements: QUOTED_VALUE, OBJECT_IDENT
                     # token labels: 
                     # rule labels: retval
                     # token list labels: 
@@ -2210,7 +2210,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: val, OBJECT_IDENT
+                    # elements: OBJECT_IDENT, val
                     # token labels: val
                     # rule labels: retval
                     # token list labels: 
@@ -2340,7 +2340,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: OBJECT_IDENT, val
+                    # elements: val, OBJECT_IDENT
                     # token labels: val
                     # rule labels: retval
                     # token list labels: 
@@ -2726,7 +2726,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                 # AST Rewrite
-                # elements: argument, function
+                # elements: function, argument
                 # token labels: 
                 # rule labels: retval
                 # token list labels: 
@@ -2938,7 +2938,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                 # AST Rewrite
-                # elements: obj_obj, obj_rel, obj_sub, rel, obj, comment, subject
+                # elements: obj_obj, obj_rel, obj, comment, obj_sub, subject, rel
                 # token labels: comment
                 # rule labels: obj_obj, retval, obj_sub, subject, obj, rel, obj_rel
                 # token list labels: 
@@ -3227,7 +3227,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     # AST Rewrite
-                    # elements: OBJECT_IDENT, ns_prefix
+                    # elements: ns_prefix, OBJECT_IDENT
                     # token labels: 
                     # rule labels: retval
                     # token list labels: 
