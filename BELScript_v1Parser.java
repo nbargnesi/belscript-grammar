@@ -1,4 +1,4 @@
-// $ANTLR 3.4 BELScript_v1.g 2012-08-13 14:45:33
+// $ANTLR 3.4 BELScript_v1.g 2012-08-28 20:03:46
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -308,39 +308,39 @@ public TreeAdaptor getTreeAdaptor() {
                 }
 
                 switch (alt1) {
-            	case 1 :
-            	    // BELScript_v1.g:68:10: NEWLINE
-            	    {
-            	    NEWLINE1=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_document327);  
-            	    stream_NEWLINE.add(NEWLINE1);
+                case 1 :
+                    // BELScript_v1.g:68:10: NEWLINE
+                    {
+                    NEWLINE1=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_document327);
+                    stream_NEWLINE.add(NEWLINE1);
 
 
-            	    }
-            	    break;
-            	case 2 :
-            	    // BELScript_v1.g:68:20: DOCUMENT_COMMENT
-            	    {
-            	    DOCUMENT_COMMENT2=(Token)match(input,DOCUMENT_COMMENT,FOLLOW_DOCUMENT_COMMENT_in_document331);  
-            	    stream_DOCUMENT_COMMENT.add(DOCUMENT_COMMENT2);
+                    }
+                    break;
+                case 2 :
+                    // BELScript_v1.g:68:20: DOCUMENT_COMMENT
+                    {
+                    DOCUMENT_COMMENT2=(Token)match(input,DOCUMENT_COMMENT,FOLLOW_DOCUMENT_COMMENT_in_document331);
+                    stream_DOCUMENT_COMMENT.add(DOCUMENT_COMMENT2);
 
 
-            	    }
-            	    break;
-            	case 3 :
-            	    // BELScript_v1.g:68:39: record
-            	    {
-            	    pushFollow(FOLLOW_record_in_document335);
-            	    record3=record();
+                    }
+                    break;
+                case 3 :
+                    // BELScript_v1.g:68:39: record
+                    {
+                    pushFollow(FOLLOW_record_in_document335);
+                    record3=record();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_record.add(record3.getTree());
+                    stream_record.add(record3.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt1 >= 1 ) break loop1;
+                default :
+                    if ( cnt1 >= 1 ) break loop1;
                         EarlyExitException eee =
                             new EarlyExitException(1, input);
                         throw eee;
@@ -349,17 +349,17 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            EOF4=(Token)match(input,EOF,FOLLOW_EOF_in_document339);  
+            EOF4=(Token)match(input,EOF,FOLLOW_EOF_in_document339);
             stream_EOF.add(EOF4);
 
 
             // AST REWRITE
             // elements: record
-            // token labels: 
+            // token labels:
             // rule labels: retval
-            // token list labels: 
-            // rule list labels: 
-            // wildcard labels: 
+            // token list labels:
+            // rule list labels:
+            // wildcard labels:
             retval.tree = root_0;
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -402,12 +402,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -584,12 +584,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -628,8 +628,8 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
 
 
-            KWRD_SET13=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_doc_expr464); 
-            KWRD_SET13_tree = 
+            KWRD_SET13=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_doc_expr464);
+            KWRD_SET13_tree =
             (Object)adaptor.create(KWRD_SET13)
             ;
             adaptor.addChild(root_0, KWRD_SET13_tree);
@@ -647,27 +647,27 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt3) {
-            	case 1 :
-            	    // BELScript_v1.g:84:18: WS
-            	    {
-            	    WS14=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr466); 
-            	    WS14_tree = 
-            	    (Object)adaptor.create(WS14)
-            	    ;
-            	    adaptor.addChild(root_0, WS14_tree);
+                case 1 :
+                    // BELScript_v1.g:84:18: WS
+                    {
+                    WS14=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr466);
+                    WS14_tree =
+                    (Object)adaptor.create(WS14)
+                    ;
+                    adaptor.addChild(root_0, WS14_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop3;
+                default :
+                    break loop3;
                 }
             } while (true);
 
 
-            KWRD_DOCUMENT15=(Token)match(input,KWRD_DOCUMENT,FOLLOW_KWRD_DOCUMENT_in_set_doc_expr469); 
-            KWRD_DOCUMENT15_tree = 
+            KWRD_DOCUMENT15=(Token)match(input,KWRD_DOCUMENT,FOLLOW_KWRD_DOCUMENT_in_set_doc_expr469);
+            KWRD_DOCUMENT15_tree =
             (Object)adaptor.create(KWRD_DOCUMENT15)
             ;
             adaptor.addChild(root_0, KWRD_DOCUMENT15_tree);
@@ -685,21 +685,21 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt4) {
-            	case 1 :
-            	    // BELScript_v1.g:84:36: WS
-            	    {
-            	    WS16=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr471); 
-            	    WS16_tree = 
-            	    (Object)adaptor.create(WS16)
-            	    ;
-            	    adaptor.addChild(root_0, WS16_tree);
+                case 1 :
+                    // BELScript_v1.g:84:36: WS
+                    {
+                    WS16=(Token)match(input,WS,FOLLOW_WS_in_set_doc_expr471);
+                    WS16_tree =
+                    (Object)adaptor.create(WS16)
+                    ;
+                    adaptor.addChild(root_0, WS16_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop4;
+                default :
+                    break loop4;
                 }
             } while (true);
 
@@ -716,12 +716,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -799,17 +799,17 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause19.getTree());
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_document499);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_document499);
                     stream_QUOTED_VALUE.add(val);
 
 
                     // AST REWRITE
-                    // elements: val, document_property
+                    // elements: document_property, val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -862,17 +862,17 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause22.getTree());
 
-                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_document536);  
+                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_document536);
                     stream_VALUE_LIST.add(val);
 
 
                     // AST REWRITE
-                    // elements: document_property, val
+                    // elements: val, document_property
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -925,7 +925,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause25.getTree());
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_document573);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_document573);
                     stream_OBJECT_IDENT.add(val);
 
 
@@ -933,9 +933,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val, document_property
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -976,12 +976,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1018,8 +1018,8 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
 
 
-            KWRD_SET26=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_sg_expr611); 
-            KWRD_SET26_tree = 
+            KWRD_SET26=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_sg_expr611);
+            KWRD_SET26_tree =
             (Object)adaptor.create(KWRD_SET26)
             ;
             adaptor.addChild(root_0, KWRD_SET26_tree);
@@ -1037,27 +1037,27 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt6) {
-            	case 1 :
-            	    // BELScript_v1.g:97:18: WS
-            	    {
-            	    WS27=(Token)match(input,WS,FOLLOW_WS_in_set_sg_expr613); 
-            	    WS27_tree = 
-            	    (Object)adaptor.create(WS27)
-            	    ;
-            	    adaptor.addChild(root_0, WS27_tree);
+                case 1 :
+                    // BELScript_v1.g:97:18: WS
+                    {
+                    WS27=(Token)match(input,WS,FOLLOW_WS_in_set_sg_expr613);
+                    WS27_tree =
+                    (Object)adaptor.create(WS27)
+                    ;
+                    adaptor.addChild(root_0, WS27_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop6;
+                default :
+                    break loop6;
                 }
             } while (true);
 
 
-            KWRD_STMT_GROUP28=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_set_sg_expr616); 
-            KWRD_STMT_GROUP28_tree = 
+            KWRD_STMT_GROUP28=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_set_sg_expr616);
+            KWRD_STMT_GROUP28_tree =
             (Object)adaptor.create(KWRD_STMT_GROUP28)
             ;
             adaptor.addChild(root_0, KWRD_STMT_GROUP28_tree);
@@ -1075,12 +1075,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1139,7 +1139,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause30.getTree());
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_statement_group641);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_statement_group641);
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -1147,9 +1147,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1193,7 +1193,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause32.getTree());
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_statement_group666);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_statement_group666);
                     stream_OBJECT_IDENT.add(val);
 
 
@@ -1201,9 +1201,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1242,12 +1242,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1303,11 +1303,11 @@ public TreeAdaptor getTreeAdaptor() {
                 case 1 :
                     // BELScript_v1.g:106:9: KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE
                     {
-                    KWRD_SET33=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation694);  
+                    KWRD_SET33=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation694);
                     stream_KWRD_SET.add(KWRD_SET33);
 
 
-                    OBJECT_IDENT34=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation696);  
+                    OBJECT_IDENT34=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation696);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT34);
 
 
@@ -1318,7 +1318,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause35.getTree());
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_annotation702);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_set_annotation702);
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -1326,9 +1326,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val, OBJECT_IDENT
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1343,7 +1343,7 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(ANNO_SET_QV, "ANNO_SET_QV")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -1362,11 +1362,11 @@ public TreeAdaptor getTreeAdaptor() {
                 case 2 :
                     // BELScript_v1.g:108:9: KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST
                     {
-                    KWRD_SET36=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation731);  
+                    KWRD_SET36=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation731);
                     stream_KWRD_SET.add(KWRD_SET36);
 
 
-                    OBJECT_IDENT37=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation733);  
+                    OBJECT_IDENT37=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation733);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT37);
 
 
@@ -1377,7 +1377,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause38.getTree());
 
-                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_annotation739);  
+                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_set_annotation739);
                     stream_VALUE_LIST.add(val);
 
 
@@ -1385,9 +1385,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1402,7 +1402,7 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(ANNO_SET_LIST, "ANNO_SET_LIST")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -1421,11 +1421,11 @@ public TreeAdaptor getTreeAdaptor() {
                 case 3 :
                     // BELScript_v1.g:110:9: KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT
                     {
-                    KWRD_SET39=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation768);  
+                    KWRD_SET39=(Token)match(input,KWRD_SET,FOLLOW_KWRD_SET_in_set_annotation768);
                     stream_KWRD_SET.add(KWRD_SET39);
 
 
-                    OBJECT_IDENT40=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation770);  
+                    OBJECT_IDENT40=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation770);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT40);
 
 
@@ -1436,17 +1436,17 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_eq_clause.add(eq_clause41.getTree());
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation776);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_set_annotation776);
                     stream_OBJECT_IDENT.add(val);
 
 
                     // AST REWRITE
-                    // elements: val, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1461,7 +1461,7 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(ANNO_SET_ID, "ANNO_SET_ID")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -1489,12 +1489,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1528,21 +1528,21 @@ public TreeAdaptor getTreeAdaptor() {
             // BELScript_v1.g:115:5: ( KWRD_UNSET KWRD_STMT_GROUP -> ^( UNSET_SG ) )
             // BELScript_v1.g:115:9: KWRD_UNSET KWRD_STMT_GROUP
             {
-            KWRD_UNSET42=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset_statement_group814);  
+            KWRD_UNSET42=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset_statement_group814);
             stream_KWRD_UNSET.add(KWRD_UNSET42);
 
 
-            KWRD_STMT_GROUP43=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group816);  
+            KWRD_STMT_GROUP43=(Token)match(input,KWRD_STMT_GROUP,FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group816);
             stream_KWRD_STMT_GROUP.add(KWRD_STMT_GROUP43);
 
 
             // AST REWRITE
-            // elements: 
-            // token labels: 
+            // elements:
+            // token labels:
             // rule labels: retval
-            // token list labels: 
-            // rule list labels: 
-            // wildcard labels: 
+            // token list labels:
+            // rule list labels:
+            // wildcard labels:
             retval.tree = root_0;
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -1576,12 +1576,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1647,11 +1647,11 @@ public TreeAdaptor getTreeAdaptor() {
                 case 1 :
                     // BELScript_v1.g:119:9: KWRD_UNSET val= OBJECT_IDENT
                     {
-                    KWRD_UNSET44=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset841);  
+                    KWRD_UNSET44=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset841);
                     stream_KWRD_UNSET.add(KWRD_UNSET44);
 
 
-                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_unset845);  
+                    val=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_unset845);
                     stream_OBJECT_IDENT.add(val);
 
 
@@ -1659,9 +1659,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1691,11 +1691,11 @@ public TreeAdaptor getTreeAdaptor() {
                 case 2 :
                     // BELScript_v1.g:120:9: KWRD_UNSET val= IDENT_LIST
                     {
-                    KWRD_UNSET45=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset864);  
+                    KWRD_UNSET45=(Token)match(input,KWRD_UNSET,FOLLOW_KWRD_UNSET_in_unset864);
                     stream_KWRD_UNSET.add(KWRD_UNSET45);
 
 
-                    val=(Token)match(input,IDENT_LIST,FOLLOW_IDENT_LIST_in_unset868);  
+                    val=(Token)match(input,IDENT_LIST,FOLLOW_IDENT_LIST_in_unset868);
                     stream_IDENT_LIST.add(val);
 
 
@@ -1703,9 +1703,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -1744,12 +1744,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1839,41 +1839,41 @@ public TreeAdaptor getTreeAdaptor() {
                 case 1 :
                     // BELScript_v1.g:124:9: KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
                     {
-                    KWRD_DEFINE46=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace896);  
+                    KWRD_DEFINE46=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace896);
                     stream_KWRD_DEFINE.add(KWRD_DEFINE46);
 
 
-                    KWRD_DFLT47=(Token)match(input,KWRD_DFLT,FOLLOW_KWRD_DFLT_in_define_namespace898);  
+                    KWRD_DFLT47=(Token)match(input,KWRD_DFLT,FOLLOW_KWRD_DFLT_in_define_namespace898);
                     stream_KWRD_DFLT.add(KWRD_DFLT47);
 
 
-                    KWRD_NS48=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace900);  
+                    KWRD_NS48=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace900);
                     stream_KWRD_NS.add(KWRD_NS48);
 
 
-                    OBJECT_IDENT49=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace902);  
+                    OBJECT_IDENT49=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace902);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT49);
 
 
-                    KWRD_AS50=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace904);  
+                    KWRD_AS50=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace904);
                     stream_KWRD_AS.add(KWRD_AS50);
 
 
-                    KWRD_URL51=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace906);  
+                    KWRD_URL51=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace906);
                     stream_KWRD_URL.add(KWRD_URL51);
 
 
-                    QUOTED_VALUE52=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace908);  
+                    QUOTED_VALUE52=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace908);
                     stream_QUOTED_VALUE.add(QUOTED_VALUE52);
 
 
                     // AST REWRITE
-                    // elements: QUOTED_VALUE, OBJECT_IDENT
-                    // token labels: 
+                    // elements: OBJECT_IDENT, QUOTED_VALUE
+                    // token labels:
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -1887,11 +1887,11 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(DFLT_NSDEF, "DFLT_NSDEF")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_QUOTED_VALUE.nextNode()
                         );
 
@@ -1908,37 +1908,37 @@ public TreeAdaptor getTreeAdaptor() {
                 case 2 :
                     // BELScript_v1.g:126:9: KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
                     {
-                    KWRD_DEFINE53=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace936);  
+                    KWRD_DEFINE53=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_namespace936);
                     stream_KWRD_DEFINE.add(KWRD_DEFINE53);
 
 
-                    KWRD_NS54=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace938);  
+                    KWRD_NS54=(Token)match(input,KWRD_NS,FOLLOW_KWRD_NS_in_define_namespace938);
                     stream_KWRD_NS.add(KWRD_NS54);
 
 
-                    OBJECT_IDENT55=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace940);  
+                    OBJECT_IDENT55=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_namespace940);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT55);
 
 
-                    KWRD_AS56=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace942);  
+                    KWRD_AS56=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_namespace942);
                     stream_KWRD_AS.add(KWRD_AS56);
 
 
-                    KWRD_URL57=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace944);  
+                    KWRD_URL57=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_namespace944);
                     stream_KWRD_URL.add(KWRD_URL57);
 
 
-                    QUOTED_VALUE58=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace946);  
+                    QUOTED_VALUE58=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_namespace946);
                     stream_QUOTED_VALUE.add(QUOTED_VALUE58);
 
 
                     // AST REWRITE
-                    // elements: QUOTED_VALUE, OBJECT_IDENT
-                    // token labels: 
+                    // elements: OBJECT_IDENT, QUOTED_VALUE
+                    // token labels:
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -1952,11 +1952,11 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(NSDEF, "NSDEF")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_QUOTED_VALUE.nextNode()
                         );
 
@@ -1982,12 +1982,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2026,8 +2026,8 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
 
 
-            KWRD_DEFINE59=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_anno_expr983); 
-            KWRD_DEFINE59_tree = 
+            KWRD_DEFINE59=(Token)match(input,KWRD_DEFINE,FOLLOW_KWRD_DEFINE_in_define_anno_expr983);
+            KWRD_DEFINE59_tree =
             (Object)adaptor.create(KWRD_DEFINE59)
             ;
             adaptor.addChild(root_0, KWRD_DEFINE59_tree);
@@ -2045,27 +2045,27 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt11) {
-            	case 1 :
-            	    // BELScript_v1.g:131:21: WS
-            	    {
-            	    WS60=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr985); 
-            	    WS60_tree = 
-            	    (Object)adaptor.create(WS60)
-            	    ;
-            	    adaptor.addChild(root_0, WS60_tree);
+                case 1 :
+                    // BELScript_v1.g:131:21: WS
+                    {
+                    WS60=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr985);
+                    WS60_tree =
+                    (Object)adaptor.create(WS60)
+                    ;
+                    adaptor.addChild(root_0, WS60_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop11;
+                default :
+                    break loop11;
                 }
             } while (true);
 
 
-            KWRD_ANNO61=(Token)match(input,KWRD_ANNO,FOLLOW_KWRD_ANNO_in_define_anno_expr988); 
-            KWRD_ANNO61_tree = 
+            KWRD_ANNO61=(Token)match(input,KWRD_ANNO,FOLLOW_KWRD_ANNO_in_define_anno_expr988);
+            KWRD_ANNO61_tree =
             (Object)adaptor.create(KWRD_ANNO61)
             ;
             adaptor.addChild(root_0, KWRD_ANNO61_tree);
@@ -2083,21 +2083,21 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt12) {
-            	case 1 :
-            	    // BELScript_v1.g:131:35: WS
-            	    {
-            	    WS62=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr990); 
-            	    WS62_tree = 
-            	    (Object)adaptor.create(WS62)
-            	    ;
-            	    adaptor.addChild(root_0, WS62_tree);
+                case 1 :
+                    // BELScript_v1.g:131:35: WS
+                    {
+                    WS62=(Token)match(input,WS,FOLLOW_WS_in_define_anno_expr990);
+                    WS62_tree =
+                    (Object)adaptor.create(WS62)
+                    ;
+                    adaptor.addChild(root_0, WS62_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop12;
+                default :
+                    break loop12;
                 }
             } while (true);
 
@@ -2114,12 +2114,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2191,19 +2191,19 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_define_anno_expr.add(define_anno_expr63.getTree());
 
-                    OBJECT_IDENT64=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1012);  
+                    OBJECT_IDENT64=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1012);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT64);
 
 
-                    KWRD_AS65=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1014);  
+                    KWRD_AS65=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1014);
                     stream_KWRD_AS.add(KWRD_AS65);
 
 
-                    KWRD_LIST66=(Token)match(input,KWRD_LIST,FOLLOW_KWRD_LIST_in_define_annotation1016);  
+                    KWRD_LIST66=(Token)match(input,KWRD_LIST,FOLLOW_KWRD_LIST_in_define_annotation1016);
                     stream_KWRD_LIST.add(KWRD_LIST66);
 
 
-                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_define_annotation1020);  
+                    val=(Token)match(input,VALUE_LIST,FOLLOW_VALUE_LIST_in_define_annotation1020);
                     stream_VALUE_LIST.add(val);
 
 
@@ -2211,9 +2211,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -2228,7 +2228,7 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(ANNO_DEF_LIST, "ANNO_DEF_LIST")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -2254,19 +2254,19 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_define_anno_expr.add(define_anno_expr67.getTree());
 
-                    OBJECT_IDENT68=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1051);  
+                    OBJECT_IDENT68=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1051);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT68);
 
 
-                    KWRD_AS69=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1053);  
+                    KWRD_AS69=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1053);
                     stream_KWRD_AS.add(KWRD_AS69);
 
 
-                    KWRD_URL70=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_annotation1055);  
+                    KWRD_URL70=(Token)match(input,KWRD_URL,FOLLOW_KWRD_URL_in_define_annotation1055);
                     stream_KWRD_URL.add(KWRD_URL70);
 
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1059);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1059);
                     stream_QUOTED_VALUE.add(val);
 
 
@@ -2274,9 +2274,9 @@ public TreeAdaptor getTreeAdaptor() {
                     // elements: val, OBJECT_IDENT
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -2291,7 +2291,7 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(ANNO_DEF_URL, "ANNO_DEF_URL")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -2317,29 +2317,29 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_define_anno_expr.add(define_anno_expr71.getTree());
 
-                    OBJECT_IDENT72=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1090);  
+                    OBJECT_IDENT72=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_define_annotation1090);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT72);
 
 
-                    KWRD_AS73=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1092);  
+                    KWRD_AS73=(Token)match(input,KWRD_AS,FOLLOW_KWRD_AS_in_define_annotation1092);
                     stream_KWRD_AS.add(KWRD_AS73);
 
 
-                    KWRD_PATTERN74=(Token)match(input,KWRD_PATTERN,FOLLOW_KWRD_PATTERN_in_define_annotation1094);  
+                    KWRD_PATTERN74=(Token)match(input,KWRD_PATTERN,FOLLOW_KWRD_PATTERN_in_define_annotation1094);
                     stream_KWRD_PATTERN.add(KWRD_PATTERN74);
 
 
-                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1098);  
+                    val=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_define_annotation1098);
                     stream_QUOTED_VALUE.add(val);
 
 
                     // AST REWRITE
-                    // elements: val, OBJECT_IDENT
+                    // elements: OBJECT_IDENT, val
                     // token labels: val
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleTokenStream stream_val=new RewriteRuleTokenStream(adaptor,"token val",val);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
@@ -2354,7 +2354,7 @@ public TreeAdaptor getTreeAdaptor() {
                         (Object)adaptor.create(ANNO_DEF_PTRN, "ANNO_DEF_PTRN")
                         , root_1);
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -2382,12 +2382,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2424,7 +2424,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             if ( (input.LA(1) >= KWRD_AUTHORS && input.LA(1) <= KWRD_COPYRIGHT)||input.LA(1)==KWRD_DESC||input.LA(1)==KWRD_DISCLAIMER||input.LA(1)==KWRD_LICENSES||input.LA(1)==KWRD_NAME||input.LA(1)==KWRD_VERSION ) {
                 input.consume();
-                adaptor.addChild(root_0, 
+                adaptor.addChild(root_0,
                 (Object)adaptor.create(set75)
                 );
                 state.errorRecovery=false;
@@ -2447,12 +2447,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2601,7 +2601,7 @@ public TreeAdaptor getTreeAdaptor() {
                         case 1 :
                             // BELScript_v1.g:155:9: COMMA
                             {
-                            COMMA76=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1225);  
+                            COMMA76=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1225);
                             stream_COMMA.add(COMMA76);
 
 
@@ -2620,11 +2620,11 @@ public TreeAdaptor getTreeAdaptor() {
 
                     // AST REWRITE
                     // elements: term
-                    // token labels: 
+                    // token labels:
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -2654,7 +2654,7 @@ public TreeAdaptor getTreeAdaptor() {
                         case 1 :
                             // BELScript_v1.g:156:9: COMMA
                             {
-                            COMMA78=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1242);  
+                            COMMA78=(Token)match(input,COMMA,FOLLOW_COMMA_in_argument1242);
                             stream_COMMA.add(COMMA78);
 
 
@@ -2673,11 +2673,11 @@ public TreeAdaptor getTreeAdaptor() {
 
                     // AST REWRITE
                     // elements: param
-                    // token labels: 
+                    // token labels:
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -2705,12 +2705,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2756,7 +2756,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_function.add(function80.getTree());
 
-            LP81=(Token)match(input,LP,FOLLOW_LP_in_term1270);  
+            LP81=(Token)match(input,LP,FOLLOW_LP_in_term1270);
             stream_LP.add(LP81);
 
 
@@ -2772,36 +2772,36 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt17) {
-            	case 1 :
-            	    // BELScript_v1.g:160:22: argument
-            	    {
-            	    pushFollow(FOLLOW_argument_in_term1273);
-            	    argument82=argument();
+                case 1 :
+                    // BELScript_v1.g:160:22: argument
+                    {
+                    pushFollow(FOLLOW_argument_in_term1273);
+                    argument82=argument();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_argument.add(argument82.getTree());
+                    stream_argument.add(argument82.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop17;
+                default :
+                    break loop17;
                 }
             } while (true);
 
 
-            RP83=(Token)match(input,RP,FOLLOW_RP_in_term1277);  
+            RP83=(Token)match(input,RP,FOLLOW_RP_in_term1277);
             stream_RP.add(RP83);
 
 
             // AST REWRITE
-            // elements: function, argument
-            // token labels: 
+            // elements: argument, function
+            // token labels:
             // rule labels: retval
-            // token list labels: 
-            // rule list labels: 
-            // wildcard labels: 
+            // token list labels:
+            // rule list labels:
+            // wildcard labels:
             retval.tree = root_0;
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -2844,12 +2844,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2945,7 +2945,7 @@ public TreeAdaptor getTreeAdaptor() {
                         case 1 :
                             // BELScript_v1.g:167:41: LP obj_sub= term obj_rel= relationship obj_obj= term RP
                             {
-                            LP84=(Token)match(input,LP,FOLLOW_LP_in_statement1327);  
+                            LP84=(Token)match(input,LP,FOLLOW_LP_in_statement1327);
                             stream_LP.add(LP84);
 
 
@@ -2970,7 +2970,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                             stream_term.add(obj_obj.getTree());
 
-                            RP85=(Token)match(input,RP,FOLLOW_RP_in_statement1341);  
+                            RP85=(Token)match(input,RP,FOLLOW_RP_in_statement1341);
                             stream_RP.add(RP85);
 
 
@@ -3009,7 +3009,7 @@ public TreeAdaptor getTreeAdaptor() {
                 case 1 :
                     // BELScript_v1.g:167:115: comment= STATEMENT_COMMENT
                     {
-                    comment=(Token)match(input,STATEMENT_COMMENT,FOLLOW_STATEMENT_COMMENT_in_statement1354);  
+                    comment=(Token)match(input,STATEMENT_COMMENT,FOLLOW_STATEMENT_COMMENT_in_statement1354);
                     stream_STATEMENT_COMMENT.add(comment);
 
 
@@ -3020,12 +3020,12 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: obj_obj, obj_rel, obj, comment, obj_sub, subject, rel
+            // elements: obj, obj_rel, obj_sub, rel, comment, subject, obj_obj
             // token labels: comment
             // rule labels: obj_obj, retval, obj_sub, subject, obj, rel, obj_rel
-            // token list labels: 
-            // rule list labels: 
-            // wildcard labels: 
+            // token list labels:
+            // rule list labels:
+            // wildcard labels:
             retval.tree = root_0;
             RewriteRuleTokenStream stream_comment=new RewriteRuleTokenStream(adaptor,"token comment",comment);
             RewriteRuleSubtreeStream stream_obj_obj=new RewriteRuleSubtreeStream(adaptor,"rule obj_obj",obj_obj!=null?obj_obj.tree:null);
@@ -3110,12 +3110,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3150,14 +3150,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
 
 
-            OBJECT_IDENT86=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_ns_prefix1415); 
-            OBJECT_IDENT86_tree = 
+            OBJECT_IDENT86=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_ns_prefix1415);
+            OBJECT_IDENT86_tree =
             (Object)adaptor.create(OBJECT_IDENT86)
             ;
             adaptor.addChild(root_0, OBJECT_IDENT86_tree);
 
 
-            COLON87=(Token)match(input,COLON,FOLLOW_COLON_in_ns_prefix1417); 
+            COLON87=(Token)match(input,COLON,FOLLOW_COLON_in_ns_prefix1417);
 
             }
 
@@ -3171,12 +3171,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3288,17 +3288,17 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    OBJECT_IDENT89=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_param1440);  
+                    OBJECT_IDENT89=(Token)match(input,OBJECT_IDENT,FOLLOW_OBJECT_IDENT_in_param1440);
                     stream_OBJECT_IDENT.add(OBJECT_IDENT89);
 
 
                     // AST REWRITE
                     // elements: ns_prefix, OBJECT_IDENT
-                    // token labels: 
+                    // token labels:
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -3319,7 +3319,7 @@ public TreeAdaptor getTreeAdaptor() {
                         }
                         stream_ns_prefix.reset();
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_OBJECT_IDENT.nextNode()
                         );
 
@@ -3360,17 +3360,17 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    QUOTED_VALUE91=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_param1464);  
+                    QUOTED_VALUE91=(Token)match(input,QUOTED_VALUE,FOLLOW_QUOTED_VALUE_in_param1464);
                     stream_QUOTED_VALUE.add(QUOTED_VALUE91);
 
 
                     // AST REWRITE
                     // elements: QUOTED_VALUE, ns_prefix
-                    // token labels: 
+                    // token labels:
                     // rule labels: retval
-                    // token list labels: 
-                    // rule list labels: 
-                    // wildcard labels: 
+                    // token list labels:
+                    // rule list labels:
+                    // wildcard labels:
                     retval.tree = root_0;
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
@@ -3391,7 +3391,7 @@ public TreeAdaptor getTreeAdaptor() {
                         }
                         stream_ns_prefix.reset();
 
-                        adaptor.addChild(root_1, 
+                        adaptor.addChild(root_1,
                         stream_QUOTED_VALUE.nextNode()
                         );
 
@@ -3417,12 +3417,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3763,8 +3763,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,126,FOLLOW_126_in_function1500); 
-                    fv_tree = 
+                    fv=(Token)match(input,126,FOLLOW_126_in_function1500);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3780,8 +3780,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,115,FOLLOW_115_in_function1524); 
-                    fv_tree = 
+                    fv=(Token)match(input,115,FOLLOW_115_in_function1524);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3797,8 +3797,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,134,FOLLOW_134_in_function1563); 
-                    fv_tree = 
+                    fv=(Token)match(input,134,FOLLOW_134_in_function1563);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3814,8 +3814,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,128,FOLLOW_128_in_function1591); 
-                    fv_tree = 
+                    fv=(Token)match(input,128,FOLLOW_128_in_function1591);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3831,8 +3831,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,72,FOLLOW_72_in_function1630); 
-                    fv_tree = 
+                    fv=(Token)match(input,72,FOLLOW_72_in_function1630);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3848,8 +3848,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,71,FOLLOW_71_in_function1661); 
-                    fv_tree = 
+                    fv=(Token)match(input,71,FOLLOW_71_in_function1661);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3865,8 +3865,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,111,FOLLOW_111_in_function1700); 
-                    fv_tree = 
+                    fv=(Token)match(input,111,FOLLOW_111_in_function1700);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3882,8 +3882,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,110,FOLLOW_110_in_function1723); 
-                    fv_tree = 
+                    fv=(Token)match(input,110,FOLLOW_110_in_function1723);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3899,8 +3899,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,98,FOLLOW_98_in_function1762); 
-                    fv_tree = 
+                    fv=(Token)match(input,98,FOLLOW_98_in_function1762);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3916,8 +3916,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,97,FOLLOW_97_in_function1789); 
-                    fv_tree = 
+                    fv=(Token)match(input,97,FOLLOW_97_in_function1789);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3933,8 +3933,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,76,FOLLOW_76_in_function1828); 
-                    fv_tree = 
+                    fv=(Token)match(input,76,FOLLOW_76_in_function1828);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3950,8 +3950,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,78,FOLLOW_78_in_function1851); 
-                    fv_tree = 
+                    fv=(Token)match(input,78,FOLLOW_78_in_function1851);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3967,8 +3967,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,117,FOLLOW_117_in_function1889); 
-                    fv_tree = 
+                    fv=(Token)match(input,117,FOLLOW_117_in_function1889);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -3984,8 +3984,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,116,FOLLOW_116_in_function1920); 
-                    fv_tree = 
+                    fv=(Token)match(input,116,FOLLOW_116_in_function1920);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4001,8 +4001,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,87,FOLLOW_87_in_function1956); 
-                    fv_tree = 
+                    fv=(Token)match(input,87,FOLLOW_87_in_function1956);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4018,8 +4018,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,86,FOLLOW_86_in_function1980); 
-                    fv_tree = 
+                    fv=(Token)match(input,86,FOLLOW_86_in_function1980);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4035,8 +4035,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,146,FOLLOW_146_in_function2013); 
-                    fv_tree = 
+                    fv=(Token)match(input,146,FOLLOW_146_in_function2013);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4052,8 +4052,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,141,FOLLOW_141_in_function2040); 
-                    fv_tree = 
+                    fv=(Token)match(input,141,FOLLOW_141_in_function2040);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4069,8 +4069,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,82,FOLLOW_82_in_function2076); 
-                    fv_tree = 
+                    fv=(Token)match(input,82,FOLLOW_82_in_function2076);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4086,8 +4086,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,136,FOLLOW_136_in_function2103); 
-                    fv_tree = 
+                    fv=(Token)match(input,136,FOLLOW_136_in_function2103);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4103,8 +4103,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,83,FOLLOW_83_in_function2140); 
-                    fv_tree = 
+                    fv=(Token)match(input,83,FOLLOW_83_in_function2140);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4120,8 +4120,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,140,FOLLOW_140_in_function2159); 
-                    fv_tree = 
+                    fv=(Token)match(input,140,FOLLOW_140_in_function2159);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4137,8 +4137,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,131,FOLLOW_131_in_function2195); 
-                    fv_tree = 
+                    fv=(Token)match(input,131,FOLLOW_131_in_function2195);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4154,8 +4154,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,135,FOLLOW_135_in_function2227); 
-                    fv_tree = 
+                    fv=(Token)match(input,135,FOLLOW_135_in_function2227);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4171,8 +4171,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,89,FOLLOW_89_in_function2264); 
-                    fv_tree = 
+                    fv=(Token)match(input,89,FOLLOW_89_in_function2264);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4188,8 +4188,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,88,FOLLOW_88_in_function2286); 
-                    fv_tree = 
+                    fv=(Token)match(input,88,FOLLOW_88_in_function2286);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4205,8 +4205,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,96,FOLLOW_96_in_function2317); 
-                    fv_tree = 
+                    fv=(Token)match(input,96,FOLLOW_96_in_function2317);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4222,8 +4222,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,95,FOLLOW_95_in_function2351); 
-                    fv_tree = 
+                    fv=(Token)match(input,95,FOLLOW_95_in_function2351);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4239,8 +4239,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,92,FOLLOW_92_in_function2388); 
-                    fv_tree = 
+                    fv=(Token)match(input,92,FOLLOW_92_in_function2388);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4256,8 +4256,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,91,FOLLOW_91_in_function2417); 
-                    fv_tree = 
+                    fv=(Token)match(input,91,FOLLOW_91_in_function2417);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4273,8 +4273,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,112,FOLLOW_112_in_function2454); 
-                    fv_tree = 
+                    fv=(Token)match(input,112,FOLLOW_112_in_function2454);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4290,8 +4290,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,73,FOLLOW_73_in_function2477); 
-                    fv_tree = 
+                    fv=(Token)match(input,73,FOLLOW_73_in_function2477);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4307,8 +4307,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,80,FOLLOW_80_in_function2514); 
-                    fv_tree = 
+                    fv=(Token)match(input,80,FOLLOW_80_in_function2514);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4324,8 +4324,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,79,FOLLOW_79_in_function2537); 
-                    fv_tree = 
+                    fv=(Token)match(input,79,FOLLOW_79_in_function2537);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4341,8 +4341,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,108,FOLLOW_108_in_function2574); 
-                    fv_tree = 
+                    fv=(Token)match(input,108,FOLLOW_108_in_function2574);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4358,8 +4358,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,107,FOLLOW_107_in_function2600); 
-                    fv_tree = 
+                    fv=(Token)match(input,107,FOLLOW_107_in_function2600);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4375,8 +4375,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,121,FOLLOW_121_in_function2637); 
-                    fv_tree = 
+                    fv=(Token)match(input,121,FOLLOW_121_in_function2637);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4392,8 +4392,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,120,FOLLOW_120_in_function2658); 
-                    fv_tree = 
+                    fv=(Token)match(input,120,FOLLOW_120_in_function2658);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4409,8 +4409,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,119,FOLLOW_119_in_function2694); 
-                    fv_tree = 
+                    fv=(Token)match(input,119,FOLLOW_119_in_function2694);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4426,8 +4426,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,118,FOLLOW_118_in_function2717); 
-                    fv_tree = 
+                    fv=(Token)match(input,118,FOLLOW_118_in_function2717);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4443,8 +4443,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,133,FOLLOW_133_in_function2754); 
-                    fv_tree = 
+                    fv=(Token)match(input,133,FOLLOW_133_in_function2754);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4460,8 +4460,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,132,FOLLOW_132_in_function2774); 
-                    fv_tree = 
+                    fv=(Token)match(input,132,FOLLOW_132_in_function2774);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4477,8 +4477,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,144,FOLLOW_144_in_function2810); 
-                    fv_tree = 
+                    fv=(Token)match(input,144,FOLLOW_144_in_function2810);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4494,8 +4494,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,150,FOLLOW_150_in_function2827); 
-                    fv_tree = 
+                    fv=(Token)match(input,150,FOLLOW_150_in_function2827);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4511,8 +4511,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,147,FOLLOW_147_in_function2860); 
-                    fv_tree = 
+                    fv=(Token)match(input,147,FOLLOW_147_in_function2860);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4528,8 +4528,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,142,FOLLOW_142_in_function2883); 
-                    fv_tree = 
+                    fv=(Token)match(input,142,FOLLOW_142_in_function2883);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4545,8 +4545,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,100,FOLLOW_100_in_function2918); 
-                    fv_tree = 
+                    fv=(Token)match(input,100,FOLLOW_100_in_function2918);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4562,8 +4562,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,99,FOLLOW_99_in_function2942); 
-                    fv_tree = 
+                    fv=(Token)match(input,99,FOLLOW_99_in_function2942);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4579,8 +4579,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,85,FOLLOW_85_in_function2979); 
-                    fv_tree = 
+                    fv=(Token)match(input,85,FOLLOW_85_in_function2979);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4596,8 +4596,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,84,FOLLOW_84_in_function3002); 
-                    fv_tree = 
+                    fv=(Token)match(input,84,FOLLOW_84_in_function3002);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4613,8 +4613,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,127,FOLLOW_127_in_function3038); 
-                    fv_tree = 
+                    fv=(Token)match(input,127,FOLLOW_127_in_function3038);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4630,8 +4630,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,122,FOLLOW_122_in_function3059); 
-                    fv_tree = 
+                    fv=(Token)match(input,122,FOLLOW_122_in_function3059);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4647,8 +4647,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,139,FOLLOW_139_in_function3095); 
-                    fv_tree = 
+                    fv=(Token)match(input,139,FOLLOW_139_in_function3095);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4664,8 +4664,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,137,FOLLOW_137_in_function3123); 
-                    fv_tree = 
+                    fv=(Token)match(input,137,FOLLOW_137_in_function3123);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4681,8 +4681,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,149,FOLLOW_149_in_function3160); 
-                    fv_tree = 
+                    fv=(Token)match(input,149,FOLLOW_149_in_function3160);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4698,8 +4698,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,148,FOLLOW_148_in_function3190); 
-                    fv_tree = 
+                    fv=(Token)match(input,148,FOLLOW_148_in_function3190);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4715,8 +4715,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,130,FOLLOW_130_in_function3225); 
-                    fv_tree = 
+                    fv=(Token)match(input,130,FOLLOW_130_in_function3225);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4732,8 +4732,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,124,FOLLOW_124_in_function3256); 
-                    fv_tree = 
+                    fv=(Token)match(input,124,FOLLOW_124_in_function3256);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4749,8 +4749,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    fv=(Token)match(input,109,FOLLOW_109_in_function3288); 
-                    fv_tree = 
+                    fv=(Token)match(input,109,FOLLOW_109_in_function3288);
+                    fv_tree =
                     (Object)adaptor.create(fv)
                     ;
                     adaptor.addChild(root_0, fv_tree);
@@ -4772,12 +4772,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4963,8 +4963,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,105,FOLLOW_105_in_relationship3337); 
-                    rv_tree = 
+                    rv=(Token)match(input,105,FOLLOW_105_in_relationship3337);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -4980,8 +4980,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,65,FOLLOW_65_in_relationship3368); 
-                    rv_tree = 
+                    rv=(Token)match(input,65,FOLLOW_65_in_relationship3368);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -4997,8 +4997,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,90,FOLLOW_90_in_relationship3406); 
-                    rv_tree = 
+                    rv=(Token)match(input,90,FOLLOW_90_in_relationship3406);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5014,8 +5014,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,66,FOLLOW_66_in_relationship3437); 
-                    rv_tree = 
+                    rv=(Token)match(input,66,FOLLOW_66_in_relationship3437);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5031,8 +5031,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,94,FOLLOW_94_in_relationship3475); 
-                    rv_tree = 
+                    rv=(Token)match(input,94,FOLLOW_94_in_relationship3475);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5048,8 +5048,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,68,FOLLOW_68_in_relationship3498); 
-                    rv_tree = 
+                    rv=(Token)match(input,68,FOLLOW_68_in_relationship3498);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5065,8 +5065,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,93,FOLLOW_93_in_relationship3536); 
-                    rv_tree = 
+                    rv=(Token)match(input,93,FOLLOW_93_in_relationship3536);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5082,8 +5082,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,69,FOLLOW_69_in_relationship3559); 
-                    rv_tree = 
+                    rv=(Token)match(input,69,FOLLOW_69_in_relationship3559);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5099,8 +5099,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,81,FOLLOW_81_in_relationship3597); 
-                    rv_tree = 
+                    rv=(Token)match(input,81,FOLLOW_81_in_relationship3597);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5116,8 +5116,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,123,FOLLOW_123_in_relationship3623); 
-                    rv_tree = 
+                    rv=(Token)match(input,123,FOLLOW_123_in_relationship3623);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5133,8 +5133,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,113,FOLLOW_113_in_relationship3644); 
-                    rv_tree = 
+                    rv=(Token)match(input,113,FOLLOW_113_in_relationship3644);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5150,8 +5150,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,145,FOLLOW_145_in_relationship3665); 
-                    rv_tree = 
+                    rv=(Token)match(input,145,FOLLOW_145_in_relationship3665);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5167,8 +5167,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,70,FOLLOW_70_in_relationship3693); 
-                    rv_tree = 
+                    rv=(Token)match(input,70,FOLLOW_70_in_relationship3693);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5184,8 +5184,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,143,FOLLOW_143_in_relationship3731); 
-                    rv_tree = 
+                    rv=(Token)match(input,143,FOLLOW_143_in_relationship3731);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5201,8 +5201,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,67,FOLLOW_67_in_relationship3758); 
-                    rv_tree = 
+                    rv=(Token)match(input,67,FOLLOW_67_in_relationship3758);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5218,8 +5218,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,106,FOLLOW_106_in_relationship3796); 
-                    rv_tree = 
+                    rv=(Token)match(input,106,FOLLOW_106_in_relationship3796);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5235,8 +5235,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,138,FOLLOW_138_in_relationship3833); 
-                    rv_tree = 
+                    rv=(Token)match(input,138,FOLLOW_138_in_relationship3833);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5252,8 +5252,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,129,FOLLOW_129_in_relationship3861); 
-                    rv_tree = 
+                    rv=(Token)match(input,129,FOLLOW_129_in_relationship3861);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5269,8 +5269,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,77,FOLLOW_77_in_relationship3883); 
-                    rv_tree = 
+                    rv=(Token)match(input,77,FOLLOW_77_in_relationship3883);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5286,8 +5286,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,125,FOLLOW_125_in_relationship3911); 
-                    rv_tree = 
+                    rv=(Token)match(input,125,FOLLOW_125_in_relationship3911);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5303,8 +5303,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,114,FOLLOW_114_in_relationship3929); 
-                    rv_tree = 
+                    rv=(Token)match(input,114,FOLLOW_114_in_relationship3929);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5320,8 +5320,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,74,FOLLOW_74_in_relationship3958); 
-                    rv_tree = 
+                    rv=(Token)match(input,74,FOLLOW_74_in_relationship3958);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5337,8 +5337,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,75,FOLLOW_75_in_relationship3989); 
-                    rv_tree = 
+                    rv=(Token)match(input,75,FOLLOW_75_in_relationship3989);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5354,8 +5354,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,64,FOLLOW_64_in_relationship4018); 
-                    rv_tree = 
+                    rv=(Token)match(input,64,FOLLOW_64_in_relationship4018);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5371,8 +5371,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,104,FOLLOW_104_in_relationship4056); 
-                    rv_tree = 
+                    rv=(Token)match(input,104,FOLLOW_104_in_relationship4056);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5388,8 +5388,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,102,FOLLOW_102_in_relationship4086); 
-                    rv_tree = 
+                    rv=(Token)match(input,102,FOLLOW_102_in_relationship4086);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5405,8 +5405,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,103,FOLLOW_103_in_relationship4113); 
-                    rv_tree = 
+                    rv=(Token)match(input,103,FOLLOW_103_in_relationship4113);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5422,8 +5422,8 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
 
 
-                    rv=(Token)match(input,101,FOLLOW_101_in_relationship4144); 
-                    rv_tree = 
+                    rv=(Token)match(input,101,FOLLOW_101_in_relationship4144);
+                    rv_tree =
                     (Object)adaptor.create(rv)
                     ;
                     adaptor.addChild(root_0, rv_tree);
@@ -5445,12 +5445,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5499,27 +5499,27 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt26) {
-            	case 1 :
-            	    // BELScript_v1.g:274:9: WS
-            	    {
-            	    WS92=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4179); 
-            	    WS92_tree = 
-            	    (Object)adaptor.create(WS92)
-            	    ;
-            	    adaptor.addChild(root_0, WS92_tree);
+                case 1 :
+                    // BELScript_v1.g:274:9: WS
+                    {
+                    WS92=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4179);
+                    WS92_tree =
+                    (Object)adaptor.create(WS92)
+                    ;
+                    adaptor.addChild(root_0, WS92_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop26;
+                default :
+                    break loop26;
                 }
             } while (true);
 
 
-            EQ93=(Token)match(input,EQ,FOLLOW_EQ_in_eq_clause4182); 
-            EQ93_tree = 
+            EQ93=(Token)match(input,EQ,FOLLOW_EQ_in_eq_clause4182);
+            EQ93_tree =
             (Object)adaptor.create(EQ93)
             ;
             adaptor.addChild(root_0, EQ93_tree);
@@ -5537,21 +5537,21 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt27) {
-            	case 1 :
-            	    // BELScript_v1.g:274:16: WS
-            	    {
-            	    WS94=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4184); 
-            	    WS94_tree = 
-            	    (Object)adaptor.create(WS94)
-            	    ;
-            	    adaptor.addChild(root_0, WS94_tree);
+                case 1 :
+                    // BELScript_v1.g:274:16: WS
+                    {
+                    WS94=(Token)match(input,WS,FOLLOW_WS_in_eq_clause4184);
+                    WS94_tree =
+                    (Object)adaptor.create(WS94)
+                    ;
+                    adaptor.addChild(root_0, WS94_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop27;
+                default :
+                    break loop27;
                 }
             } while (true);
 
@@ -5568,12 +5568,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5885,7 +5885,7 @@ public TreeAdaptor getTreeAdaptor() {
             return "134:1: define_annotation : ( define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST -> ^( ANNO_DEF_LIST OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE -> ^( ANNO_DEF_URL OBJECT_IDENT $val) | define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE -> ^( ANNO_DEF_PTRN OBJECT_IDENT $val) );";
         }
     }
- 
+
 
     public static final BitSet FOLLOW_NEWLINE_in_document327 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});
     public static final BitSet FOLLOW_DOCUMENT_COMMENT_in_document331 = new BitSet(new long[]{0x0000214010040000L,0xD7F9F81F9BFDD380L,0x00000000007D7BFDL});

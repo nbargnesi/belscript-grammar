@@ -1,4 +1,4 @@
-# $ANTLR 3.4 BELScript_Python_v1.g 2012-08-13 14:45:36
+# $ANTLR 3.4 BELScript_Python_v1.g 2012-08-28 20:03:51
 
 import sys
 from antlr3 import *
@@ -165,34 +165,34 @@ WS=63
 # token names
 tokenNames = [
     "<invalid>", "<EOR>", "<DOWN>", "<UP>",
-    "ANNO_DEF_LIST", "ANNO_DEF_PTRN", "ANNO_DEF_URL", "ANNO_SET_ID", "ANNO_SET_LIST", 
-    "ANNO_SET_QV", "COLON", "COMMA", "DFLT_NSDEF", "DIGIT", "DOCDEF", "DOCSET_ID", 
-    "DOCSET_LIST", "DOCSET_QV", "DOCUMENT_COMMENT", "EQ", "ESCAPE_SEQUENCE", 
-    "HEX_DIGIT", "IDENT_LIST", "KWRD_ANNO", "KWRD_AS", "KWRD_AUTHORS", "KWRD_CONTACTINFO", 
-    "KWRD_COPYRIGHT", "KWRD_DEFINE", "KWRD_DESC", "KWRD_DFLT", "KWRD_DISCLAIMER", 
-    "KWRD_DOCUMENT", "KWRD_LICENSES", "KWRD_LIST", "KWRD_NAME", "KWRD_NS", 
-    "KWRD_PATTERN", "KWRD_SET", "KWRD_STMT_GROUP", "KWRD_UNSET", "KWRD_URL", 
-    "KWRD_VERSION", "LETTER", "LP", "NEWLINE", "NSDEF", "OBJECT_IDENT", 
-    "OCTAL_ESCAPE", "PARAM_DEF_ID", "PARAM_DEF_QV", "QUOTED_VALUE", "RP", 
-    "SG_SET_ID", "SG_SET_QV", "STATEMENT_COMMENT", "STMTDEF", "TERMDEF", 
-    "UNICODE_ESCAPE", "UNSET_ID", "UNSET_ID_LIST", "UNSET_SG", "VALUE_LIST", 
-    "WS", "'--'", "'->'", "'-|'", "':>'", "'=>'", "'=|'", "'>>'", "'a'", 
-    "'abundance'", "'act'", "'analogous'", "'association'", "'biologicalProcess'", 
-    "'biomarkerFor'", "'bp'", "'cat'", "'catalyticActivity'", "'causesNoChange'", 
-    "'cellSecretion'", "'cellSurfaceExpression'", "'chap'", "'chaperoneActivity'", 
-    "'complex'", "'complexAbundance'", "'composite'", "'compositeAbundance'", 
-    "'decreases'", "'deg'", "'degradation'", "'directlyDecreases'", "'directlyIncreases'", 
-    "'fus'", "'fusion'", "'g'", "'geneAbundance'", "'gtp'", "'gtpBoundActivity'", 
-    "'hasComponent'", "'hasComponents'", "'hasMember'", "'hasMembers'", 
-    "'increases'", "'isA'", "'kin'", "'kinaseActivity'", "'list'", "'m'", 
-    "'microRNAAbundance'", "'molecularActivity'", "'negativeCorrelation'", 
-    "'orthologous'", "'p'", "'path'", "'pathology'", "'pep'", "'peptidaseActivity'", 
-    "'phos'", "'phosphataseActivity'", "'pmod'", "'positiveCorrelation'", 
-    "'products'", "'prognosticBiomarkerFor'", "'proteinAbundance'", "'proteinModification'", 
-    "'r'", "'rateLimitingStepOf'", "'reactants'", "'reaction'", "'ribo'", 
-    "'ribosylationActivity'", "'rnaAbundance'", "'rxn'", "'sec'", "'sub'", 
-    "'subProcessOf'", "'substitution'", "'surf'", "'tloc'", "'tport'", "'transcribedTo'", 
-    "'transcriptionalActivity'", "'translatedTo'", "'translocation'", "'transportActivity'", 
+    "ANNO_DEF_LIST", "ANNO_DEF_PTRN", "ANNO_DEF_URL", "ANNO_SET_ID", "ANNO_SET_LIST",
+    "ANNO_SET_QV", "COLON", "COMMA", "DFLT_NSDEF", "DIGIT", "DOCDEF", "DOCSET_ID",
+    "DOCSET_LIST", "DOCSET_QV", "DOCUMENT_COMMENT", "EQ", "ESCAPE_SEQUENCE",
+    "HEX_DIGIT", "IDENT_LIST", "KWRD_ANNO", "KWRD_AS", "KWRD_AUTHORS", "KWRD_CONTACTINFO",
+    "KWRD_COPYRIGHT", "KWRD_DEFINE", "KWRD_DESC", "KWRD_DFLT", "KWRD_DISCLAIMER",
+    "KWRD_DOCUMENT", "KWRD_LICENSES", "KWRD_LIST", "KWRD_NAME", "KWRD_NS",
+    "KWRD_PATTERN", "KWRD_SET", "KWRD_STMT_GROUP", "KWRD_UNSET", "KWRD_URL",
+    "KWRD_VERSION", "LETTER", "LP", "NEWLINE", "NSDEF", "OBJECT_IDENT",
+    "OCTAL_ESCAPE", "PARAM_DEF_ID", "PARAM_DEF_QV", "QUOTED_VALUE", "RP",
+    "SG_SET_ID", "SG_SET_QV", "STATEMENT_COMMENT", "STMTDEF", "TERMDEF",
+    "UNICODE_ESCAPE", "UNSET_ID", "UNSET_ID_LIST", "UNSET_SG", "VALUE_LIST",
+    "WS", "'--'", "'->'", "'-|'", "':>'", "'=>'", "'=|'", "'>>'", "'a'",
+    "'abundance'", "'act'", "'analogous'", "'association'", "'biologicalProcess'",
+    "'biomarkerFor'", "'bp'", "'cat'", "'catalyticActivity'", "'causesNoChange'",
+    "'cellSecretion'", "'cellSurfaceExpression'", "'chap'", "'chaperoneActivity'",
+    "'complex'", "'complexAbundance'", "'composite'", "'compositeAbundance'",
+    "'decreases'", "'deg'", "'degradation'", "'directlyDecreases'", "'directlyIncreases'",
+    "'fus'", "'fusion'", "'g'", "'geneAbundance'", "'gtp'", "'gtpBoundActivity'",
+    "'hasComponent'", "'hasComponents'", "'hasMember'", "'hasMembers'",
+    "'increases'", "'isA'", "'kin'", "'kinaseActivity'", "'list'", "'m'",
+    "'microRNAAbundance'", "'molecularActivity'", "'negativeCorrelation'",
+    "'orthologous'", "'p'", "'path'", "'pathology'", "'pep'", "'peptidaseActivity'",
+    "'phos'", "'phosphataseActivity'", "'pmod'", "'positiveCorrelation'",
+    "'products'", "'prognosticBiomarkerFor'", "'proteinAbundance'", "'proteinModification'",
+    "'r'", "'rateLimitingStepOf'", "'reactants'", "'reaction'", "'ribo'",
+    "'ribosylationActivity'", "'rnaAbundance'", "'rxn'", "'sec'", "'sub'",
+    "'subProcessOf'", "'substitution'", "'surf'", "'tloc'", "'tport'", "'transcribedTo'",
+    "'transcriptionalActivity'", "'translatedTo'", "'translocation'", "'transportActivity'",
     "'trunc'", "'truncation'", "'tscript'"
 ]
 
@@ -270,8 +270,8 @@ class BELScript_Python_v1Parser(Parser):
 
         self.delegates = []
 
-	self._adaptor = None
-	self.adaptor = CommonTreeAdaptor()
+    self._adaptor = None
+    self.adaptor = CommonTreeAdaptor()
 
 
 
@@ -320,7 +320,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:68:5: ( ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF -> ^( DOCDEF ( record )+ ) )
                 # BELScript_Python_v1.g:68:9: ( NEWLINE | DOCUMENT_COMMENT | record )+ EOF
-                pass 
+                pass
                 # BELScript_Python_v1.g:68:9: ( NEWLINE | DOCUMENT_COMMENT | record )+
                 cnt1 = 0
                 while True: #loop1
@@ -335,23 +335,23 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt1 == 1:
                         # BELScript_Python_v1.g:68:10: NEWLINE
-                        pass 
-                        NEWLINE1 = self.match(self.input, NEWLINE, self.FOLLOW_NEWLINE_in_document327) 
+                        pass
+                        NEWLINE1 = self.match(self.input, NEWLINE, self.FOLLOW_NEWLINE_in_document327)
                         stream_NEWLINE.add(NEWLINE1)
 
 
 
                     elif alt1 == 2:
                         # BELScript_Python_v1.g:68:20: DOCUMENT_COMMENT
-                        pass 
-                        DOCUMENT_COMMENT2 = self.match(self.input, DOCUMENT_COMMENT, self.FOLLOW_DOCUMENT_COMMENT_in_document331) 
+                        pass
+                        DOCUMENT_COMMENT2 = self.match(self.input, DOCUMENT_COMMENT, self.FOLLOW_DOCUMENT_COMMENT_in_document331)
                         stream_DOCUMENT_COMMENT.add(DOCUMENT_COMMENT2)
 
 
 
                     elif alt1 == 3:
                         # BELScript_Python_v1.g:68:39: record
-                        pass 
+                        pass
                         self._state.following.append(self.FOLLOW_record_in_document335)
                         record3 = self.record()
 
@@ -370,17 +370,17 @@ class BELScript_Python_v1Parser(Parser):
                     cnt1 += 1
 
 
-                EOF4 = self.match(self.input, EOF, self.FOLLOW_EOF_in_document339) 
+                EOF4 = self.match(self.input, EOF, self.FOLLOW_EOF_in_document339)
                 stream_EOF.add(EOF4)
 
 
                 # AST Rewrite
                 # elements: record
-                # token labels: 
+                # token labels:
                 # rule labels: retval
-                # token list labels: 
-                # rule list labels: 
-                # wildcard labels: 
+                # token list labels:
+                # rule list labels:
+                # wildcard labels:
                 retval.tree = root_0
                 if retval is not None:
                     stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -481,7 +481,7 @@ class BELScript_Python_v1Parser(Parser):
                 alt2 = self.dfa2.predict(self.input)
                 if alt2 == 1:
                     # BELScript_Python_v1.g:73:9: define_namespace
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -495,7 +495,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 2:
                     # BELScript_Python_v1.g:74:9: define_annotation
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -509,7 +509,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 3:
                     # BELScript_Python_v1.g:75:9: set_annotation
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -523,7 +523,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 4:
                     # BELScript_Python_v1.g:76:9: set_document
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -537,7 +537,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 5:
                     # BELScript_Python_v1.g:77:9: set_statement_group
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -551,7 +551,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 6:
                     # BELScript_Python_v1.g:78:9: unset_statement_group
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -565,7 +565,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 7:
                     # BELScript_Python_v1.g:79:9: unset
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -579,7 +579,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt2 == 8:
                     # BELScript_Python_v1.g:80:9: statement
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -644,7 +644,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:84:5: ( KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )* )
                 # BELScript_Python_v1.g:84:9: KWRD_SET ( WS )* KWRD_DOCUMENT ( WS )*
-                pass 
+                pass
                 root_0 = self._adaptor.nil()
 
 
@@ -665,7 +665,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt3 == 1:
                         # BELScript_Python_v1.g:84:18: WS
-                        pass 
+                        pass
                         WS14 = self.match(self.input, WS, self.FOLLOW_WS_in_set_doc_expr466)
                         WS14_tree = self._adaptor.createWithPayload(WS14)
                         self._adaptor.addChild(root_0, WS14_tree)
@@ -694,7 +694,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt4 == 1:
                         # BELScript_Python_v1.g:84:36: WS
-                        pass 
+                        pass
                         WS16 = self.match(self.input, WS, self.FOLLOW_WS_in_set_doc_expr471)
                         WS16_tree = self._adaptor.createWithPayload(WS16)
                         self._adaptor.addChild(root_0, WS16_tree)
@@ -781,7 +781,7 @@ class BELScript_Python_v1Parser(Parser):
                 alt5 = self.dfa5.predict(self.input)
                 if alt5 == 1:
                     # BELScript_Python_v1.g:88:9: set_doc_expr document_property eq_clause val= QUOTED_VALUE
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_set_doc_expr_in_set_document491)
                     set_doc_expr17 = self.set_doc_expr()
 
@@ -803,7 +803,7 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause19.tree)
 
 
-                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_set_document499) 
+                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_set_document499)
                     stream_QUOTED_VALUE.add(val)
 
 
@@ -811,9 +811,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val, document_property
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -846,7 +846,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt5 == 2:
                     # BELScript_Python_v1.g:90:9: set_doc_expr document_property eq_clause val= VALUE_LIST
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_set_doc_expr_in_set_document528)
                     set_doc_expr20 = self.set_doc_expr()
 
@@ -868,7 +868,7 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause22.tree)
 
 
-                    val = self.match(self.input, VALUE_LIST, self.FOLLOW_VALUE_LIST_in_set_document536) 
+                    val = self.match(self.input, VALUE_LIST, self.FOLLOW_VALUE_LIST_in_set_document536)
                     stream_VALUE_LIST.add(val)
 
 
@@ -876,9 +876,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: document_property, val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -911,7 +911,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt5 == 3:
                     # BELScript_Python_v1.g:92:9: set_doc_expr document_property eq_clause val= OBJECT_IDENT
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_set_doc_expr_in_set_document565)
                     set_doc_expr23 = self.set_doc_expr()
 
@@ -933,17 +933,17 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause25.tree)
 
 
-                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_document573) 
+                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_document573)
                     stream_OBJECT_IDENT.add(val)
 
 
                     # AST Rewrite
-                    # elements: val, document_property
+                    # elements: document_property, val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1025,7 +1025,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:97:5: ( KWRD_SET ( WS )* KWRD_STMT_GROUP )
                 # BELScript_Python_v1.g:97:9: KWRD_SET ( WS )* KWRD_STMT_GROUP
-                pass 
+                pass
                 root_0 = self._adaptor.nil()
 
 
@@ -1046,7 +1046,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt6 == 1:
                         # BELScript_Python_v1.g:97:18: WS
-                        pass 
+                        pass
                         WS27 = self.match(self.input, WS, self.FOLLOW_WS_in_set_sg_expr613)
                         WS27_tree = self._adaptor.createWithPayload(WS27)
                         self._adaptor.addChild(root_0, WS27_tree)
@@ -1127,7 +1127,7 @@ class BELScript_Python_v1Parser(Parser):
                 alt7 = self.dfa7.predict(self.input)
                 if alt7 == 1:
                     # BELScript_Python_v1.g:101:9: set_sg_expr eq_clause val= QUOTED_VALUE
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_set_sg_expr_in_set_statement_group635)
                     set_sg_expr29 = self.set_sg_expr()
 
@@ -1142,7 +1142,7 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause30.tree)
 
 
-                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_set_statement_group641) 
+                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_set_statement_group641)
                     stream_QUOTED_VALUE.add(val)
 
 
@@ -1150,9 +1150,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1183,7 +1183,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt7 == 2:
                     # BELScript_Python_v1.g:102:9: set_sg_expr eq_clause val= OBJECT_IDENT
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_set_sg_expr_in_set_statement_group660)
                     set_sg_expr31 = self.set_sg_expr()
 
@@ -1198,7 +1198,7 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause32.tree)
 
 
-                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_statement_group666) 
+                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_statement_group666)
                     stream_OBJECT_IDENT.add(val)
 
 
@@ -1206,9 +1206,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1309,12 +1309,12 @@ class BELScript_Python_v1Parser(Parser):
                 alt8 = self.dfa8.predict(self.input)
                 if alt8 == 1:
                     # BELScript_Python_v1.g:106:9: KWRD_SET OBJECT_IDENT eq_clause val= QUOTED_VALUE
-                    pass 
-                    KWRD_SET33 = self.match(self.input, KWRD_SET, self.FOLLOW_KWRD_SET_in_set_annotation694) 
+                    pass
+                    KWRD_SET33 = self.match(self.input, KWRD_SET, self.FOLLOW_KWRD_SET_in_set_annotation694)
                     stream_KWRD_SET.add(KWRD_SET33)
 
 
-                    OBJECT_IDENT34 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation696) 
+                    OBJECT_IDENT34 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation696)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT34)
 
 
@@ -1325,7 +1325,7 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause35.tree)
 
 
-                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_set_annotation702) 
+                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_set_annotation702)
                     stream_QUOTED_VALUE.add(val)
 
 
@@ -1333,9 +1333,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val, OBJECT_IDENT
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1352,7 +1352,7 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(ANNO_SET_QV, "ANNO_SET_QV")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -1370,12 +1370,12 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt8 == 2:
                     # BELScript_Python_v1.g:108:9: KWRD_SET OBJECT_IDENT eq_clause val= VALUE_LIST
-                    pass 
-                    KWRD_SET36 = self.match(self.input, KWRD_SET, self.FOLLOW_KWRD_SET_in_set_annotation731) 
+                    pass
+                    KWRD_SET36 = self.match(self.input, KWRD_SET, self.FOLLOW_KWRD_SET_in_set_annotation731)
                     stream_KWRD_SET.add(KWRD_SET36)
 
 
-                    OBJECT_IDENT37 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation733) 
+                    OBJECT_IDENT37 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation733)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT37)
 
 
@@ -1386,7 +1386,7 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause38.tree)
 
 
-                    val = self.match(self.input, VALUE_LIST, self.FOLLOW_VALUE_LIST_in_set_annotation739) 
+                    val = self.match(self.input, VALUE_LIST, self.FOLLOW_VALUE_LIST_in_set_annotation739)
                     stream_VALUE_LIST.add(val)
 
 
@@ -1394,9 +1394,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: OBJECT_IDENT, val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1413,7 +1413,7 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(ANNO_SET_LIST, "ANNO_SET_LIST")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -1431,12 +1431,12 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt8 == 3:
                     # BELScript_Python_v1.g:110:9: KWRD_SET OBJECT_IDENT eq_clause val= OBJECT_IDENT
-                    pass 
-                    KWRD_SET39 = self.match(self.input, KWRD_SET, self.FOLLOW_KWRD_SET_in_set_annotation768) 
+                    pass
+                    KWRD_SET39 = self.match(self.input, KWRD_SET, self.FOLLOW_KWRD_SET_in_set_annotation768)
                     stream_KWRD_SET.add(KWRD_SET39)
 
 
-                    OBJECT_IDENT40 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation770) 
+                    OBJECT_IDENT40 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation770)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT40)
 
 
@@ -1447,17 +1447,17 @@ class BELScript_Python_v1Parser(Parser):
                     stream_eq_clause.add(eq_clause41.tree)
 
 
-                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation776) 
+                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_set_annotation776)
                     stream_OBJECT_IDENT.add(val)
 
 
                     # AST Rewrite
-                    # elements: val, OBJECT_IDENT
+                    # elements: OBJECT_IDENT, val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1474,7 +1474,7 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(ANNO_SET_ID, "ANNO_SET_ID")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -1541,22 +1541,22 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:115:5: ( KWRD_UNSET KWRD_STMT_GROUP -> ^( UNSET_SG ) )
                 # BELScript_Python_v1.g:115:9: KWRD_UNSET KWRD_STMT_GROUP
-                pass 
-                KWRD_UNSET42 = self.match(self.input, KWRD_UNSET, self.FOLLOW_KWRD_UNSET_in_unset_statement_group814) 
+                pass
+                KWRD_UNSET42 = self.match(self.input, KWRD_UNSET, self.FOLLOW_KWRD_UNSET_in_unset_statement_group814)
                 stream_KWRD_UNSET.add(KWRD_UNSET42)
 
 
-                KWRD_STMT_GROUP43 = self.match(self.input, KWRD_STMT_GROUP, self.FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group816) 
+                KWRD_STMT_GROUP43 = self.match(self.input, KWRD_STMT_GROUP, self.FOLLOW_KWRD_STMT_GROUP_in_unset_statement_group816)
                 stream_KWRD_STMT_GROUP.add(KWRD_STMT_GROUP43)
 
 
                 # AST Rewrite
-                # elements: 
-                # token labels: 
+                # elements:
+                # token labels:
                 # rule labels: retval
-                # token list labels: 
-                # rule list labels: 
-                # wildcard labels: 
+                # token list labels:
+                # rule list labels:
+                # wildcard labels:
                 retval.tree = root_0
                 if retval is not None:
                     stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -1660,12 +1660,12 @@ class BELScript_Python_v1Parser(Parser):
 
                 if alt9 == 1:
                     # BELScript_Python_v1.g:119:9: KWRD_UNSET val= OBJECT_IDENT
-                    pass 
-                    KWRD_UNSET44 = self.match(self.input, KWRD_UNSET, self.FOLLOW_KWRD_UNSET_in_unset841) 
+                    pass
+                    KWRD_UNSET44 = self.match(self.input, KWRD_UNSET, self.FOLLOW_KWRD_UNSET_in_unset841)
                     stream_KWRD_UNSET.add(KWRD_UNSET44)
 
 
-                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_unset845) 
+                    val = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_unset845)
                     stream_OBJECT_IDENT.add(val)
 
 
@@ -1673,9 +1673,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1706,12 +1706,12 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt9 == 2:
                     # BELScript_Python_v1.g:120:9: KWRD_UNSET val= IDENT_LIST
-                    pass 
-                    KWRD_UNSET45 = self.match(self.input, KWRD_UNSET, self.FOLLOW_KWRD_UNSET_in_unset864) 
+                    pass
+                    KWRD_UNSET45 = self.match(self.input, KWRD_UNSET, self.FOLLOW_KWRD_UNSET_in_unset864)
                     stream_KWRD_UNSET.add(KWRD_UNSET45)
 
 
-                    val = self.match(self.input, IDENT_LIST, self.FOLLOW_IDENT_LIST_in_unset868) 
+                    val = self.match(self.input, IDENT_LIST, self.FOLLOW_IDENT_LIST_in_unset868)
                     stream_IDENT_LIST.add(val)
 
 
@@ -1719,9 +1719,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -1851,42 +1851,42 @@ class BELScript_Python_v1Parser(Parser):
 
                 if alt10 == 1:
                     # BELScript_Python_v1.g:124:9: KWRD_DEFINE KWRD_DFLT KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
-                    pass 
-                    KWRD_DEFINE46 = self.match(self.input, KWRD_DEFINE, self.FOLLOW_KWRD_DEFINE_in_define_namespace896) 
+                    pass
+                    KWRD_DEFINE46 = self.match(self.input, KWRD_DEFINE, self.FOLLOW_KWRD_DEFINE_in_define_namespace896)
                     stream_KWRD_DEFINE.add(KWRD_DEFINE46)
 
 
-                    KWRD_DFLT47 = self.match(self.input, KWRD_DFLT, self.FOLLOW_KWRD_DFLT_in_define_namespace898) 
+                    KWRD_DFLT47 = self.match(self.input, KWRD_DFLT, self.FOLLOW_KWRD_DFLT_in_define_namespace898)
                     stream_KWRD_DFLT.add(KWRD_DFLT47)
 
 
-                    KWRD_NS48 = self.match(self.input, KWRD_NS, self.FOLLOW_KWRD_NS_in_define_namespace900) 
+                    KWRD_NS48 = self.match(self.input, KWRD_NS, self.FOLLOW_KWRD_NS_in_define_namespace900)
                     stream_KWRD_NS.add(KWRD_NS48)
 
 
-                    OBJECT_IDENT49 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_namespace902) 
+                    OBJECT_IDENT49 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_namespace902)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT49)
 
 
-                    KWRD_AS50 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_namespace904) 
+                    KWRD_AS50 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_namespace904)
                     stream_KWRD_AS.add(KWRD_AS50)
 
 
-                    KWRD_URL51 = self.match(self.input, KWRD_URL, self.FOLLOW_KWRD_URL_in_define_namespace906) 
+                    KWRD_URL51 = self.match(self.input, KWRD_URL, self.FOLLOW_KWRD_URL_in_define_namespace906)
                     stream_KWRD_URL.add(KWRD_URL51)
 
 
-                    QUOTED_VALUE52 = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_namespace908) 
+                    QUOTED_VALUE52 = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_namespace908)
                     stream_QUOTED_VALUE.add(QUOTED_VALUE52)
 
 
                     # AST Rewrite
                     # elements: QUOTED_VALUE, OBJECT_IDENT
-                    # token labels: 
+                    # token labels:
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     if retval is not None:
                         stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -1902,11 +1902,11 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(DFLT_NSDEF, "DFLT_NSDEF")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_QUOTED_VALUE.nextNode()
                     )
 
@@ -1922,38 +1922,38 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt10 == 2:
                     # BELScript_Python_v1.g:126:9: KWRD_DEFINE KWRD_NS OBJECT_IDENT KWRD_AS KWRD_URL QUOTED_VALUE
-                    pass 
-                    KWRD_DEFINE53 = self.match(self.input, KWRD_DEFINE, self.FOLLOW_KWRD_DEFINE_in_define_namespace936) 
+                    pass
+                    KWRD_DEFINE53 = self.match(self.input, KWRD_DEFINE, self.FOLLOW_KWRD_DEFINE_in_define_namespace936)
                     stream_KWRD_DEFINE.add(KWRD_DEFINE53)
 
 
-                    KWRD_NS54 = self.match(self.input, KWRD_NS, self.FOLLOW_KWRD_NS_in_define_namespace938) 
+                    KWRD_NS54 = self.match(self.input, KWRD_NS, self.FOLLOW_KWRD_NS_in_define_namespace938)
                     stream_KWRD_NS.add(KWRD_NS54)
 
 
-                    OBJECT_IDENT55 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_namespace940) 
+                    OBJECT_IDENT55 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_namespace940)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT55)
 
 
-                    KWRD_AS56 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_namespace942) 
+                    KWRD_AS56 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_namespace942)
                     stream_KWRD_AS.add(KWRD_AS56)
 
 
-                    KWRD_URL57 = self.match(self.input, KWRD_URL, self.FOLLOW_KWRD_URL_in_define_namespace944) 
+                    KWRD_URL57 = self.match(self.input, KWRD_URL, self.FOLLOW_KWRD_URL_in_define_namespace944)
                     stream_KWRD_URL.add(KWRD_URL57)
 
 
-                    QUOTED_VALUE58 = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_namespace946) 
+                    QUOTED_VALUE58 = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_namespace946)
                     stream_QUOTED_VALUE.add(QUOTED_VALUE58)
 
 
                     # AST Rewrite
-                    # elements: QUOTED_VALUE, OBJECT_IDENT
-                    # token labels: 
+                    # elements: OBJECT_IDENT, QUOTED_VALUE
+                    # token labels:
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     if retval is not None:
                         stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -1969,11 +1969,11 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(NSDEF, "NSDEF")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_QUOTED_VALUE.nextNode()
                     )
 
@@ -2040,7 +2040,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:131:5: ( KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )* )
                 # BELScript_Python_v1.g:131:9: KWRD_DEFINE ( WS )* KWRD_ANNO ( WS )*
-                pass 
+                pass
                 root_0 = self._adaptor.nil()
 
 
@@ -2061,7 +2061,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt11 == 1:
                         # BELScript_Python_v1.g:131:21: WS
-                        pass 
+                        pass
                         WS60 = self.match(self.input, WS, self.FOLLOW_WS_in_define_anno_expr985)
                         WS60_tree = self._adaptor.createWithPayload(WS60)
                         self._adaptor.addChild(root_0, WS60_tree)
@@ -2090,7 +2090,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt12 == 1:
                         # BELScript_Python_v1.g:131:35: WS
-                        pass 
+                        pass
                         WS62 = self.match(self.input, WS, self.FOLLOW_WS_in_define_anno_expr990)
                         WS62_tree = self._adaptor.createWithPayload(WS62)
                         self._adaptor.addChild(root_0, WS62_tree)
@@ -2185,7 +2185,7 @@ class BELScript_Python_v1Parser(Parser):
                 alt13 = self.dfa13.predict(self.input)
                 if alt13 == 1:
                     # BELScript_Python_v1.g:135:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_LIST val= VALUE_LIST
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_define_anno_expr_in_define_annotation1010)
                     define_anno_expr63 = self.define_anno_expr()
 
@@ -2193,19 +2193,19 @@ class BELScript_Python_v1Parser(Parser):
                     stream_define_anno_expr.add(define_anno_expr63.tree)
 
 
-                    OBJECT_IDENT64 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_annotation1012) 
+                    OBJECT_IDENT64 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_annotation1012)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT64)
 
 
-                    KWRD_AS65 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_annotation1014) 
+                    KWRD_AS65 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_annotation1014)
                     stream_KWRD_AS.add(KWRD_AS65)
 
 
-                    KWRD_LIST66 = self.match(self.input, KWRD_LIST, self.FOLLOW_KWRD_LIST_in_define_annotation1016) 
+                    KWRD_LIST66 = self.match(self.input, KWRD_LIST, self.FOLLOW_KWRD_LIST_in_define_annotation1016)
                     stream_KWRD_LIST.add(KWRD_LIST66)
 
 
-                    val = self.match(self.input, VALUE_LIST, self.FOLLOW_VALUE_LIST_in_define_annotation1020) 
+                    val = self.match(self.input, VALUE_LIST, self.FOLLOW_VALUE_LIST_in_define_annotation1020)
                     stream_VALUE_LIST.add(val)
 
 
@@ -2213,9 +2213,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: OBJECT_IDENT, val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -2232,7 +2232,7 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(ANNO_DEF_LIST, "ANNO_DEF_LIST")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -2250,7 +2250,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt13 == 2:
                     # BELScript_Python_v1.g:137:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_URL val= QUOTED_VALUE
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_define_anno_expr_in_define_annotation1049)
                     define_anno_expr67 = self.define_anno_expr()
 
@@ -2258,29 +2258,29 @@ class BELScript_Python_v1Parser(Parser):
                     stream_define_anno_expr.add(define_anno_expr67.tree)
 
 
-                    OBJECT_IDENT68 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_annotation1051) 
+                    OBJECT_IDENT68 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_annotation1051)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT68)
 
 
-                    KWRD_AS69 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_annotation1053) 
+                    KWRD_AS69 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_annotation1053)
                     stream_KWRD_AS.add(KWRD_AS69)
 
 
-                    KWRD_URL70 = self.match(self.input, KWRD_URL, self.FOLLOW_KWRD_URL_in_define_annotation1055) 
+                    KWRD_URL70 = self.match(self.input, KWRD_URL, self.FOLLOW_KWRD_URL_in_define_annotation1055)
                     stream_KWRD_URL.add(KWRD_URL70)
 
 
-                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_annotation1059) 
+                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_annotation1059)
                     stream_QUOTED_VALUE.add(val)
 
 
                     # AST Rewrite
-                    # elements: val, OBJECT_IDENT
+                    # elements: OBJECT_IDENT, val
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -2297,7 +2297,7 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(ANNO_DEF_URL, "ANNO_DEF_URL")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -2315,7 +2315,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt13 == 3:
                     # BELScript_Python_v1.g:139:9: define_anno_expr OBJECT_IDENT KWRD_AS KWRD_PATTERN val= QUOTED_VALUE
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_define_anno_expr_in_define_annotation1088)
                     define_anno_expr71 = self.define_anno_expr()
 
@@ -2323,19 +2323,19 @@ class BELScript_Python_v1Parser(Parser):
                     stream_define_anno_expr.add(define_anno_expr71.tree)
 
 
-                    OBJECT_IDENT72 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_annotation1090) 
+                    OBJECT_IDENT72 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_define_annotation1090)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT72)
 
 
-                    KWRD_AS73 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_annotation1092) 
+                    KWRD_AS73 = self.match(self.input, KWRD_AS, self.FOLLOW_KWRD_AS_in_define_annotation1092)
                     stream_KWRD_AS.add(KWRD_AS73)
 
 
-                    KWRD_PATTERN74 = self.match(self.input, KWRD_PATTERN, self.FOLLOW_KWRD_PATTERN_in_define_annotation1094) 
+                    KWRD_PATTERN74 = self.match(self.input, KWRD_PATTERN, self.FOLLOW_KWRD_PATTERN_in_define_annotation1094)
                     stream_KWRD_PATTERN.add(KWRD_PATTERN74)
 
 
-                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_annotation1098) 
+                    val = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_define_annotation1098)
                     stream_QUOTED_VALUE.add(val)
 
 
@@ -2343,9 +2343,9 @@ class BELScript_Python_v1Parser(Parser):
                     # elements: val, OBJECT_IDENT
                     # token labels: val
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     stream_val = RewriteRuleTokenStream(self._adaptor, "token val", val)
                     if retval is not None:
@@ -2362,7 +2362,7 @@ class BELScript_Python_v1Parser(Parser):
                     self._adaptor.createFromType(ANNO_DEF_PTRN, "ANNO_DEF_PTRN")
                     , root_1)
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -2425,7 +2425,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:144:5: ( KWRD_AUTHORS | KWRD_CONTACTINFO | KWRD_COPYRIGHT | KWRD_DESC | KWRD_DISCLAIMER | KWRD_LICENSES | KWRD_NAME | KWRD_VERSION )
                 # BELScript_Python_v1.g:
-                pass 
+                pass
                 root_0 = self._adaptor.nil()
 
 
@@ -2527,7 +2527,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 if alt16 == 1:
                     # BELScript_Python_v1.g:155:9: ( COMMA )? term
-                    pass 
+                    pass
                     # BELScript_Python_v1.g:155:9: ( COMMA )?
                     alt14 = 2
                     LA14_0 = self.input.LA(1)
@@ -2536,8 +2536,8 @@ class BELScript_Python_v1Parser(Parser):
                         alt14 = 1
                     if alt14 == 1:
                         # BELScript_Python_v1.g:155:9: COMMA
-                        pass 
-                        COMMA76 = self.match(self.input, COMMA, self.FOLLOW_COMMA_in_argument1225) 
+                        pass
+                        COMMA76 = self.match(self.input, COMMA, self.FOLLOW_COMMA_in_argument1225)
                         stream_COMMA.add(COMMA76)
 
 
@@ -2553,11 +2553,11 @@ class BELScript_Python_v1Parser(Parser):
 
                     # AST Rewrite
                     # elements: term
-                    # token labels: 
+                    # token labels:
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     if retval is not None:
                         stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -2579,7 +2579,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt16 == 2:
                     # BELScript_Python_v1.g:156:9: ( COMMA )? param
-                    pass 
+                    pass
                     # BELScript_Python_v1.g:156:9: ( COMMA )?
                     alt15 = 2
                     LA15_0 = self.input.LA(1)
@@ -2588,8 +2588,8 @@ class BELScript_Python_v1Parser(Parser):
                         alt15 = 1
                     if alt15 == 1:
                         # BELScript_Python_v1.g:156:9: COMMA
-                        pass 
-                        COMMA78 = self.match(self.input, COMMA, self.FOLLOW_COMMA_in_argument1242) 
+                        pass
+                        COMMA78 = self.match(self.input, COMMA, self.FOLLOW_COMMA_in_argument1242)
                         stream_COMMA.add(COMMA78)
 
 
@@ -2605,11 +2605,11 @@ class BELScript_Python_v1Parser(Parser):
 
                     # AST Rewrite
                     # elements: param
-                    # token labels: 
+                    # token labels:
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     if retval is not None:
                         stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -2685,7 +2685,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:160:5: ( function LP ( argument )* RP -> ^( TERMDEF function ( argument )* ) )
                 # BELScript_Python_v1.g:160:9: function LP ( argument )* RP
-                pass 
+                pass
                 self._state.following.append(self.FOLLOW_function_in_term1268)
                 function80 = self.function()
 
@@ -2693,7 +2693,7 @@ class BELScript_Python_v1Parser(Parser):
                 stream_function.add(function80.tree)
 
 
-                LP81 = self.match(self.input, LP, self.FOLLOW_LP_in_term1270) 
+                LP81 = self.match(self.input, LP, self.FOLLOW_LP_in_term1270)
                 stream_LP.add(LP81)
 
 
@@ -2708,7 +2708,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt17 == 1:
                         # BELScript_Python_v1.g:160:22: argument
-                        pass 
+                        pass
                         self._state.following.append(self.FOLLOW_argument_in_term1273)
                         argument82 = self.argument()
 
@@ -2721,17 +2721,17 @@ class BELScript_Python_v1Parser(Parser):
                         break #loop17
 
 
-                RP83 = self.match(self.input, RP, self.FOLLOW_RP_in_term1277) 
+                RP83 = self.match(self.input, RP, self.FOLLOW_RP_in_term1277)
                 stream_RP.add(RP83)
 
 
                 # AST Rewrite
-                # elements: function, argument
-                # token labels: 
+                # elements: argument, function
+                # token labels:
                 # rule labels: retval
-                # token list labels: 
-                # rule list labels: 
-                # wildcard labels: 
+                # token list labels:
+                # rule list labels:
+                # wildcard labels:
                 retval.tree = root_0
                 if retval is not None:
                     stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -2834,7 +2834,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:167:5: (subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )? -> ^( STMTDEF ( $comment)? $subject ( $rel)? ( $obj)? ( $obj_sub)? ( $obj_rel)? ( $obj_obj)? ) )
                 # BELScript_Python_v1.g:167:9: subject= term (rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term ) )? (comment= STATEMENT_COMMENT )?
-                pass 
+                pass
                 self._state.following.append(self.FOLLOW_term_in_statement1319)
                 subject = self.term()
 
@@ -2850,7 +2850,7 @@ class BELScript_Python_v1Parser(Parser):
                     alt19 = 1
                 if alt19 == 1:
                     # BELScript_Python_v1.g:167:23: rel= relationship ( LP obj_sub= term obj_rel= relationship obj_obj= term RP |obj= term )
-                    pass 
+                    pass
                     self._state.following.append(self.FOLLOW_relationship_in_statement1324)
                     rel = self.relationship()
 
@@ -2874,8 +2874,8 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt18 == 1:
                         # BELScript_Python_v1.g:167:41: LP obj_sub= term obj_rel= relationship obj_obj= term RP
-                        pass 
-                        LP84 = self.match(self.input, LP, self.FOLLOW_LP_in_statement1327) 
+                        pass
+                        LP84 = self.match(self.input, LP, self.FOLLOW_LP_in_statement1327)
                         stream_LP.add(LP84)
 
 
@@ -2900,14 +2900,14 @@ class BELScript_Python_v1Parser(Parser):
                         stream_term.add(obj_obj.tree)
 
 
-                        RP85 = self.match(self.input, RP, self.FOLLOW_RP_in_statement1341) 
+                        RP85 = self.match(self.input, RP, self.FOLLOW_RP_in_statement1341)
                         stream_RP.add(RP85)
 
 
 
                     elif alt18 == 2:
                         # BELScript_Python_v1.g:167:96: obj= term
-                        pass 
+                        pass
                         self._state.following.append(self.FOLLOW_term_in_statement1347)
                         obj = self.term()
 
@@ -2929,8 +2929,8 @@ class BELScript_Python_v1Parser(Parser):
                     alt20 = 1
                 if alt20 == 1:
                     # BELScript_Python_v1.g:167:115: comment= STATEMENT_COMMENT
-                    pass 
-                    comment = self.match(self.input, STATEMENT_COMMENT, self.FOLLOW_STATEMENT_COMMENT_in_statement1354) 
+                    pass
+                    comment = self.match(self.input, STATEMENT_COMMENT, self.FOLLOW_STATEMENT_COMMENT_in_statement1354)
                     stream_STATEMENT_COMMENT.add(comment)
 
 
@@ -2938,12 +2938,12 @@ class BELScript_Python_v1Parser(Parser):
 
 
                 # AST Rewrite
-                # elements: obj_obj, obj_rel, obj, comment, obj_sub, subject, rel
+                # elements: obj_rel, obj_obj, subject, obj, rel, comment, obj_sub
                 # token labels: comment
                 # rule labels: obj_obj, retval, obj_sub, subject, obj, rel, obj_rel
-                # token list labels: 
-                # rule list labels: 
-                # wildcard labels: 
+                # token list labels:
+                # rule list labels:
+                # wildcard labels:
                 retval.tree = root_0
                 stream_comment = RewriteRuleTokenStream(self._adaptor, "token comment", comment)
                 if obj_obj is not None:
@@ -3094,7 +3094,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:172:5: ( OBJECT_IDENT COLON !)
                 # BELScript_Python_v1.g:172:9: OBJECT_IDENT COLON !
-                pass 
+                pass
                 root_0 = self._adaptor.nil()
 
 
@@ -3199,7 +3199,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 if alt23 == 1:
                     # BELScript_Python_v1.g:176:9: ( ns_prefix )? OBJECT_IDENT
-                    pass 
+                    pass
                     # BELScript_Python_v1.g:176:9: ( ns_prefix )?
                     alt21 = 2
                     LA21_0 = self.input.LA(1)
@@ -3211,7 +3211,7 @@ class BELScript_Python_v1Parser(Parser):
                             alt21 = 1
                     if alt21 == 1:
                         # BELScript_Python_v1.g:176:9: ns_prefix
-                        pass 
+                        pass
                         self._state.following.append(self.FOLLOW_ns_prefix_in_param1437)
                         ns_prefix88 = self.ns_prefix()
 
@@ -3222,17 +3222,17 @@ class BELScript_Python_v1Parser(Parser):
 
 
 
-                    OBJECT_IDENT89 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_param1440) 
+                    OBJECT_IDENT89 = self.match(self.input, OBJECT_IDENT, self.FOLLOW_OBJECT_IDENT_in_param1440)
                     stream_OBJECT_IDENT.add(OBJECT_IDENT89)
 
 
                     # AST Rewrite
-                    # elements: ns_prefix, OBJECT_IDENT
-                    # token labels: 
+                    # elements: OBJECT_IDENT, ns_prefix
+                    # token labels:
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     if retval is not None:
                         stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -3255,7 +3255,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     stream_ns_prefix.reset();
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_OBJECT_IDENT.nextNode()
                     )
 
@@ -3271,7 +3271,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 elif alt23 == 2:
                     # BELScript_Python_v1.g:177:9: ( ns_prefix )? QUOTED_VALUE
-                    pass 
+                    pass
                     # BELScript_Python_v1.g:177:9: ( ns_prefix )?
                     alt22 = 2
                     LA22_0 = self.input.LA(1)
@@ -3280,7 +3280,7 @@ class BELScript_Python_v1Parser(Parser):
                         alt22 = 1
                     if alt22 == 1:
                         # BELScript_Python_v1.g:177:9: ns_prefix
-                        pass 
+                        pass
                         self._state.following.append(self.FOLLOW_ns_prefix_in_param1461)
                         ns_prefix90 = self.ns_prefix()
 
@@ -3291,17 +3291,17 @@ class BELScript_Python_v1Parser(Parser):
 
 
 
-                    QUOTED_VALUE91 = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_param1464) 
+                    QUOTED_VALUE91 = self.match(self.input, QUOTED_VALUE, self.FOLLOW_QUOTED_VALUE_in_param1464)
                     stream_QUOTED_VALUE.add(QUOTED_VALUE91)
 
 
                     # AST Rewrite
                     # elements: QUOTED_VALUE, ns_prefix
-                    # token labels: 
+                    # token labels:
                     # rule labels: retval
-                    # token list labels: 
-                    # rule list labels: 
-                    # wildcard labels: 
+                    # token list labels:
+                    # rule list labels:
+                    # wildcard labels:
                     retval.tree = root_0
                     if retval is not None:
                         stream_retval = RewriteRuleSubtreeStream(self._adaptor, "rule retval", retval.tree)
@@ -3324,7 +3324,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     stream_ns_prefix.reset();
 
-                    self._adaptor.addChild(root_1, 
+                    self._adaptor.addChild(root_1,
                     stream_QUOTED_VALUE.nextNode()
                     )
 
@@ -3513,7 +3513,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 if alt24 == 1:
                     # BELScript_Python_v1.g:181:9: fv= 'proteinAbundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3524,14 +3524,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "p" 
+                    retval.r =  "p"
                     #action end
 
 
 
                 elif alt24 == 2:
                     # BELScript_Python_v1.g:182:9: fv= 'p'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3542,14 +3542,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "p" 
+                    retval.r =  "p"
                     #action end
 
 
 
                 elif alt24 == 3:
                     # BELScript_Python_v1.g:183:9: fv= 'rnaAbundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3560,14 +3560,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "r" 
+                    retval.r =  "r"
                     #action end
 
 
 
                 elif alt24 == 4:
                     # BELScript_Python_v1.g:184:9: fv= 'r'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3578,14 +3578,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "r" 
+                    retval.r =  "r"
                     #action end
 
 
 
                 elif alt24 == 5:
                     # BELScript_Python_v1.g:185:9: fv= 'abundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3596,14 +3596,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "a" 
+                    retval.r =  "a"
                     #action end
 
 
 
                 elif alt24 == 6:
                     # BELScript_Python_v1.g:186:9: fv= 'a'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3614,14 +3614,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "a" 
+                    retval.r =  "a"
                     #action end
 
 
 
                 elif alt24 == 7:
                     # BELScript_Python_v1.g:187:9: fv= 'microRNAAbundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3632,14 +3632,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "m" 
+                    retval.r =  "m"
                     #action end
 
 
 
                 elif alt24 == 8:
                     # BELScript_Python_v1.g:188:9: fv= 'm'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3650,14 +3650,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "m" 
+                    retval.r =  "m"
                     #action end
 
 
 
                 elif alt24 == 9:
                     # BELScript_Python_v1.g:189:9: fv= 'geneAbundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3668,14 +3668,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "g" 
+                    retval.r =  "g"
                     #action end
 
 
 
                 elif alt24 == 10:
                     # BELScript_Python_v1.g:190:9: fv= 'g'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3686,14 +3686,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "g" 
+                    retval.r =  "g"
                     #action end
 
 
 
                 elif alt24 == 11:
                     # BELScript_Python_v1.g:191:9: fv= 'biologicalProcess'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3704,14 +3704,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "bp" 
+                    retval.r =  "bp"
                     #action end
 
 
 
                 elif alt24 == 12:
                     # BELScript_Python_v1.g:192:9: fv= 'bp'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3722,14 +3722,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "bp" 
+                    retval.r =  "bp"
                     #action end
 
 
 
                 elif alt24 == 13:
                     # BELScript_Python_v1.g:193:9: fv= 'pathology'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3740,14 +3740,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "path" 
+                    retval.r =  "path"
                     #action end
 
 
 
                 elif alt24 == 14:
                     # BELScript_Python_v1.g:194:9: fv= 'path'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3758,14 +3758,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "path" 
+                    retval.r =  "path"
                     #action end
 
 
 
                 elif alt24 == 15:
                     # BELScript_Python_v1.g:195:9: fv= 'complexAbundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3776,14 +3776,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "complex" 
+                    retval.r =  "complex"
                     #action end
 
 
 
                 elif alt24 == 16:
                     # BELScript_Python_v1.g:196:9: fv= 'complex'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3794,14 +3794,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "complex" 
+                    retval.r =  "complex"
                     #action end
 
 
 
                 elif alt24 == 17:
                     # BELScript_Python_v1.g:197:9: fv= 'translocation'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3812,14 +3812,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "tloc" 
+                    retval.r =  "tloc"
                     #action end
 
 
 
                 elif alt24 == 18:
                     # BELScript_Python_v1.g:198:9: fv= 'tloc'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3830,14 +3830,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "tloc" 
+                    retval.r =  "tloc"
                     #action end
 
 
 
                 elif alt24 == 19:
                     # BELScript_Python_v1.g:199:9: fv= 'cellSecretion'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3848,14 +3848,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "sec" 
+                    retval.r =  "sec"
                     #action end
 
 
 
                 elif alt24 == 20:
                     # BELScript_Python_v1.g:200:9: fv= 'sec'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3866,14 +3866,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "sec" 
+                    retval.r =  "sec"
                     #action end
 
 
 
                 elif alt24 == 21:
                     # BELScript_Python_v1.g:201:9: fv= 'cellSurfaceExpression'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3884,14 +3884,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "surf" 
+                    retval.r =  "surf"
                     #action end
 
 
 
                 elif alt24 == 22:
                     # BELScript_Python_v1.g:202:9: fv= 'surf'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3902,14 +3902,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "surf" 
+                    retval.r =  "surf"
                     #action end
 
 
 
                 elif alt24 == 23:
                     # BELScript_Python_v1.g:203:9: fv= 'reaction'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3920,14 +3920,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "rxn" 
+                    retval.r =  "rxn"
                     #action end
 
 
 
                 elif alt24 == 24:
                     # BELScript_Python_v1.g:204:9: fv= 'rxn'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3938,14 +3938,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "rxn" 
+                    retval.r =  "rxn"
                     #action end
 
 
 
                 elif alt24 == 25:
                     # BELScript_Python_v1.g:205:9: fv= 'compositeAbundance'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3956,14 +3956,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "composite" 
+                    retval.r =  "composite"
                     #action end
 
 
 
                 elif alt24 == 26:
                     # BELScript_Python_v1.g:206:9: fv= 'composite'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3974,14 +3974,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "composite" 
+                    retval.r =  "composite"
                     #action end
 
 
 
                 elif alt24 == 27:
                     # BELScript_Python_v1.g:207:9: fv= 'fusion'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -3992,14 +3992,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "fus" 
+                    retval.r =  "fus"
                     #action end
 
 
 
                 elif alt24 == 28:
                     # BELScript_Python_v1.g:208:9: fv= 'fus'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4010,14 +4010,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "fus" 
+                    retval.r =  "fus"
                     #action end
 
 
 
                 elif alt24 == 29:
                     # BELScript_Python_v1.g:209:9: fv= 'degradation'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4028,14 +4028,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "deg" 
+                    retval.r =  "deg"
                     #action end
 
 
 
                 elif alt24 == 30:
                     # BELScript_Python_v1.g:210:9: fv= 'deg'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4046,14 +4046,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "deg" 
+                    retval.r =  "deg"
                     #action end
 
 
 
                 elif alt24 == 31:
                     # BELScript_Python_v1.g:211:9: fv= 'molecularActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4064,14 +4064,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "act" 
+                    retval.r =  "act"
                     #action end
 
 
 
                 elif alt24 == 32:
                     # BELScript_Python_v1.g:212:9: fv= 'act'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4082,14 +4082,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "act" 
+                    retval.r =  "act"
                     #action end
 
 
 
                 elif alt24 == 33:
                     # BELScript_Python_v1.g:213:9: fv= 'catalyticActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4100,14 +4100,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "cat" 
+                    retval.r =  "cat"
                     #action end
 
 
 
                 elif alt24 == 34:
                     # BELScript_Python_v1.g:214:9: fv= 'cat'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4118,14 +4118,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "cat" 
+                    retval.r =  "cat"
                     #action end
 
 
 
                 elif alt24 == 35:
                     # BELScript_Python_v1.g:215:9: fv= 'kinaseActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4136,14 +4136,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "kin" 
+                    retval.r =  "kin"
                     #action end
 
 
 
                 elif alt24 == 36:
                     # BELScript_Python_v1.g:216:9: fv= 'kin'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4154,14 +4154,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "kin" 
+                    retval.r =  "kin"
                     #action end
 
 
 
                 elif alt24 == 37:
                     # BELScript_Python_v1.g:217:9: fv= 'phosphataseActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4172,14 +4172,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "phos" 
+                    retval.r =  "phos"
                     #action end
 
 
 
                 elif alt24 == 38:
                     # BELScript_Python_v1.g:218:9: fv= 'phos'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4190,14 +4190,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "phos" 
+                    retval.r =  "phos"
                     #action end
 
 
 
                 elif alt24 == 39:
                     # BELScript_Python_v1.g:219:9: fv= 'peptidaseActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4208,14 +4208,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "pep" 
+                    retval.r =  "pep"
                     #action end
 
 
 
                 elif alt24 == 40:
                     # BELScript_Python_v1.g:220:9: fv= 'pep'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4226,14 +4226,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "pep" 
+                    retval.r =  "pep"
                     #action end
 
 
 
                 elif alt24 == 41:
                     # BELScript_Python_v1.g:221:9: fv= 'ribosylationActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4244,14 +4244,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "ribo" 
+                    retval.r =  "ribo"
                     #action end
 
 
 
                 elif alt24 == 42:
                     # BELScript_Python_v1.g:222:9: fv= 'ribo'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4262,14 +4262,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "ribo" 
+                    retval.r =  "ribo"
                     #action end
 
 
 
                 elif alt24 == 43:
                     # BELScript_Python_v1.g:223:9: fv= 'transcriptionalActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4280,14 +4280,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "tscript" 
+                    retval.r =  "tscript"
                     #action end
 
 
 
                 elif alt24 == 44:
                     # BELScript_Python_v1.g:224:9: fv= 'tscript'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4298,14 +4298,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "tscript" 
+                    retval.r =  "tscript"
                     #action end
 
 
 
                 elif alt24 == 45:
                     # BELScript_Python_v1.g:225:9: fv= 'transportActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4316,14 +4316,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "tport" 
+                    retval.r =  "tport"
                     #action end
 
 
 
                 elif alt24 == 46:
                     # BELScript_Python_v1.g:226:9: fv= 'tport'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4334,14 +4334,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "tport" 
+                    retval.r =  "tport"
                     #action end
 
 
 
                 elif alt24 == 47:
                     # BELScript_Python_v1.g:227:9: fv= 'gtpBoundActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4352,14 +4352,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "gtp" 
+                    retval.r =  "gtp"
                     #action end
 
 
 
                 elif alt24 == 48:
                     # BELScript_Python_v1.g:228:9: fv= 'gtp'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4370,14 +4370,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "gtp" 
+                    retval.r =  "gtp"
                     #action end
 
 
 
                 elif alt24 == 49:
                     # BELScript_Python_v1.g:229:9: fv= 'chaperoneActivity'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4388,14 +4388,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "chap" 
+                    retval.r =  "chap"
                     #action end
 
 
 
                 elif alt24 == 50:
                     # BELScript_Python_v1.g:230:9: fv= 'chap'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4406,14 +4406,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "chap" 
+                    retval.r =  "chap"
                     #action end
 
 
 
                 elif alt24 == 51:
                     # BELScript_Python_v1.g:231:9: fv= 'proteinModification'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4424,14 +4424,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "pmod" 
+                    retval.r =  "pmod"
                     #action end
 
 
 
                 elif alt24 == 52:
                     # BELScript_Python_v1.g:232:9: fv= 'pmod'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4442,14 +4442,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "pmod" 
+                    retval.r =  "pmod"
                     #action end
 
 
 
                 elif alt24 == 53:
                     # BELScript_Python_v1.g:233:9: fv= 'substitution'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4460,14 +4460,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "sub" 
+                    retval.r =  "sub"
                     #action end
 
 
 
                 elif alt24 == 54:
                     # BELScript_Python_v1.g:234:9: fv= 'sub'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4478,14 +4478,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "sub" 
+                    retval.r =  "sub"
                     #action end
 
 
 
                 elif alt24 == 55:
                     # BELScript_Python_v1.g:235:9: fv= 'truncation'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4496,14 +4496,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "trunc" 
+                    retval.r =  "trunc"
                     #action end
 
 
 
                 elif alt24 == 56:
                     # BELScript_Python_v1.g:236:9: fv= 'trunc'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4514,14 +4514,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "trunc" 
+                    retval.r =  "trunc"
                     #action end
 
 
 
                 elif alt24 == 57:
                     # BELScript_Python_v1.g:237:9: fv= 'reactants'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4532,14 +4532,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "reactants" 
+                    retval.r =  "reactants"
                     #action end
 
 
 
                 elif alt24 == 58:
                     # BELScript_Python_v1.g:238:9: fv= 'products'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4550,14 +4550,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "products" 
+                    retval.r =  "products"
                     #action end
 
 
 
                 elif alt24 == 59:
                     # BELScript_Python_v1.g:239:9: fv= 'list'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4568,7 +4568,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "list" 
+                    retval.r =  "list"
                     #action end
 
 
@@ -4686,7 +4686,7 @@ class BELScript_Python_v1Parser(Parser):
 
                 if alt25 == 1:
                     # BELScript_Python_v1.g:243:9: rv= 'increases'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4697,14 +4697,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "increases" 
+                    retval.r =  "increases"
                     #action end
 
 
 
                 elif alt25 == 2:
                     # BELScript_Python_v1.g:244:9: rv= '->'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4715,14 +4715,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "increases" 
+                    retval.r =  "increases"
                     #action end
 
 
 
                 elif alt25 == 3:
                     # BELScript_Python_v1.g:245:9: rv= 'decreases'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4733,14 +4733,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "decreases" 
+                    retval.r =  "decreases"
                     #action end
 
 
 
                 elif alt25 == 4:
                     # BELScript_Python_v1.g:246:9: rv= '-|'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4751,14 +4751,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "decreases" 
+                    retval.r =  "decreases"
                     #action end
 
 
 
                 elif alt25 == 5:
                     # BELScript_Python_v1.g:247:9: rv= 'directlyIncreases'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4769,14 +4769,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "directlyIncreases" 
+                    retval.r =  "directlyIncreases"
                     #action end
 
 
 
                 elif alt25 == 6:
                     # BELScript_Python_v1.g:248:9: rv= '=>'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4787,14 +4787,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "directlyIncreases" 
+                    retval.r =  "directlyIncreases"
                     #action end
 
 
 
                 elif alt25 == 7:
                     # BELScript_Python_v1.g:249:9: rv= 'directlyDecreases'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4805,14 +4805,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "directlyDecreases" 
+                    retval.r =  "directlyDecreases"
                     #action end
 
 
 
                 elif alt25 == 8:
                     # BELScript_Python_v1.g:250:9: rv= '=|'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4823,14 +4823,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "directlyDecreases" 
+                    retval.r =  "directlyDecreases"
                     #action end
 
 
 
                 elif alt25 == 9:
                     # BELScript_Python_v1.g:251:9: rv= 'causesNoChange'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4841,14 +4841,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "causesNoChange" 
+                    retval.r =  "causesNoChange"
                     #action end
 
 
 
                 elif alt25 == 10:
                     # BELScript_Python_v1.g:252:9: rv= 'positiveCorrelation'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4859,14 +4859,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "positiveCorrelation" 
+                    retval.r =  "positiveCorrelation"
                     #action end
 
 
 
                 elif alt25 == 11:
                     # BELScript_Python_v1.g:253:9: rv= 'negativeCorrelation'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4877,14 +4877,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "negativeCorrelation" 
+                    retval.r =  "negativeCorrelation"
                     #action end
 
 
 
                 elif alt25 == 12:
                     # BELScript_Python_v1.g:254:9: rv= 'translatedTo'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4895,14 +4895,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "translatedTo" 
+                    retval.r =  "translatedTo"
                     #action end
 
 
 
                 elif alt25 == 13:
                     # BELScript_Python_v1.g:255:9: rv= '>>'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4913,14 +4913,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "translatedTo" 
+                    retval.r =  "translatedTo"
                     #action end
 
 
 
                 elif alt25 == 14:
                     # BELScript_Python_v1.g:256:9: rv= 'transcribedTo'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4931,14 +4931,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "transcribedTo" 
+                    retval.r =  "transcribedTo"
                     #action end
 
 
 
                 elif alt25 == 15:
                     # BELScript_Python_v1.g:257:9: rv= ':>'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4949,14 +4949,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "transcribedTo" 
+                    retval.r =  "transcribedTo"
                     #action end
 
 
 
                 elif alt25 == 16:
                     # BELScript_Python_v1.g:258:9: rv= 'isA'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4967,14 +4967,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "isA" 
+                    retval.r =  "isA"
                     #action end
 
 
 
                 elif alt25 == 17:
                     # BELScript_Python_v1.g:259:9: rv= 'subProcessOf'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -4985,14 +4985,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "subProcessOf" 
+                    retval.r =  "subProcessOf"
                     #action end
 
 
 
                 elif alt25 == 18:
                     # BELScript_Python_v1.g:260:9: rv= 'rateLimitingStepOf'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5003,14 +5003,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "rateLimitingStepOf" 
+                    retval.r =  "rateLimitingStepOf"
                     #action end
 
 
 
                 elif alt25 == 19:
                     # BELScript_Python_v1.g:261:9: rv= 'biomarkerFor'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5021,14 +5021,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "biomarkerFor" 
+                    retval.r =  "biomarkerFor"
                     #action end
 
 
 
                 elif alt25 == 20:
                     # BELScript_Python_v1.g:262:9: rv= 'prognosticBiomarkerFor'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5039,14 +5039,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "prognosticBiomarkerFor" 
+                    retval.r =  "prognosticBiomarkerFor"
                     #action end
 
 
 
                 elif alt25 == 21:
                     # BELScript_Python_v1.g:263:9: rv= 'orthologous'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5057,14 +5057,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "orthologous" 
+                    retval.r =  "orthologous"
                     #action end
 
 
 
                 elif alt25 == 22:
                     # BELScript_Python_v1.g:264:9: rv= 'analogous'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5075,14 +5075,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "analogous" 
+                    retval.r =  "analogous"
                     #action end
 
 
 
                 elif alt25 == 23:
                     # BELScript_Python_v1.g:265:9: rv= 'association'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5093,14 +5093,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "association" 
+                    retval.r =  "association"
                     #action end
 
 
 
                 elif alt25 == 24:
                     # BELScript_Python_v1.g:266:9: rv= '--'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5111,14 +5111,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "association" 
+                    retval.r =  "association"
                     #action end
 
 
 
                 elif alt25 == 25:
                     # BELScript_Python_v1.g:267:9: rv= 'hasMembers'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5129,14 +5129,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "hasMembers" 
+                    retval.r =  "hasMembers"
                     #action end
 
 
 
                 elif alt25 == 26:
                     # BELScript_Python_v1.g:268:9: rv= 'hasComponents'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5147,14 +5147,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "hasComponents" 
+                    retval.r =  "hasComponents"
                     #action end
 
 
 
                 elif alt25 == 27:
                     # BELScript_Python_v1.g:269:9: rv= 'hasMember'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5165,14 +5165,14 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "hasMember" 
+                    retval.r =  "hasMember"
                     #action end
 
 
 
                 elif alt25 == 28:
                     # BELScript_Python_v1.g:270:9: rv= 'hasComponent'
-                    pass 
+                    pass
                     root_0 = self._adaptor.nil()
 
 
@@ -5183,7 +5183,7 @@ class BELScript_Python_v1Parser(Parser):
 
 
                     #action start
-                    retval.r =  "hasComponent" 
+                    retval.r =  "hasComponent"
                     #action end
 
 
@@ -5239,7 +5239,7 @@ class BELScript_Python_v1Parser(Parser):
             try:
                 # BELScript_Python_v1.g:274:5: ( ( WS )* EQ ( WS )* )
                 # BELScript_Python_v1.g:274:9: ( WS )* EQ ( WS )*
-                pass 
+                pass
                 root_0 = self._adaptor.nil()
 
 
@@ -5254,7 +5254,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt26 == 1:
                         # BELScript_Python_v1.g:274:9: WS
-                        pass 
+                        pass
                         WS92 = self.match(self.input, WS, self.FOLLOW_WS_in_eq_clause4179)
                         WS92_tree = self._adaptor.createWithPayload(WS92)
                         self._adaptor.addChild(root_0, WS92_tree)
@@ -5283,7 +5283,7 @@ class BELScript_Python_v1Parser(Parser):
 
                     if alt27 == 1:
                         # BELScript_Python_v1.g:274:16: WS
-                        pass 
+                        pass
                         WS94 = self.match(self.input, WS, self.FOLLOW_WS_in_eq_clause4184)
                         WS94_tree = self._adaptor.createWithPayload(WS94)
                         self._adaptor.addChild(root_0, WS94_tree)
@@ -5556,7 +5556,7 @@ class BELScript_Python_v1Parser(Parser):
         pass
 
 
- 
+
 
     FOLLOW_NEWLINE_in_document327 = frozenset([18, 28, 38, 40, 45, 71, 72, 73, 76, 78, 79, 80, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 95, 96, 97, 98, 99, 100, 107, 108, 109, 110, 111, 112, 115, 116, 117, 118, 119, 120, 121, 122, 124, 126, 127, 128, 130, 131, 132, 133, 134, 135, 136, 137, 139, 140, 141, 142, 144, 146, 147, 148, 149, 150])
     FOLLOW_DOCUMENT_COMMENT_in_document331 = frozenset([18, 28, 38, 40, 45, 71, 72, 73, 76, 78, 79, 80, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 95, 96, 97, 98, 99, 100, 107, 108, 109, 110, 111, 112, 115, 116, 117, 118, 119, 120, 121, 122, 124, 126, 127, 128, 130, 131, 132, 133, 134, 135, 136, 137, 139, 140, 141, 142, 144, 146, 147, 148, 149, 150])

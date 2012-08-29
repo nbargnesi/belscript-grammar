@@ -1,4 +1,4 @@
-# $ANTLR 3.4 BELScript_Python_v1.g 2012-08-13 14:45:37
+# $ANTLR 3.4 BELScript_Python_v1.g 2012-08-28 20:03:53
 
 import sys
 from antlr3 import *
@@ -196,7 +196,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:7:7: ( '--' )
             # BELScript_Python_v1.g:7:9: '--'
-            pass 
+            pass
             self.match("--")
 
 
@@ -219,7 +219,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:8:7: ( '->' )
             # BELScript_Python_v1.g:8:9: '->'
-            pass 
+            pass
             self.match("->")
 
 
@@ -242,7 +242,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:9:7: ( '-|' )
             # BELScript_Python_v1.g:9:9: '-|'
-            pass 
+            pass
             self.match("-|")
 
 
@@ -265,7 +265,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:10:7: ( ':>' )
             # BELScript_Python_v1.g:10:9: ':>'
-            pass 
+            pass
             self.match(":>")
 
 
@@ -288,7 +288,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:11:7: ( '=>' )
             # BELScript_Python_v1.g:11:9: '=>'
-            pass 
+            pass
             self.match("=>")
 
 
@@ -311,7 +311,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:12:7: ( '=|' )
             # BELScript_Python_v1.g:12:9: '=|'
-            pass 
+            pass
             self.match("=|")
 
 
@@ -334,7 +334,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:13:7: ( '>>' )
             # BELScript_Python_v1.g:13:9: '>>'
-            pass 
+            pass
             self.match(">>")
 
 
@@ -357,7 +357,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:14:7: ( 'a' )
             # BELScript_Python_v1.g:14:9: 'a'
-            pass 
+            pass
             self.match(97)
 
 
@@ -379,7 +379,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:15:7: ( 'abundance' )
             # BELScript_Python_v1.g:15:9: 'abundance'
-            pass 
+            pass
             self.match("abundance")
 
 
@@ -402,7 +402,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:16:7: ( 'act' )
             # BELScript_Python_v1.g:16:9: 'act'
-            pass 
+            pass
             self.match("act")
 
 
@@ -425,7 +425,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:17:7: ( 'analogous' )
             # BELScript_Python_v1.g:17:9: 'analogous'
-            pass 
+            pass
             self.match("analogous")
 
 
@@ -448,7 +448,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:18:7: ( 'association' )
             # BELScript_Python_v1.g:18:9: 'association'
-            pass 
+            pass
             self.match("association")
 
 
@@ -471,7 +471,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:19:7: ( 'biologicalProcess' )
             # BELScript_Python_v1.g:19:9: 'biologicalProcess'
-            pass 
+            pass
             self.match("biologicalProcess")
 
 
@@ -494,7 +494,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:20:7: ( 'biomarkerFor' )
             # BELScript_Python_v1.g:20:9: 'biomarkerFor'
-            pass 
+            pass
             self.match("biomarkerFor")
 
 
@@ -517,7 +517,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:21:7: ( 'bp' )
             # BELScript_Python_v1.g:21:9: 'bp'
-            pass 
+            pass
             self.match("bp")
 
 
@@ -540,7 +540,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:22:7: ( 'cat' )
             # BELScript_Python_v1.g:22:9: 'cat'
-            pass 
+            pass
             self.match("cat")
 
 
@@ -563,7 +563,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:23:7: ( 'catalyticActivity' )
             # BELScript_Python_v1.g:23:9: 'catalyticActivity'
-            pass 
+            pass
             self.match("catalyticActivity")
 
 
@@ -586,7 +586,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:24:7: ( 'causesNoChange' )
             # BELScript_Python_v1.g:24:9: 'causesNoChange'
-            pass 
+            pass
             self.match("causesNoChange")
 
 
@@ -609,7 +609,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:25:7: ( 'cellSecretion' )
             # BELScript_Python_v1.g:25:9: 'cellSecretion'
-            pass 
+            pass
             self.match("cellSecretion")
 
 
@@ -632,7 +632,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:26:7: ( 'cellSurfaceExpression' )
             # BELScript_Python_v1.g:26:9: 'cellSurfaceExpression'
-            pass 
+            pass
             self.match("cellSurfaceExpression")
 
 
@@ -655,7 +655,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:27:7: ( 'chap' )
             # BELScript_Python_v1.g:27:9: 'chap'
-            pass 
+            pass
             self.match("chap")
 
 
@@ -678,7 +678,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:28:7: ( 'chaperoneActivity' )
             # BELScript_Python_v1.g:28:9: 'chaperoneActivity'
-            pass 
+            pass
             self.match("chaperoneActivity")
 
 
@@ -701,7 +701,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:29:7: ( 'complex' )
             # BELScript_Python_v1.g:29:9: 'complex'
-            pass 
+            pass
             self.match("complex")
 
 
@@ -724,7 +724,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:30:7: ( 'complexAbundance' )
             # BELScript_Python_v1.g:30:9: 'complexAbundance'
-            pass 
+            pass
             self.match("complexAbundance")
 
 
@@ -747,7 +747,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:31:7: ( 'composite' )
             # BELScript_Python_v1.g:31:9: 'composite'
-            pass 
+            pass
             self.match("composite")
 
 
@@ -770,7 +770,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:32:7: ( 'compositeAbundance' )
             # BELScript_Python_v1.g:32:9: 'compositeAbundance'
-            pass 
+            pass
             self.match("compositeAbundance")
 
 
@@ -793,7 +793,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:33:7: ( 'decreases' )
             # BELScript_Python_v1.g:33:9: 'decreases'
-            pass 
+            pass
             self.match("decreases")
 
 
@@ -816,7 +816,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:34:7: ( 'deg' )
             # BELScript_Python_v1.g:34:9: 'deg'
-            pass 
+            pass
             self.match("deg")
 
 
@@ -839,7 +839,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:35:7: ( 'degradation' )
             # BELScript_Python_v1.g:35:9: 'degradation'
-            pass 
+            pass
             self.match("degradation")
 
 
@@ -862,7 +862,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:36:7: ( 'directlyDecreases' )
             # BELScript_Python_v1.g:36:9: 'directlyDecreases'
-            pass 
+            pass
             self.match("directlyDecreases")
 
 
@@ -885,7 +885,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:37:7: ( 'directlyIncreases' )
             # BELScript_Python_v1.g:37:9: 'directlyIncreases'
-            pass 
+            pass
             self.match("directlyIncreases")
 
 
@@ -908,7 +908,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:38:7: ( 'fus' )
             # BELScript_Python_v1.g:38:9: 'fus'
-            pass 
+            pass
             self.match("fus")
 
 
@@ -931,7 +931,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:39:7: ( 'fusion' )
             # BELScript_Python_v1.g:39:9: 'fusion'
-            pass 
+            pass
             self.match("fusion")
 
 
@@ -954,7 +954,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:40:7: ( 'g' )
             # BELScript_Python_v1.g:40:9: 'g'
-            pass 
+            pass
             self.match(103)
 
 
@@ -976,7 +976,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:41:7: ( 'geneAbundance' )
             # BELScript_Python_v1.g:41:9: 'geneAbundance'
-            pass 
+            pass
             self.match("geneAbundance")
 
 
@@ -999,7 +999,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:42:7: ( 'gtp' )
             # BELScript_Python_v1.g:42:9: 'gtp'
-            pass 
+            pass
             self.match("gtp")
 
 
@@ -1022,7 +1022,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:43:8: ( 'gtpBoundActivity' )
             # BELScript_Python_v1.g:43:10: 'gtpBoundActivity'
-            pass 
+            pass
             self.match("gtpBoundActivity")
 
 
@@ -1045,7 +1045,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:44:8: ( 'hasComponent' )
             # BELScript_Python_v1.g:44:10: 'hasComponent'
-            pass 
+            pass
             self.match("hasComponent")
 
 
@@ -1068,7 +1068,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:45:8: ( 'hasComponents' )
             # BELScript_Python_v1.g:45:10: 'hasComponents'
-            pass 
+            pass
             self.match("hasComponents")
 
 
@@ -1091,7 +1091,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:46:8: ( 'hasMember' )
             # BELScript_Python_v1.g:46:10: 'hasMember'
-            pass 
+            pass
             self.match("hasMember")
 
 
@@ -1114,7 +1114,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:47:8: ( 'hasMembers' )
             # BELScript_Python_v1.g:47:10: 'hasMembers'
-            pass 
+            pass
             self.match("hasMembers")
 
 
@@ -1137,7 +1137,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:48:8: ( 'increases' )
             # BELScript_Python_v1.g:48:10: 'increases'
-            pass 
+            pass
             self.match("increases")
 
 
@@ -1160,7 +1160,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:49:8: ( 'isA' )
             # BELScript_Python_v1.g:49:10: 'isA'
-            pass 
+            pass
             self.match("isA")
 
 
@@ -1183,7 +1183,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:50:8: ( 'kin' )
             # BELScript_Python_v1.g:50:10: 'kin'
-            pass 
+            pass
             self.match("kin")
 
 
@@ -1206,7 +1206,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:51:8: ( 'kinaseActivity' )
             # BELScript_Python_v1.g:51:10: 'kinaseActivity'
-            pass 
+            pass
             self.match("kinaseActivity")
 
 
@@ -1229,7 +1229,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:52:8: ( 'list' )
             # BELScript_Python_v1.g:52:10: 'list'
-            pass 
+            pass
             self.match("list")
 
 
@@ -1252,7 +1252,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:53:8: ( 'm' )
             # BELScript_Python_v1.g:53:10: 'm'
-            pass 
+            pass
             self.match(109)
 
 
@@ -1274,7 +1274,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:54:8: ( 'microRNAAbundance' )
             # BELScript_Python_v1.g:54:10: 'microRNAAbundance'
-            pass 
+            pass
             self.match("microRNAAbundance")
 
 
@@ -1297,7 +1297,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:55:8: ( 'molecularActivity' )
             # BELScript_Python_v1.g:55:10: 'molecularActivity'
-            pass 
+            pass
             self.match("molecularActivity")
 
 
@@ -1320,7 +1320,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:56:8: ( 'negativeCorrelation' )
             # BELScript_Python_v1.g:56:10: 'negativeCorrelation'
-            pass 
+            pass
             self.match("negativeCorrelation")
 
 
@@ -1343,7 +1343,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:57:8: ( 'orthologous' )
             # BELScript_Python_v1.g:57:10: 'orthologous'
-            pass 
+            pass
             self.match("orthologous")
 
 
@@ -1366,7 +1366,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:58:8: ( 'p' )
             # BELScript_Python_v1.g:58:10: 'p'
-            pass 
+            pass
             self.match(112)
 
 
@@ -1388,7 +1388,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:59:8: ( 'path' )
             # BELScript_Python_v1.g:59:10: 'path'
-            pass 
+            pass
             self.match("path")
 
 
@@ -1411,7 +1411,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:60:8: ( 'pathology' )
             # BELScript_Python_v1.g:60:10: 'pathology'
-            pass 
+            pass
             self.match("pathology")
 
 
@@ -1434,7 +1434,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:61:8: ( 'pep' )
             # BELScript_Python_v1.g:61:10: 'pep'
-            pass 
+            pass
             self.match("pep")
 
 
@@ -1457,7 +1457,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:62:8: ( 'peptidaseActivity' )
             # BELScript_Python_v1.g:62:10: 'peptidaseActivity'
-            pass 
+            pass
             self.match("peptidaseActivity")
 
 
@@ -1480,7 +1480,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:63:8: ( 'phos' )
             # BELScript_Python_v1.g:63:10: 'phos'
-            pass 
+            pass
             self.match("phos")
 
 
@@ -1503,7 +1503,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:64:8: ( 'phosphataseActivity' )
             # BELScript_Python_v1.g:64:10: 'phosphataseActivity'
-            pass 
+            pass
             self.match("phosphataseActivity")
 
 
@@ -1526,7 +1526,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:65:8: ( 'pmod' )
             # BELScript_Python_v1.g:65:10: 'pmod'
-            pass 
+            pass
             self.match("pmod")
 
 
@@ -1549,7 +1549,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:66:8: ( 'positiveCorrelation' )
             # BELScript_Python_v1.g:66:10: 'positiveCorrelation'
-            pass 
+            pass
             self.match("positiveCorrelation")
 
 
@@ -1572,7 +1572,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:67:8: ( 'products' )
             # BELScript_Python_v1.g:67:10: 'products'
-            pass 
+            pass
             self.match("products")
 
 
@@ -1595,7 +1595,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:68:8: ( 'prognosticBiomarkerFor' )
             # BELScript_Python_v1.g:68:10: 'prognosticBiomarkerFor'
-            pass 
+            pass
             self.match("prognosticBiomarkerFor")
 
 
@@ -1618,7 +1618,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:69:8: ( 'proteinAbundance' )
             # BELScript_Python_v1.g:69:10: 'proteinAbundance'
-            pass 
+            pass
             self.match("proteinAbundance")
 
 
@@ -1641,7 +1641,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:70:8: ( 'proteinModification' )
             # BELScript_Python_v1.g:70:10: 'proteinModification'
-            pass 
+            pass
             self.match("proteinModification")
 
 
@@ -1664,7 +1664,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:71:8: ( 'r' )
             # BELScript_Python_v1.g:71:10: 'r'
-            pass 
+            pass
             self.match(114)
 
 
@@ -1686,7 +1686,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:72:8: ( 'rateLimitingStepOf' )
             # BELScript_Python_v1.g:72:10: 'rateLimitingStepOf'
-            pass 
+            pass
             self.match("rateLimitingStepOf")
 
 
@@ -1709,7 +1709,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:73:8: ( 'reactants' )
             # BELScript_Python_v1.g:73:10: 'reactants'
-            pass 
+            pass
             self.match("reactants")
 
 
@@ -1732,7 +1732,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:74:8: ( 'reaction' )
             # BELScript_Python_v1.g:74:10: 'reaction'
-            pass 
+            pass
             self.match("reaction")
 
 
@@ -1755,7 +1755,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:75:8: ( 'ribo' )
             # BELScript_Python_v1.g:75:10: 'ribo'
-            pass 
+            pass
             self.match("ribo")
 
 
@@ -1778,7 +1778,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:76:8: ( 'ribosylationActivity' )
             # BELScript_Python_v1.g:76:10: 'ribosylationActivity'
-            pass 
+            pass
             self.match("ribosylationActivity")
 
 
@@ -1801,7 +1801,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:77:8: ( 'rnaAbundance' )
             # BELScript_Python_v1.g:77:10: 'rnaAbundance'
-            pass 
+            pass
             self.match("rnaAbundance")
 
 
@@ -1824,7 +1824,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:78:8: ( 'rxn' )
             # BELScript_Python_v1.g:78:10: 'rxn'
-            pass 
+            pass
             self.match("rxn")
 
 
@@ -1847,7 +1847,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:79:8: ( 'sec' )
             # BELScript_Python_v1.g:79:10: 'sec'
-            pass 
+            pass
             self.match("sec")
 
 
@@ -1870,7 +1870,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:80:8: ( 'sub' )
             # BELScript_Python_v1.g:80:10: 'sub'
-            pass 
+            pass
             self.match("sub")
 
 
@@ -1893,7 +1893,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:81:8: ( 'subProcessOf' )
             # BELScript_Python_v1.g:81:10: 'subProcessOf'
-            pass 
+            pass
             self.match("subProcessOf")
 
 
@@ -1916,7 +1916,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:82:8: ( 'substitution' )
             # BELScript_Python_v1.g:82:10: 'substitution'
-            pass 
+            pass
             self.match("substitution")
 
 
@@ -1939,7 +1939,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:83:8: ( 'surf' )
             # BELScript_Python_v1.g:83:10: 'surf'
-            pass 
+            pass
             self.match("surf")
 
 
@@ -1962,7 +1962,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:84:8: ( 'tloc' )
             # BELScript_Python_v1.g:84:10: 'tloc'
-            pass 
+            pass
             self.match("tloc")
 
 
@@ -1985,7 +1985,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:85:8: ( 'tport' )
             # BELScript_Python_v1.g:85:10: 'tport'
-            pass 
+            pass
             self.match("tport")
 
 
@@ -2008,7 +2008,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:86:8: ( 'transcribedTo' )
             # BELScript_Python_v1.g:86:10: 'transcribedTo'
-            pass 
+            pass
             self.match("transcribedTo")
 
 
@@ -2031,7 +2031,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:87:8: ( 'transcriptionalActivity' )
             # BELScript_Python_v1.g:87:10: 'transcriptionalActivity'
-            pass 
+            pass
             self.match("transcriptionalActivity")
 
 
@@ -2054,7 +2054,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:88:8: ( 'translatedTo' )
             # BELScript_Python_v1.g:88:10: 'translatedTo'
-            pass 
+            pass
             self.match("translatedTo")
 
 
@@ -2077,7 +2077,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:89:8: ( 'translocation' )
             # BELScript_Python_v1.g:89:10: 'translocation'
-            pass 
+            pass
             self.match("translocation")
 
 
@@ -2100,7 +2100,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:90:8: ( 'transportActivity' )
             # BELScript_Python_v1.g:90:10: 'transportActivity'
-            pass 
+            pass
             self.match("transportActivity")
 
 
@@ -2123,7 +2123,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:91:8: ( 'trunc' )
             # BELScript_Python_v1.g:91:10: 'trunc'
-            pass 
+            pass
             self.match("trunc")
 
 
@@ -2146,7 +2146,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:92:8: ( 'truncation' )
             # BELScript_Python_v1.g:92:10: 'truncation'
-            pass 
+            pass
             self.match("truncation")
 
 
@@ -2169,7 +2169,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:93:8: ( 'tscript' )
             # BELScript_Python_v1.g:93:10: 'tscript'
-            pass 
+            pass
             self.match("tscript")
 
 
@@ -2192,7 +2192,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:278:5: ( '#' (~ ( '\\n' | '\\r' ) )* )
             # BELScript_Python_v1.g:278:9: '#' (~ ( '\\n' | '\\r' ) )*
-            pass 
+            pass
             self.match(35)
 
             # BELScript_Python_v1.g:278:13: (~ ( '\\n' | '\\r' ) )*
@@ -2206,7 +2206,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt1 == 1:
                     # BELScript_Python_v1.g:
-                    pass 
+                    pass
                     if (0 <= self.input.LA(1) <= 9) or (11 <= self.input.LA(1) <= 12) or (14 <= self.input.LA(1) <= 65535):
                         self.input.consume()
                     else:
@@ -2240,7 +2240,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:282:5: ( '//' ( ( '\\\\\\n' ) | ( '\\\\\\r\\n' ) |~ ( '\\n' | '\\r' ) )* )
             # BELScript_Python_v1.g:282:9: '//' ( ( '\\\\\\n' ) | ( '\\\\\\r\\n' ) |~ ( '\\n' | '\\r' ) )*
-            pass 
+            pass
             self.match("//")
 
 
@@ -2264,10 +2264,10 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt2 == 1:
                     # BELScript_Python_v1.g:282:15: ( '\\\\\\n' )
-                    pass 
+                    pass
                     # BELScript_Python_v1.g:282:15: ( '\\\\\\n' )
                     # BELScript_Python_v1.g:282:16: '\\\\\\n'
-                    pass 
+                    pass
                     self.match("\\\n")
 
 
@@ -2277,10 +2277,10 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 elif alt2 == 2:
                     # BELScript_Python_v1.g:282:26: ( '\\\\\\r\\n' )
-                    pass 
+                    pass
                     # BELScript_Python_v1.g:282:26: ( '\\\\\\r\\n' )
                     # BELScript_Python_v1.g:282:27: '\\\\\\r\\n'
-                    pass 
+                    pass
                     self.match("\\\r\n")
 
 
@@ -2290,7 +2290,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 elif alt2 == 3:
                     # BELScript_Python_v1.g:282:39: ~ ( '\\n' | '\\r' )
-                    pass 
+                    pass
                     if (0 <= self.input.LA(1) <= 9) or (11 <= self.input.LA(1) <= 12) or (14 <= self.input.LA(1) <= 65535):
                         self.input.consume()
                     else:
@@ -2324,7 +2324,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:286:5: ( '{' OBJECT_IDENT ( COMMA OBJECT_IDENT )* '}' )
             # BELScript_Python_v1.g:286:9: '{' OBJECT_IDENT ( COMMA OBJECT_IDENT )* '}'
-            pass 
+            pass
             self.match(123)
 
             self.mOBJECT_IDENT()
@@ -2341,7 +2341,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt3 == 1:
                     # BELScript_Python_v1.g:286:27: COMMA OBJECT_IDENT
-                    pass 
+                    pass
                     self.mCOMMA()
 
 
@@ -2374,7 +2374,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:290:5: ( '{' ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? ( COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? )* '}' )
             # BELScript_Python_v1.g:290:9: '{' ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? ( COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? )* '}'
-            pass 
+            pass
             self.match(123)
 
             # BELScript_Python_v1.g:290:13: ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
@@ -2388,21 +2388,21 @@ class BELScript_Python_v1Lexer(Lexer):
                 alt4 = 3
             if alt4 == 1:
                 # BELScript_Python_v1.g:290:14: OBJECT_IDENT
-                pass 
+                pass
                 self.mOBJECT_IDENT()
 
 
 
             elif alt4 == 2:
                 # BELScript_Python_v1.g:290:29: QUOTED_VALUE
-                pass 
+                pass
                 self.mQUOTED_VALUE()
 
 
 
             elif alt4 == 3:
                 # BELScript_Python_v1.g:290:44: VALUE_LIST
-                pass 
+                pass
                 self.mVALUE_LIST()
 
 
@@ -2420,7 +2420,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt7 == 1:
                     # BELScript_Python_v1.g:290:58: COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
-                    pass 
+                    pass
                     self.mCOMMA()
 
 
@@ -2435,7 +2435,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
                         if alt5 == 1:
                             # BELScript_Python_v1.g:290:65: ' '
-                            pass 
+                            pass
                             self.match(32)
 
 
@@ -2454,21 +2454,21 @@ class BELScript_Python_v1Lexer(Lexer):
                         alt6 = 3
                     if alt6 == 1:
                         # BELScript_Python_v1.g:290:72: OBJECT_IDENT
-                        pass 
+                        pass
                         self.mOBJECT_IDENT()
 
 
 
                     elif alt6 == 2:
                         # BELScript_Python_v1.g:290:87: QUOTED_VALUE
-                        pass 
+                        pass
                         self.mQUOTED_VALUE()
 
 
 
                     elif alt6 == 3:
                         # BELScript_Python_v1.g:290:102: VALUE_LIST
-                        pass 
+                        pass
                         self.mVALUE_LIST()
 
 
@@ -2501,7 +2501,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:294:5: ( '\"' ( ESCAPE_SEQUENCE | '\\\\\\n' | '\\\\\\r\\n' |~ ( '\\\\' | '\"' ) )* '\"' )
             # BELScript_Python_v1.g:294:9: '\"' ( ESCAPE_SEQUENCE | '\\\\\\n' | '\\\\\\r\\n' |~ ( '\\\\' | '\"' ) )* '\"'
-            pass 
+            pass
             self.match(34)
 
             # BELScript_Python_v1.g:294:13: ( ESCAPE_SEQUENCE | '\\\\\\n' | '\\\\\\r\\n' |~ ( '\\\\' | '\"' ) )*
@@ -2524,28 +2524,28 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt8 == 1:
                     # BELScript_Python_v1.g:294:15: ESCAPE_SEQUENCE
-                    pass 
+                    pass
                     self.mESCAPE_SEQUENCE()
 
 
 
                 elif alt8 == 2:
                     # BELScript_Python_v1.g:294:33: '\\\\\\n'
-                    pass 
+                    pass
                     self.match("\\\n")
 
 
 
                 elif alt8 == 3:
                     # BELScript_Python_v1.g:294:42: '\\\\\\r\\n'
-                    pass 
+                    pass
                     self.match("\\\r\n")
 
 
 
                 elif alt8 == 4:
                     # BELScript_Python_v1.g:294:53: ~ ( '\\\\' | '\"' )
-                    pass 
+                    pass
                     if (0 <= self.input.LA(1) <= 33) or (35 <= self.input.LA(1) <= 91) or (93 <= self.input.LA(1) <= 65535):
                         self.input.consume()
                     else:
@@ -2581,7 +2581,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:297:3: ( '(' )
             # BELScript_Python_v1.g:297:5: '('
-            pass 
+            pass
             self.match(40)
 
 
@@ -2603,7 +2603,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:298:3: ( ')' )
             # BELScript_Python_v1.g:298:5: ')'
-            pass 
+            pass
             self.match(41)
 
 
@@ -2625,7 +2625,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:299:3: ( '=' )
             # BELScript_Python_v1.g:299:5: '='
-            pass 
+            pass
             self.match(61)
 
 
@@ -2647,7 +2647,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:300:6: ( ':' )
             # BELScript_Python_v1.g:300:8: ':'
-            pass 
+            pass
             self.match(58)
 
 
@@ -2669,7 +2669,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:301:6: ( ',' )
             # BELScript_Python_v1.g:301:8: ','
-            pass 
+            pass
             self.match(44)
 
 
@@ -2711,7 +2711,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             if alt10 == 1:
                 # BELScript_Python_v1.g:304:9: ( '\\u000d' )? '\\u000a'
-                pass 
+                pass
                 # BELScript_Python_v1.g:304:9: ( '\\u000d' )?
                 alt9 = 2
                 LA9_0 = self.input.LA(1)
@@ -2720,7 +2720,7 @@ class BELScript_Python_v1Lexer(Lexer):
                     alt9 = 1
                 if alt9 == 1:
                     # BELScript_Python_v1.g:304:9: '\\u000d'
-                    pass 
+                    pass
                     self.match(13)
 
 
@@ -2731,7 +2731,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             elif alt10 == 2:
                 # BELScript_Python_v1.g:304:30: '\\u000d'
-                pass 
+                pass
                 self.match(13)
 
 
@@ -2752,7 +2752,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:307:3: ( ( ' ' | '\\t' | '\\n' | '\\r' | '\\f' | '\\\\\\n' | '\\\\\\r\\n' )+ )
             # BELScript_Python_v1.g:307:5: ( ' ' | '\\t' | '\\n' | '\\r' | '\\f' | '\\\\\\n' | '\\\\\\r\\n' )+
-            pass 
+            pass
             # BELScript_Python_v1.g:307:5: ( ' ' | '\\t' | '\\n' | '\\r' | '\\f' | '\\\\\\n' | '\\\\\\r\\n' )+
             cnt11 = 0
             while True: #loop11
@@ -2780,44 +2780,44 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt11 == 1:
                     # BELScript_Python_v1.g:307:6: ' '
-                    pass 
+                    pass
                     self.match(32)
 
 
                 elif alt11 == 2:
                     # BELScript_Python_v1.g:307:12: '\\t'
-                    pass 
+                    pass
                     self.match(9)
 
 
                 elif alt11 == 3:
                     # BELScript_Python_v1.g:307:19: '\\n'
-                    pass 
+                    pass
                     self.match(10)
 
 
                 elif alt11 == 4:
                     # BELScript_Python_v1.g:307:26: '\\r'
-                    pass 
+                    pass
                     self.match(13)
 
 
                 elif alt11 == 5:
                     # BELScript_Python_v1.g:307:32: '\\f'
-                    pass 
+                    pass
                     self.match(12)
 
 
                 elif alt11 == 6:
                     # BELScript_Python_v1.g:307:39: '\\\\\\n'
-                    pass 
+                    pass
                     self.match("\\\n")
 
 
 
                 elif alt11 == 7:
                     # BELScript_Python_v1.g:307:48: '\\\\\\r\\n'
-                    pass 
+                    pass
                     self.match("\\\r\n")
 
 
@@ -2833,7 +2833,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
 
             #action start
-            skip() 
+            skip()
             #action end
 
 
@@ -2856,7 +2856,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:312:5: ( ( 'A' | 'a' ) ( 'N' | 'n' ) ( 'N' | 'n' ) ( 'O' | 'o' ) ( 'T' | 't' ) ( 'A' | 'a' ) ( 'T' | 't' ) ( 'I' | 'i' ) ( 'O' | 'o' ) ( 'N' | 'n' ) )
             # BELScript_Python_v1.g:312:9: ( 'A' | 'a' ) ( 'N' | 'n' ) ( 'N' | 'n' ) ( 'O' | 'o' ) ( 'T' | 't' ) ( 'A' | 'a' ) ( 'T' | 't' ) ( 'I' | 'i' ) ( 'O' | 'o' ) ( 'N' | 'n' )
-            pass 
+            pass
             if self.input.LA(1) == 65 or self.input.LA(1) == 97:
                 self.input.consume()
             else:
@@ -2966,7 +2966,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:316:5: ( ( 'A' | 'a' ) ( 'S' | 's' ) )
             # BELScript_Python_v1.g:316:9: ( 'A' | 'a' ) ( 'S' | 's' )
-            pass 
+            pass
             if self.input.LA(1) == 65 or self.input.LA(1) == 97:
                 self.input.consume()
             else:
@@ -3004,7 +3004,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:320:5: ( ( 'A' | 'a' ) ( 'U' | 'u' ) ( 'T' | 't' ) ( 'H' | 'h' ) ( 'O' | 'o' ) ( 'R' | 'r' ) ( 'S' | 's' ) )
             # BELScript_Python_v1.g:320:9: ( 'A' | 'a' ) ( 'U' | 'u' ) ( 'T' | 't' ) ( 'H' | 'h' ) ( 'O' | 'o' ) ( 'R' | 'r' ) ( 'S' | 's' )
-            pass 
+            pass
             if self.input.LA(1) == 65 or self.input.LA(1) == 97:
                 self.input.consume()
             else:
@@ -3087,7 +3087,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:324:5: ( ( 'C' | 'c' ) ( 'O' | 'o' ) ( 'N' | 'n' ) ( 'T' | 't' ) ( 'A' | 'a' ) ( 'C' | 'c' ) ( 'T' | 't' ) ( 'I' | 'i' ) ( 'N' | 'n' ) ( 'F' | 'f' ) ( 'O' | 'o' ) )
             # BELScript_Python_v1.g:324:9: ( 'C' | 'c' ) ( 'O' | 'o' ) ( 'N' | 'n' ) ( 'T' | 't' ) ( 'A' | 'a' ) ( 'C' | 'c' ) ( 'T' | 't' ) ( 'I' | 'i' ) ( 'N' | 'n' ) ( 'F' | 'f' ) ( 'O' | 'o' )
-            pass 
+            pass
             if self.input.LA(1) == 67 or self.input.LA(1) == 99:
                 self.input.consume()
             else:
@@ -3206,7 +3206,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:328:5: ( ( 'C' | 'c' ) ( 'O' | 'o' ) ( 'P' | 'p' ) ( 'Y' | 'y' ) ( 'R' | 'r' ) ( 'I' | 'i' ) ( 'G' | 'g' ) ( 'H' | 'h' ) ( 'T' | 't' ) )
             # BELScript_Python_v1.g:328:9: ( 'C' | 'c' ) ( 'O' | 'o' ) ( 'P' | 'p' ) ( 'Y' | 'y' ) ( 'R' | 'r' ) ( 'I' | 'i' ) ( 'G' | 'g' ) ( 'H' | 'h' ) ( 'T' | 't' )
-            pass 
+            pass
             if self.input.LA(1) == 67 or self.input.LA(1) == 99:
                 self.input.consume()
             else:
@@ -3307,7 +3307,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:332:5: ( ( 'D' | 'd' ) ( 'E' | 'e' ) ( 'F' | 'f' ) ( 'A' | 'a' ) ( 'U' | 'u' ) ( 'L' | 'l' ) ( 'T' | 't' ) )
             # BELScript_Python_v1.g:332:9: ( 'D' | 'd' ) ( 'E' | 'e' ) ( 'F' | 'f' ) ( 'A' | 'a' ) ( 'U' | 'u' ) ( 'L' | 'l' ) ( 'T' | 't' )
-            pass 
+            pass
             if self.input.LA(1) == 68 or self.input.LA(1) == 100:
                 self.input.consume()
             else:
@@ -3390,7 +3390,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:336:5: ( ( 'D' | 'd' ) ( 'E' | 'e' ) ( 'F' | 'f' ) ( 'I' | 'i' ) ( 'N' | 'n' ) ( 'E' | 'e' ) )
             # BELScript_Python_v1.g:336:9: ( 'D' | 'd' ) ( 'E' | 'e' ) ( 'F' | 'f' ) ( 'I' | 'i' ) ( 'N' | 'n' ) ( 'E' | 'e' )
-            pass 
+            pass
             if self.input.LA(1) == 68 or self.input.LA(1) == 100:
                 self.input.consume()
             else:
@@ -3464,7 +3464,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:340:5: ( ( 'D' | 'd' ) ( 'E' | 'e' ) ( 'S' | 's' ) ( 'C' | 'c' ) ( 'R' | 'r' ) ( 'I' | 'i' ) ( 'P' | 'p' ) ( 'T' | 't' ) ( 'I' | 'i' ) ( 'O' | 'o' ) ( 'N' | 'n' ) )
             # BELScript_Python_v1.g:340:9: ( 'D' | 'd' ) ( 'E' | 'e' ) ( 'S' | 's' ) ( 'C' | 'c' ) ( 'R' | 'r' ) ( 'I' | 'i' ) ( 'P' | 'p' ) ( 'T' | 't' ) ( 'I' | 'i' ) ( 'O' | 'o' ) ( 'N' | 'n' )
-            pass 
+            pass
             if self.input.LA(1) == 68 or self.input.LA(1) == 100:
                 self.input.consume()
             else:
@@ -3583,7 +3583,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:344:5: ( ( 'D' | 'd' ) ( 'I' | 'i' ) ( 'S' | 's' ) ( 'C' | 'c' ) ( 'L' | 'l' ) ( 'A' | 'a' ) ( 'I' | 'i' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'R' | 'r' ) )
             # BELScript_Python_v1.g:344:9: ( 'D' | 'd' ) ( 'I' | 'i' ) ( 'S' | 's' ) ( 'C' | 'c' ) ( 'L' | 'l' ) ( 'A' | 'a' ) ( 'I' | 'i' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'R' | 'r' )
-            pass 
+            pass
             if self.input.LA(1) == 68 or self.input.LA(1) == 100:
                 self.input.consume()
             else:
@@ -3693,7 +3693,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:348:5: ( ( 'D' | 'd' ) ( 'O' | 'o' ) ( 'C' | 'c' ) ( 'U' | 'u' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'N' | 'n' ) ( 'T' | 't' ) )
             # BELScript_Python_v1.g:348:9: ( 'D' | 'd' ) ( 'O' | 'o' ) ( 'C' | 'c' ) ( 'U' | 'u' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'N' | 'n' ) ( 'T' | 't' )
-            pass 
+            pass
             if self.input.LA(1) == 68 or self.input.LA(1) == 100:
                 self.input.consume()
             else:
@@ -3785,7 +3785,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:352:5: ( ( 'L' | 'l' ) ( 'I' | 'i' ) ( 'C' | 'c' ) ( 'E' | 'e' ) ( 'N' | 'n' ) ( 'S' | 's' ) ( 'E' | 'e' ) ( 'S' | 's' ) )
             # BELScript_Python_v1.g:352:9: ( 'L' | 'l' ) ( 'I' | 'i' ) ( 'C' | 'c' ) ( 'E' | 'e' ) ( 'N' | 'n' ) ( 'S' | 's' ) ( 'E' | 'e' ) ( 'S' | 's' )
-            pass 
+            pass
             if self.input.LA(1) == 76 or self.input.LA(1) == 108:
                 self.input.consume()
             else:
@@ -3877,7 +3877,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:356:5: ( ( 'L' | 'l' ) ( 'I' | 'i' ) ( 'S' | 's' ) ( 'T' | 't' ) )
             # BELScript_Python_v1.g:356:9: ( 'L' | 'l' ) ( 'I' | 'i' ) ( 'S' | 's' ) ( 'T' | 't' )
-            pass 
+            pass
             if self.input.LA(1) == 76 or self.input.LA(1) == 108:
                 self.input.consume()
             else:
@@ -3933,7 +3933,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:360:5: ( ( 'N' | 'n' ) ( 'A' | 'a' ) ( 'M' | 'm' ) ( 'E' | 'e' ) )
             # BELScript_Python_v1.g:360:9: ( 'N' | 'n' ) ( 'A' | 'a' ) ( 'M' | 'm' ) ( 'E' | 'e' )
-            pass 
+            pass
             if self.input.LA(1) == 78 or self.input.LA(1) == 110:
                 self.input.consume()
             else:
@@ -3989,7 +3989,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:364:5: ( ( 'N' | 'n' ) ( 'A' | 'a' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'S' | 's' ) ( 'P' | 'p' ) ( 'A' | 'a' ) ( 'C' | 'c' ) ( 'E' | 'e' ) )
             # BELScript_Python_v1.g:364:9: ( 'N' | 'n' ) ( 'A' | 'a' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'S' | 's' ) ( 'P' | 'p' ) ( 'A' | 'a' ) ( 'C' | 'c' ) ( 'E' | 'e' )
-            pass 
+            pass
             if self.input.LA(1) == 78 or self.input.LA(1) == 110:
                 self.input.consume()
             else:
@@ -4090,7 +4090,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:368:5: ( ( 'P' | 'p' ) ( 'A' | 'a' ) ( 'T' | 't' ) ( 'T' | 't' ) ( 'E' | 'e' ) ( 'R' | 'r' ) ( 'N' | 'n' ) )
             # BELScript_Python_v1.g:368:9: ( 'P' | 'p' ) ( 'A' | 'a' ) ( 'T' | 't' ) ( 'T' | 't' ) ( 'E' | 'e' ) ( 'R' | 'r' ) ( 'N' | 'n' )
-            pass 
+            pass
             if self.input.LA(1) == 80 or self.input.LA(1) == 112:
                 self.input.consume()
             else:
@@ -4173,7 +4173,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:372:5: ( ( 'S' | 's' ) ( 'E' | 'e' ) ( 'T' | 't' ) )
             # BELScript_Python_v1.g:372:9: ( 'S' | 's' ) ( 'E' | 'e' ) ( 'T' | 't' )
-            pass 
+            pass
             if self.input.LA(1) == 83 or self.input.LA(1) == 115:
                 self.input.consume()
             else:
@@ -4220,7 +4220,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:376:5: ( ( 'S' | 's' ) ( 'T' | 't' ) ( 'A' | 'a' ) ( 'T' | 't' ) ( 'E' | 'e' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'N' | 'n' ) ( 'T' | 't' ) ( '_' ) ( 'G' | 'g' ) ( 'R' | 'r' ) ( 'O' | 'o' ) ( 'U' | 'u' ) ( 'P' | 'p' ) )
             # BELScript_Python_v1.g:376:9: ( 'S' | 's' ) ( 'T' | 't' ) ( 'A' | 'a' ) ( 'T' | 't' ) ( 'E' | 'e' ) ( 'M' | 'm' ) ( 'E' | 'e' ) ( 'N' | 'n' ) ( 'T' | 't' ) ( '_' ) ( 'G' | 'g' ) ( 'R' | 'r' ) ( 'O' | 'o' ) ( 'U' | 'u' ) ( 'P' | 'p' )
-            pass 
+            pass
             if self.input.LA(1) == 83 or self.input.LA(1) == 115:
                 self.input.consume()
             else:
@@ -4304,7 +4304,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:376:90: ( '_' )
             # BELScript_Python_v1.g:376:91: '_'
-            pass 
+            pass
             self.match(95)
 
 
@@ -4374,7 +4374,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:380:5: ( ( 'U' | 'u' ) ( 'N' | 'n' ) ( 'S' | 's' ) ( 'E' | 'e' ) ( 'T' | 't' ) )
             # BELScript_Python_v1.g:380:9: ( 'U' | 'u' ) ( 'N' | 'n' ) ( 'S' | 's' ) ( 'E' | 'e' ) ( 'T' | 't' )
-            pass 
+            pass
             if self.input.LA(1) == 85 or self.input.LA(1) == 117:
                 self.input.consume()
             else:
@@ -4439,7 +4439,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:384:5: ( ( 'U' | 'u' ) ( 'R' | 'r' ) ( 'L' | 'l' ) )
             # BELScript_Python_v1.g:384:9: ( 'U' | 'u' ) ( 'R' | 'r' ) ( 'L' | 'l' )
-            pass 
+            pass
             if self.input.LA(1) == 85 or self.input.LA(1) == 117:
                 self.input.consume()
             else:
@@ -4486,7 +4486,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:388:5: ( ( 'V' | 'v' ) ( 'E' | 'e' ) ( 'R' | 'r' ) ( 'S' | 's' ) ( 'I' | 'i' ) ( 'O' | 'o' ) ( 'N' | 'n' ) )
             # BELScript_Python_v1.g:388:9: ( 'V' | 'v' ) ( 'E' | 'e' ) ( 'R' | 'r' ) ( 'S' | 's' ) ( 'I' | 'i' ) ( 'O' | 'o' ) ( 'N' | 'n' )
-            pass 
+            pass
             if self.input.LA(1) == 86 or self.input.LA(1) == 118:
                 self.input.consume()
             else:
@@ -4569,7 +4569,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             # BELScript_Python_v1.g:392:5: ( ( '_' | LETTER | DIGIT )+ )
             # BELScript_Python_v1.g:392:9: ( '_' | LETTER | DIGIT )+
-            pass 
+            pass
             # BELScript_Python_v1.g:392:9: ( '_' | LETTER | DIGIT )+
             cnt12 = 0
             while True: #loop12
@@ -4582,7 +4582,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
                 if alt12 == 1:
                     # BELScript_Python_v1.g:
-                    pass 
+                    pass
                     if (48 <= self.input.LA(1) <= 57) or (65 <= self.input.LA(1) <= 90) or self.input.LA(1) == 95 or (97 <= self.input.LA(1) <= 122):
                         self.input.consume()
                     else:
@@ -4619,7 +4619,7 @@ class BELScript_Python_v1Lexer(Lexer):
         try:
             # BELScript_Python_v1.g:400:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
             # BELScript_Python_v1.g:
-            pass 
+            pass
             if (65 <= self.input.LA(1) <= 90) or (97 <= self.input.LA(1) <= 122):
                 self.input.consume()
             else:
@@ -4644,7 +4644,7 @@ class BELScript_Python_v1Lexer(Lexer):
         try:
             # BELScript_Python_v1.g:404:5: ( '0' .. '9' )
             # BELScript_Python_v1.g:
-            pass 
+            pass
             if (48 <= self.input.LA(1) <= 57):
                 self.input.consume()
             else:
@@ -4693,7 +4693,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             if alt13 == 1:
                 # BELScript_Python_v1.g:408:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
-                pass 
+                pass
                 self.match(92)
 
                 if self.input.LA(1) == 34 or self.input.LA(1) == 39 or self.input.LA(1) == 92 or self.input.LA(1) == 98 or self.input.LA(1) == 102 or self.input.LA(1) == 110 or self.input.LA(1) == 114 or self.input.LA(1) == 116:
@@ -4708,14 +4708,14 @@ class BELScript_Python_v1Lexer(Lexer):
 
             elif alt13 == 2:
                 # BELScript_Python_v1.g:409:9: UNICODE_ESCAPE
-                pass 
+                pass
                 self.mUNICODE_ESCAPE()
 
 
 
             elif alt13 == 3:
                 # BELScript_Python_v1.g:410:9: OCTAL_ESCAPE
-                pass 
+                pass
                 self.mOCTAL_ESCAPE()
 
 
@@ -4774,7 +4774,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             if alt14 == 1:
                 # BELScript_Python_v1.g:414:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
-                pass 
+                pass
                 self.match(92)
 
                 if (48 <= self.input.LA(1) <= 51):
@@ -4807,7 +4807,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             elif alt14 == 2:
                 # BELScript_Python_v1.g:415:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
-                pass 
+                pass
                 self.match(92)
 
                 if (48 <= self.input.LA(1) <= 55):
@@ -4831,7 +4831,7 @@ class BELScript_Python_v1Lexer(Lexer):
 
             elif alt14 == 3:
                 # BELScript_Python_v1.g:416:9: '\\\\' ( '0' .. '7' )
-                pass 
+                pass
                 self.match(92)
 
                 if (48 <= self.input.LA(1) <= 55):
@@ -4857,7 +4857,7 @@ class BELScript_Python_v1Lexer(Lexer):
         try:
             # BELScript_Python_v1.g:420:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
             # BELScript_Python_v1.g:420:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
-            pass 
+            pass
             self.match(92)
 
             self.match(117)
@@ -4889,7 +4889,7 @@ class BELScript_Python_v1Lexer(Lexer):
         try:
             # BELScript_Python_v1.g:424:5: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
             # BELScript_Python_v1.g:
-            pass 
+            pass
             if (48 <= self.input.LA(1) <= 57) or (65 <= self.input.LA(1) <= 70) or (97 <= self.input.LA(1) <= 102):
                 self.input.consume()
             else:
@@ -4915,840 +4915,840 @@ class BELScript_Python_v1Lexer(Lexer):
         alt15 = self.dfa15.predict(self.input)
         if alt15 == 1:
             # BELScript_Python_v1.g:1:10: T__64
-            pass 
+            pass
             self.mT__64()
 
 
 
         elif alt15 == 2:
             # BELScript_Python_v1.g:1:16: T__65
-            pass 
+            pass
             self.mT__65()
 
 
 
         elif alt15 == 3:
             # BELScript_Python_v1.g:1:22: T__66
-            pass 
+            pass
             self.mT__66()
 
 
 
         elif alt15 == 4:
             # BELScript_Python_v1.g:1:28: T__67
-            pass 
+            pass
             self.mT__67()
 
 
 
         elif alt15 == 5:
             # BELScript_Python_v1.g:1:34: T__68
-            pass 
+            pass
             self.mT__68()
 
 
 
         elif alt15 == 6:
             # BELScript_Python_v1.g:1:40: T__69
-            pass 
+            pass
             self.mT__69()
 
 
 
         elif alt15 == 7:
             # BELScript_Python_v1.g:1:46: T__70
-            pass 
+            pass
             self.mT__70()
 
 
 
         elif alt15 == 8:
             # BELScript_Python_v1.g:1:52: T__71
-            pass 
+            pass
             self.mT__71()
 
 
 
         elif alt15 == 9:
             # BELScript_Python_v1.g:1:58: T__72
-            pass 
+            pass
             self.mT__72()
 
 
 
         elif alt15 == 10:
             # BELScript_Python_v1.g:1:64: T__73
-            pass 
+            pass
             self.mT__73()
 
 
 
         elif alt15 == 11:
             # BELScript_Python_v1.g:1:70: T__74
-            pass 
+            pass
             self.mT__74()
 
 
 
         elif alt15 == 12:
             # BELScript_Python_v1.g:1:76: T__75
-            pass 
+            pass
             self.mT__75()
 
 
 
         elif alt15 == 13:
             # BELScript_Python_v1.g:1:82: T__76
-            pass 
+            pass
             self.mT__76()
 
 
 
         elif alt15 == 14:
             # BELScript_Python_v1.g:1:88: T__77
-            pass 
+            pass
             self.mT__77()
 
 
 
         elif alt15 == 15:
             # BELScript_Python_v1.g:1:94: T__78
-            pass 
+            pass
             self.mT__78()
 
 
 
         elif alt15 == 16:
             # BELScript_Python_v1.g:1:100: T__79
-            pass 
+            pass
             self.mT__79()
 
 
 
         elif alt15 == 17:
             # BELScript_Python_v1.g:1:106: T__80
-            pass 
+            pass
             self.mT__80()
 
 
 
         elif alt15 == 18:
             # BELScript_Python_v1.g:1:112: T__81
-            pass 
+            pass
             self.mT__81()
 
 
 
         elif alt15 == 19:
             # BELScript_Python_v1.g:1:118: T__82
-            pass 
+            pass
             self.mT__82()
 
 
 
         elif alt15 == 20:
             # BELScript_Python_v1.g:1:124: T__83
-            pass 
+            pass
             self.mT__83()
 
 
 
         elif alt15 == 21:
             # BELScript_Python_v1.g:1:130: T__84
-            pass 
+            pass
             self.mT__84()
 
 
 
         elif alt15 == 22:
             # BELScript_Python_v1.g:1:136: T__85
-            pass 
+            pass
             self.mT__85()
 
 
 
         elif alt15 == 23:
             # BELScript_Python_v1.g:1:142: T__86
-            pass 
+            pass
             self.mT__86()
 
 
 
         elif alt15 == 24:
             # BELScript_Python_v1.g:1:148: T__87
-            pass 
+            pass
             self.mT__87()
 
 
 
         elif alt15 == 25:
             # BELScript_Python_v1.g:1:154: T__88
-            pass 
+            pass
             self.mT__88()
 
 
 
         elif alt15 == 26:
             # BELScript_Python_v1.g:1:160: T__89
-            pass 
+            pass
             self.mT__89()
 
 
 
         elif alt15 == 27:
             # BELScript_Python_v1.g:1:166: T__90
-            pass 
+            pass
             self.mT__90()
 
 
 
         elif alt15 == 28:
             # BELScript_Python_v1.g:1:172: T__91
-            pass 
+            pass
             self.mT__91()
 
 
 
         elif alt15 == 29:
             # BELScript_Python_v1.g:1:178: T__92
-            pass 
+            pass
             self.mT__92()
 
 
 
         elif alt15 == 30:
             # BELScript_Python_v1.g:1:184: T__93
-            pass 
+            pass
             self.mT__93()
 
 
 
         elif alt15 == 31:
             # BELScript_Python_v1.g:1:190: T__94
-            pass 
+            pass
             self.mT__94()
 
 
 
         elif alt15 == 32:
             # BELScript_Python_v1.g:1:196: T__95
-            pass 
+            pass
             self.mT__95()
 
 
 
         elif alt15 == 33:
             # BELScript_Python_v1.g:1:202: T__96
-            pass 
+            pass
             self.mT__96()
 
 
 
         elif alt15 == 34:
             # BELScript_Python_v1.g:1:208: T__97
-            pass 
+            pass
             self.mT__97()
 
 
 
         elif alt15 == 35:
             # BELScript_Python_v1.g:1:214: T__98
-            pass 
+            pass
             self.mT__98()
 
 
 
         elif alt15 == 36:
             # BELScript_Python_v1.g:1:220: T__99
-            pass 
+            pass
             self.mT__99()
 
 
 
         elif alt15 == 37:
             # BELScript_Python_v1.g:1:226: T__100
-            pass 
+            pass
             self.mT__100()
 
 
 
         elif alt15 == 38:
             # BELScript_Python_v1.g:1:233: T__101
-            pass 
+            pass
             self.mT__101()
 
 
 
         elif alt15 == 39:
             # BELScript_Python_v1.g:1:240: T__102
-            pass 
+            pass
             self.mT__102()
 
 
 
         elif alt15 == 40:
             # BELScript_Python_v1.g:1:247: T__103
-            pass 
+            pass
             self.mT__103()
 
 
 
         elif alt15 == 41:
             # BELScript_Python_v1.g:1:254: T__104
-            pass 
+            pass
             self.mT__104()
 
 
 
         elif alt15 == 42:
             # BELScript_Python_v1.g:1:261: T__105
-            pass 
+            pass
             self.mT__105()
 
 
 
         elif alt15 == 43:
             # BELScript_Python_v1.g:1:268: T__106
-            pass 
+            pass
             self.mT__106()
 
 
 
         elif alt15 == 44:
             # BELScript_Python_v1.g:1:275: T__107
-            pass 
+            pass
             self.mT__107()
 
 
 
         elif alt15 == 45:
             # BELScript_Python_v1.g:1:282: T__108
-            pass 
+            pass
             self.mT__108()
 
 
 
         elif alt15 == 46:
             # BELScript_Python_v1.g:1:289: T__109
-            pass 
+            pass
             self.mT__109()
 
 
 
         elif alt15 == 47:
             # BELScript_Python_v1.g:1:296: T__110
-            pass 
+            pass
             self.mT__110()
 
 
 
         elif alt15 == 48:
             # BELScript_Python_v1.g:1:303: T__111
-            pass 
+            pass
             self.mT__111()
 
 
 
         elif alt15 == 49:
             # BELScript_Python_v1.g:1:310: T__112
-            pass 
+            pass
             self.mT__112()
 
 
 
         elif alt15 == 50:
             # BELScript_Python_v1.g:1:317: T__113
-            pass 
+            pass
             self.mT__113()
 
 
 
         elif alt15 == 51:
             # BELScript_Python_v1.g:1:324: T__114
-            pass 
+            pass
             self.mT__114()
 
 
 
         elif alt15 == 52:
             # BELScript_Python_v1.g:1:331: T__115
-            pass 
+            pass
             self.mT__115()
 
 
 
         elif alt15 == 53:
             # BELScript_Python_v1.g:1:338: T__116
-            pass 
+            pass
             self.mT__116()
 
 
 
         elif alt15 == 54:
             # BELScript_Python_v1.g:1:345: T__117
-            pass 
+            pass
             self.mT__117()
 
 
 
         elif alt15 == 55:
             # BELScript_Python_v1.g:1:352: T__118
-            pass 
+            pass
             self.mT__118()
 
 
 
         elif alt15 == 56:
             # BELScript_Python_v1.g:1:359: T__119
-            pass 
+            pass
             self.mT__119()
 
 
 
         elif alt15 == 57:
             # BELScript_Python_v1.g:1:366: T__120
-            pass 
+            pass
             self.mT__120()
 
 
 
         elif alt15 == 58:
             # BELScript_Python_v1.g:1:373: T__121
-            pass 
+            pass
             self.mT__121()
 
 
 
         elif alt15 == 59:
             # BELScript_Python_v1.g:1:380: T__122
-            pass 
+            pass
             self.mT__122()
 
 
 
         elif alt15 == 60:
             # BELScript_Python_v1.g:1:387: T__123
-            pass 
+            pass
             self.mT__123()
 
 
 
         elif alt15 == 61:
             # BELScript_Python_v1.g:1:394: T__124
-            pass 
+            pass
             self.mT__124()
 
 
 
         elif alt15 == 62:
             # BELScript_Python_v1.g:1:401: T__125
-            pass 
+            pass
             self.mT__125()
 
 
 
         elif alt15 == 63:
             # BELScript_Python_v1.g:1:408: T__126
-            pass 
+            pass
             self.mT__126()
 
 
 
         elif alt15 == 64:
             # BELScript_Python_v1.g:1:415: T__127
-            pass 
+            pass
             self.mT__127()
 
 
 
         elif alt15 == 65:
             # BELScript_Python_v1.g:1:422: T__128
-            pass 
+            pass
             self.mT__128()
 
 
 
         elif alt15 == 66:
             # BELScript_Python_v1.g:1:429: T__129
-            pass 
+            pass
             self.mT__129()
 
 
 
         elif alt15 == 67:
             # BELScript_Python_v1.g:1:436: T__130
-            pass 
+            pass
             self.mT__130()
 
 
 
         elif alt15 == 68:
             # BELScript_Python_v1.g:1:443: T__131
-            pass 
+            pass
             self.mT__131()
 
 
 
         elif alt15 == 69:
             # BELScript_Python_v1.g:1:450: T__132
-            pass 
+            pass
             self.mT__132()
 
 
 
         elif alt15 == 70:
             # BELScript_Python_v1.g:1:457: T__133
-            pass 
+            pass
             self.mT__133()
 
 
 
         elif alt15 == 71:
             # BELScript_Python_v1.g:1:464: T__134
-            pass 
+            pass
             self.mT__134()
 
 
 
         elif alt15 == 72:
             # BELScript_Python_v1.g:1:471: T__135
-            pass 
+            pass
             self.mT__135()
 
 
 
         elif alt15 == 73:
             # BELScript_Python_v1.g:1:478: T__136
-            pass 
+            pass
             self.mT__136()
 
 
 
         elif alt15 == 74:
             # BELScript_Python_v1.g:1:485: T__137
-            pass 
+            pass
             self.mT__137()
 
 
 
         elif alt15 == 75:
             # BELScript_Python_v1.g:1:492: T__138
-            pass 
+            pass
             self.mT__138()
 
 
 
         elif alt15 == 76:
             # BELScript_Python_v1.g:1:499: T__139
-            pass 
+            pass
             self.mT__139()
 
 
 
         elif alt15 == 77:
             # BELScript_Python_v1.g:1:506: T__140
-            pass 
+            pass
             self.mT__140()
 
 
 
         elif alt15 == 78:
             # BELScript_Python_v1.g:1:513: T__141
-            pass 
+            pass
             self.mT__141()
 
 
 
         elif alt15 == 79:
             # BELScript_Python_v1.g:1:520: T__142
-            pass 
+            pass
             self.mT__142()
 
 
 
         elif alt15 == 80:
             # BELScript_Python_v1.g:1:527: T__143
-            pass 
+            pass
             self.mT__143()
 
 
 
         elif alt15 == 81:
             # BELScript_Python_v1.g:1:534: T__144
-            pass 
+            pass
             self.mT__144()
 
 
 
         elif alt15 == 82:
             # BELScript_Python_v1.g:1:541: T__145
-            pass 
+            pass
             self.mT__145()
 
 
 
         elif alt15 == 83:
             # BELScript_Python_v1.g:1:548: T__146
-            pass 
+            pass
             self.mT__146()
 
 
 
         elif alt15 == 84:
             # BELScript_Python_v1.g:1:555: T__147
-            pass 
+            pass
             self.mT__147()
 
 
 
         elif alt15 == 85:
             # BELScript_Python_v1.g:1:562: T__148
-            pass 
+            pass
             self.mT__148()
 
 
 
         elif alt15 == 86:
             # BELScript_Python_v1.g:1:569: T__149
-            pass 
+            pass
             self.mT__149()
 
 
 
         elif alt15 == 87:
             # BELScript_Python_v1.g:1:576: T__150
-            pass 
+            pass
             self.mT__150()
 
 
 
         elif alt15 == 88:
             # BELScript_Python_v1.g:1:583: DOCUMENT_COMMENT
-            pass 
+            pass
             self.mDOCUMENT_COMMENT()
 
 
 
         elif alt15 == 89:
             # BELScript_Python_v1.g:1:600: STATEMENT_COMMENT
-            pass 
+            pass
             self.mSTATEMENT_COMMENT()
 
 
 
         elif alt15 == 90:
             # BELScript_Python_v1.g:1:618: IDENT_LIST
-            pass 
+            pass
             self.mIDENT_LIST()
 
 
 
         elif alt15 == 91:
             # BELScript_Python_v1.g:1:629: VALUE_LIST
-            pass 
+            pass
             self.mVALUE_LIST()
 
 
 
         elif alt15 == 92:
             # BELScript_Python_v1.g:1:640: QUOTED_VALUE
-            pass 
+            pass
             self.mQUOTED_VALUE()
 
 
 
         elif alt15 == 93:
             # BELScript_Python_v1.g:1:653: LP
-            pass 
+            pass
             self.mLP()
 
 
 
         elif alt15 == 94:
             # BELScript_Python_v1.g:1:656: RP
-            pass 
+            pass
             self.mRP()
 
 
 
         elif alt15 == 95:
             # BELScript_Python_v1.g:1:659: EQ
-            pass 
+            pass
             self.mEQ()
 
 
 
         elif alt15 == 96:
             # BELScript_Python_v1.g:1:662: COLON
-            pass 
+            pass
             self.mCOLON()
 
 
 
         elif alt15 == 97:
             # BELScript_Python_v1.g:1:668: COMMA
-            pass 
+            pass
             self.mCOMMA()
 
 
 
         elif alt15 == 98:
             # BELScript_Python_v1.g:1:674: NEWLINE
-            pass 
+            pass
             self.mNEWLINE()
 
 
 
         elif alt15 == 99:
             # BELScript_Python_v1.g:1:682: WS
-            pass 
+            pass
             self.mWS()
 
 
 
         elif alt15 == 100:
             # BELScript_Python_v1.g:1:685: KWRD_ANNO
-            pass 
+            pass
             self.mKWRD_ANNO()
 
 
 
         elif alt15 == 101:
             # BELScript_Python_v1.g:1:695: KWRD_AS
-            pass 
+            pass
             self.mKWRD_AS()
 
 
 
         elif alt15 == 102:
             # BELScript_Python_v1.g:1:703: KWRD_AUTHORS
-            pass 
+            pass
             self.mKWRD_AUTHORS()
 
 
 
         elif alt15 == 103:
             # BELScript_Python_v1.g:1:716: KWRD_CONTACTINFO
-            pass 
+            pass
             self.mKWRD_CONTACTINFO()
 
 
 
         elif alt15 == 104:
             # BELScript_Python_v1.g:1:733: KWRD_COPYRIGHT
-            pass 
+            pass
             self.mKWRD_COPYRIGHT()
 
 
 
         elif alt15 == 105:
             # BELScript_Python_v1.g:1:748: KWRD_DFLT
-            pass 
+            pass
             self.mKWRD_DFLT()
 
 
 
         elif alt15 == 106:
             # BELScript_Python_v1.g:1:758: KWRD_DEFINE
-            pass 
+            pass
             self.mKWRD_DEFINE()
 
 
 
         elif alt15 == 107:
             # BELScript_Python_v1.g:1:770: KWRD_DESC
-            pass 
+            pass
             self.mKWRD_DESC()
 
 
 
         elif alt15 == 108:
             # BELScript_Python_v1.g:1:780: KWRD_DISCLAIMER
-            pass 
+            pass
             self.mKWRD_DISCLAIMER()
 
 
 
         elif alt15 == 109:
             # BELScript_Python_v1.g:1:796: KWRD_DOCUMENT
-            pass 
+            pass
             self.mKWRD_DOCUMENT()
 
 
 
         elif alt15 == 110:
             # BELScript_Python_v1.g:1:810: KWRD_LICENSES
-            pass 
+            pass
             self.mKWRD_LICENSES()
 
 
 
         elif alt15 == 111:
             # BELScript_Python_v1.g:1:824: KWRD_LIST
-            pass 
+            pass
             self.mKWRD_LIST()
 
 
 
         elif alt15 == 112:
             # BELScript_Python_v1.g:1:834: KWRD_NAME
-            pass 
+            pass
             self.mKWRD_NAME()
 
 
 
         elif alt15 == 113:
             # BELScript_Python_v1.g:1:844: KWRD_NS
-            pass 
+            pass
             self.mKWRD_NS()
 
 
 
         elif alt15 == 114:
             # BELScript_Python_v1.g:1:852: KWRD_PATTERN
-            pass 
+            pass
             self.mKWRD_PATTERN()
 
 
 
         elif alt15 == 115:
             # BELScript_Python_v1.g:1:865: KWRD_SET
-            pass 
+            pass
             self.mKWRD_SET()
 
 
 
         elif alt15 == 116:
             # BELScript_Python_v1.g:1:874: KWRD_STMT_GROUP
-            pass 
+            pass
             self.mKWRD_STMT_GROUP()
 
 
 
         elif alt15 == 117:
             # BELScript_Python_v1.g:1:890: KWRD_UNSET
-            pass 
+            pass
             self.mKWRD_UNSET()
 
 
 
         elif alt15 == 118:
             # BELScript_Python_v1.g:1:901: KWRD_URL
-            pass 
+            pass
             self.mKWRD_URL()
 
 
 
         elif alt15 == 119:
             # BELScript_Python_v1.g:1:910: KWRD_VERSION
-            pass 
+            pass
             self.mKWRD_VERSION()
 
 
 
         elif alt15 == 120:
             # BELScript_Python_v1.g:1:923: OBJECT_IDENT
-            pass 
+            pass
             self.mOBJECT_IDENT()
 
 
@@ -6932,7 +6932,7 @@ class BELScript_Python_v1Lexer(Lexer):
         pass
 
 
- 
+
 
 
 

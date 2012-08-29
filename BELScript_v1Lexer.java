@@ -1,4 +1,4 @@
-// $ANTLR 3.4 BELScript_v1.g 2012-08-13 14:45:34
+// $ANTLR 3.4 BELScript_v1.g 2012-08-28 20:03:47
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -162,7 +162,7 @@ public class BELScript_v1Lexer extends Lexer {
         return new Lexer[] {};
     }
 
-    public BELScript_v1Lexer() {} 
+    public BELScript_v1Lexer() {}
     public BELScript_v1Lexer(CharStream input) {
         this(input, new RecognizerSharedState());
     }
@@ -179,7 +179,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:7:7: ( '--' )
             // BELScript_v1.g:7:9: '--'
             {
-            match("--"); 
+            match("--");
 
 
 
@@ -189,7 +189,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__64"
@@ -202,7 +202,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:8:7: ( '->' )
             // BELScript_v1.g:8:9: '->'
             {
-            match("->"); 
+            match("->");
 
 
 
@@ -212,7 +212,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__65"
@@ -225,7 +225,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:9:7: ( '-|' )
             // BELScript_v1.g:9:9: '-|'
             {
-            match("-|"); 
+            match("-|");
 
 
 
@@ -235,7 +235,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__66"
@@ -248,7 +248,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:10:7: ( ':>' )
             // BELScript_v1.g:10:9: ':>'
             {
-            match(":>"); 
+            match(":>");
 
 
 
@@ -258,7 +258,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__67"
@@ -271,7 +271,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:11:7: ( '=>' )
             // BELScript_v1.g:11:9: '=>'
             {
-            match("=>"); 
+            match("=>");
 
 
 
@@ -281,7 +281,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__68"
@@ -294,7 +294,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:12:7: ( '=|' )
             // BELScript_v1.g:12:9: '=|'
             {
-            match("=|"); 
+            match("=|");
 
 
 
@@ -304,7 +304,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__69"
@@ -317,7 +317,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:13:7: ( '>>' )
             // BELScript_v1.g:13:9: '>>'
             {
-            match(">>"); 
+            match(">>");
 
 
 
@@ -327,7 +327,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__70"
@@ -340,7 +340,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:14:7: ( 'a' )
             // BELScript_v1.g:14:9: 'a'
             {
-            match('a'); 
+            match('a');
 
             }
 
@@ -348,7 +348,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__71"
@@ -361,7 +361,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:15:7: ( 'abundance' )
             // BELScript_v1.g:15:9: 'abundance'
             {
-            match("abundance"); 
+            match("abundance");
 
 
 
@@ -371,7 +371,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__72"
@@ -384,7 +384,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:16:7: ( 'act' )
             // BELScript_v1.g:16:9: 'act'
             {
-            match("act"); 
+            match("act");
 
 
 
@@ -394,7 +394,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__73"
@@ -407,7 +407,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:17:7: ( 'analogous' )
             // BELScript_v1.g:17:9: 'analogous'
             {
-            match("analogous"); 
+            match("analogous");
 
 
 
@@ -417,7 +417,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__74"
@@ -430,7 +430,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:18:7: ( 'association' )
             // BELScript_v1.g:18:9: 'association'
             {
-            match("association"); 
+            match("association");
 
 
 
@@ -440,7 +440,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__75"
@@ -453,7 +453,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:19:7: ( 'biologicalProcess' )
             // BELScript_v1.g:19:9: 'biologicalProcess'
             {
-            match("biologicalProcess"); 
+            match("biologicalProcess");
 
 
 
@@ -463,7 +463,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__76"
@@ -476,7 +476,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:20:7: ( 'biomarkerFor' )
             // BELScript_v1.g:20:9: 'biomarkerFor'
             {
-            match("biomarkerFor"); 
+            match("biomarkerFor");
 
 
 
@@ -486,7 +486,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__77"
@@ -499,7 +499,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:21:7: ( 'bp' )
             // BELScript_v1.g:21:9: 'bp'
             {
-            match("bp"); 
+            match("bp");
 
 
 
@@ -509,7 +509,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__78"
@@ -522,7 +522,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:22:7: ( 'cat' )
             // BELScript_v1.g:22:9: 'cat'
             {
-            match("cat"); 
+            match("cat");
 
 
 
@@ -532,7 +532,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__79"
@@ -545,7 +545,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:23:7: ( 'catalyticActivity' )
             // BELScript_v1.g:23:9: 'catalyticActivity'
             {
-            match("catalyticActivity"); 
+            match("catalyticActivity");
 
 
 
@@ -555,7 +555,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__80"
@@ -568,7 +568,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:24:7: ( 'causesNoChange' )
             // BELScript_v1.g:24:9: 'causesNoChange'
             {
-            match("causesNoChange"); 
+            match("causesNoChange");
 
 
 
@@ -578,7 +578,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__81"
@@ -591,7 +591,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:25:7: ( 'cellSecretion' )
             // BELScript_v1.g:25:9: 'cellSecretion'
             {
-            match("cellSecretion"); 
+            match("cellSecretion");
 
 
 
@@ -601,7 +601,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__82"
@@ -614,7 +614,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:26:7: ( 'cellSurfaceExpression' )
             // BELScript_v1.g:26:9: 'cellSurfaceExpression'
             {
-            match("cellSurfaceExpression"); 
+            match("cellSurfaceExpression");
 
 
 
@@ -624,7 +624,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__83"
@@ -637,7 +637,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:27:7: ( 'chap' )
             // BELScript_v1.g:27:9: 'chap'
             {
-            match("chap"); 
+            match("chap");
 
 
 
@@ -647,7 +647,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__84"
@@ -660,7 +660,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:28:7: ( 'chaperoneActivity' )
             // BELScript_v1.g:28:9: 'chaperoneActivity'
             {
-            match("chaperoneActivity"); 
+            match("chaperoneActivity");
 
 
 
@@ -670,7 +670,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__85"
@@ -683,7 +683,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:29:7: ( 'complex' )
             // BELScript_v1.g:29:9: 'complex'
             {
-            match("complex"); 
+            match("complex");
 
 
 
@@ -693,7 +693,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__86"
@@ -706,7 +706,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:30:7: ( 'complexAbundance' )
             // BELScript_v1.g:30:9: 'complexAbundance'
             {
-            match("complexAbundance"); 
+            match("complexAbundance");
 
 
 
@@ -716,7 +716,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__87"
@@ -729,7 +729,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:31:7: ( 'composite' )
             // BELScript_v1.g:31:9: 'composite'
             {
-            match("composite"); 
+            match("composite");
 
 
 
@@ -739,7 +739,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__88"
@@ -752,7 +752,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:32:7: ( 'compositeAbundance' )
             // BELScript_v1.g:32:9: 'compositeAbundance'
             {
-            match("compositeAbundance"); 
+            match("compositeAbundance");
 
 
 
@@ -762,7 +762,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__89"
@@ -775,7 +775,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:33:7: ( 'decreases' )
             // BELScript_v1.g:33:9: 'decreases'
             {
-            match("decreases"); 
+            match("decreases");
 
 
 
@@ -785,7 +785,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__90"
@@ -798,7 +798,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:34:7: ( 'deg' )
             // BELScript_v1.g:34:9: 'deg'
             {
-            match("deg"); 
+            match("deg");
 
 
 
@@ -808,7 +808,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__91"
@@ -821,7 +821,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:35:7: ( 'degradation' )
             // BELScript_v1.g:35:9: 'degradation'
             {
-            match("degradation"); 
+            match("degradation");
 
 
 
@@ -831,7 +831,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__92"
@@ -844,7 +844,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:36:7: ( 'directlyDecreases' )
             // BELScript_v1.g:36:9: 'directlyDecreases'
             {
-            match("directlyDecreases"); 
+            match("directlyDecreases");
 
 
 
@@ -854,7 +854,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__93"
@@ -867,7 +867,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:37:7: ( 'directlyIncreases' )
             // BELScript_v1.g:37:9: 'directlyIncreases'
             {
-            match("directlyIncreases"); 
+            match("directlyIncreases");
 
 
 
@@ -877,7 +877,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__94"
@@ -890,7 +890,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:38:7: ( 'fus' )
             // BELScript_v1.g:38:9: 'fus'
             {
-            match("fus"); 
+            match("fus");
 
 
 
@@ -900,7 +900,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__95"
@@ -913,7 +913,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:39:7: ( 'fusion' )
             // BELScript_v1.g:39:9: 'fusion'
             {
-            match("fusion"); 
+            match("fusion");
 
 
 
@@ -923,7 +923,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__96"
@@ -936,7 +936,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:40:7: ( 'g' )
             // BELScript_v1.g:40:9: 'g'
             {
-            match('g'); 
+            match('g');
 
             }
 
@@ -944,7 +944,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__97"
@@ -957,7 +957,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:41:7: ( 'geneAbundance' )
             // BELScript_v1.g:41:9: 'geneAbundance'
             {
-            match("geneAbundance"); 
+            match("geneAbundance");
 
 
 
@@ -967,7 +967,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__98"
@@ -980,7 +980,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:42:7: ( 'gtp' )
             // BELScript_v1.g:42:9: 'gtp'
             {
-            match("gtp"); 
+            match("gtp");
 
 
 
@@ -990,7 +990,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__99"
@@ -1003,7 +1003,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:43:8: ( 'gtpBoundActivity' )
             // BELScript_v1.g:43:10: 'gtpBoundActivity'
             {
-            match("gtpBoundActivity"); 
+            match("gtpBoundActivity");
 
 
 
@@ -1013,7 +1013,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__100"
@@ -1026,7 +1026,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:44:8: ( 'hasComponent' )
             // BELScript_v1.g:44:10: 'hasComponent'
             {
-            match("hasComponent"); 
+            match("hasComponent");
 
 
 
@@ -1036,7 +1036,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__101"
@@ -1049,7 +1049,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:45:8: ( 'hasComponents' )
             // BELScript_v1.g:45:10: 'hasComponents'
             {
-            match("hasComponents"); 
+            match("hasComponents");
 
 
 
@@ -1059,7 +1059,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__102"
@@ -1072,7 +1072,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:46:8: ( 'hasMember' )
             // BELScript_v1.g:46:10: 'hasMember'
             {
-            match("hasMember"); 
+            match("hasMember");
 
 
 
@@ -1082,7 +1082,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__103"
@@ -1095,7 +1095,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:47:8: ( 'hasMembers' )
             // BELScript_v1.g:47:10: 'hasMembers'
             {
-            match("hasMembers"); 
+            match("hasMembers");
 
 
 
@@ -1105,7 +1105,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__104"
@@ -1118,7 +1118,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:48:8: ( 'increases' )
             // BELScript_v1.g:48:10: 'increases'
             {
-            match("increases"); 
+            match("increases");
 
 
 
@@ -1128,7 +1128,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__105"
@@ -1141,7 +1141,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:49:8: ( 'isA' )
             // BELScript_v1.g:49:10: 'isA'
             {
-            match("isA"); 
+            match("isA");
 
 
 
@@ -1151,7 +1151,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__106"
@@ -1164,7 +1164,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:50:8: ( 'kin' )
             // BELScript_v1.g:50:10: 'kin'
             {
-            match("kin"); 
+            match("kin");
 
 
 
@@ -1174,7 +1174,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__107"
@@ -1187,7 +1187,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:51:8: ( 'kinaseActivity' )
             // BELScript_v1.g:51:10: 'kinaseActivity'
             {
-            match("kinaseActivity"); 
+            match("kinaseActivity");
 
 
 
@@ -1197,7 +1197,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__108"
@@ -1210,7 +1210,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:52:8: ( 'list' )
             // BELScript_v1.g:52:10: 'list'
             {
-            match("list"); 
+            match("list");
 
 
 
@@ -1220,7 +1220,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__109"
@@ -1233,7 +1233,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:53:8: ( 'm' )
             // BELScript_v1.g:53:10: 'm'
             {
-            match('m'); 
+            match('m');
 
             }
 
@@ -1241,7 +1241,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__110"
@@ -1254,7 +1254,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:54:8: ( 'microRNAAbundance' )
             // BELScript_v1.g:54:10: 'microRNAAbundance'
             {
-            match("microRNAAbundance"); 
+            match("microRNAAbundance");
 
 
 
@@ -1264,7 +1264,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__111"
@@ -1277,7 +1277,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:55:8: ( 'molecularActivity' )
             // BELScript_v1.g:55:10: 'molecularActivity'
             {
-            match("molecularActivity"); 
+            match("molecularActivity");
 
 
 
@@ -1287,7 +1287,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__112"
@@ -1300,7 +1300,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:56:8: ( 'negativeCorrelation' )
             // BELScript_v1.g:56:10: 'negativeCorrelation'
             {
-            match("negativeCorrelation"); 
+            match("negativeCorrelation");
 
 
 
@@ -1310,7 +1310,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__113"
@@ -1323,7 +1323,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:57:8: ( 'orthologous' )
             // BELScript_v1.g:57:10: 'orthologous'
             {
-            match("orthologous"); 
+            match("orthologous");
 
 
 
@@ -1333,7 +1333,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__114"
@@ -1346,7 +1346,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:58:8: ( 'p' )
             // BELScript_v1.g:58:10: 'p'
             {
-            match('p'); 
+            match('p');
 
             }
 
@@ -1354,7 +1354,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__115"
@@ -1367,7 +1367,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:59:8: ( 'path' )
             // BELScript_v1.g:59:10: 'path'
             {
-            match("path"); 
+            match("path");
 
 
 
@@ -1377,7 +1377,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__116"
@@ -1390,7 +1390,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:60:8: ( 'pathology' )
             // BELScript_v1.g:60:10: 'pathology'
             {
-            match("pathology"); 
+            match("pathology");
 
 
 
@@ -1400,7 +1400,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__117"
@@ -1413,7 +1413,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:61:8: ( 'pep' )
             // BELScript_v1.g:61:10: 'pep'
             {
-            match("pep"); 
+            match("pep");
 
 
 
@@ -1423,7 +1423,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__118"
@@ -1436,7 +1436,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:62:8: ( 'peptidaseActivity' )
             // BELScript_v1.g:62:10: 'peptidaseActivity'
             {
-            match("peptidaseActivity"); 
+            match("peptidaseActivity");
 
 
 
@@ -1446,7 +1446,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__119"
@@ -1459,7 +1459,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:63:8: ( 'phos' )
             // BELScript_v1.g:63:10: 'phos'
             {
-            match("phos"); 
+            match("phos");
 
 
 
@@ -1469,7 +1469,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__120"
@@ -1482,7 +1482,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:64:8: ( 'phosphataseActivity' )
             // BELScript_v1.g:64:10: 'phosphataseActivity'
             {
-            match("phosphataseActivity"); 
+            match("phosphataseActivity");
 
 
 
@@ -1492,7 +1492,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__121"
@@ -1505,7 +1505,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:65:8: ( 'pmod' )
             // BELScript_v1.g:65:10: 'pmod'
             {
-            match("pmod"); 
+            match("pmod");
 
 
 
@@ -1515,7 +1515,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__122"
@@ -1528,7 +1528,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:66:8: ( 'positiveCorrelation' )
             // BELScript_v1.g:66:10: 'positiveCorrelation'
             {
-            match("positiveCorrelation"); 
+            match("positiveCorrelation");
 
 
 
@@ -1538,7 +1538,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__123"
@@ -1551,7 +1551,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:67:8: ( 'products' )
             // BELScript_v1.g:67:10: 'products'
             {
-            match("products"); 
+            match("products");
 
 
 
@@ -1561,7 +1561,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__124"
@@ -1574,7 +1574,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:68:8: ( 'prognosticBiomarkerFor' )
             // BELScript_v1.g:68:10: 'prognosticBiomarkerFor'
             {
-            match("prognosticBiomarkerFor"); 
+            match("prognosticBiomarkerFor");
 
 
 
@@ -1584,7 +1584,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__125"
@@ -1597,7 +1597,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:69:8: ( 'proteinAbundance' )
             // BELScript_v1.g:69:10: 'proteinAbundance'
             {
-            match("proteinAbundance"); 
+            match("proteinAbundance");
 
 
 
@@ -1607,7 +1607,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__126"
@@ -1620,7 +1620,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:70:8: ( 'proteinModification' )
             // BELScript_v1.g:70:10: 'proteinModification'
             {
-            match("proteinModification"); 
+            match("proteinModification");
 
 
 
@@ -1630,7 +1630,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__127"
@@ -1643,7 +1643,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:71:8: ( 'r' )
             // BELScript_v1.g:71:10: 'r'
             {
-            match('r'); 
+            match('r');
 
             }
 
@@ -1651,7 +1651,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__128"
@@ -1664,7 +1664,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:72:8: ( 'rateLimitingStepOf' )
             // BELScript_v1.g:72:10: 'rateLimitingStepOf'
             {
-            match("rateLimitingStepOf"); 
+            match("rateLimitingStepOf");
 
 
 
@@ -1674,7 +1674,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__129"
@@ -1687,7 +1687,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:73:8: ( 'reactants' )
             // BELScript_v1.g:73:10: 'reactants'
             {
-            match("reactants"); 
+            match("reactants");
 
 
 
@@ -1697,7 +1697,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__130"
@@ -1710,7 +1710,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:74:8: ( 'reaction' )
             // BELScript_v1.g:74:10: 'reaction'
             {
-            match("reaction"); 
+            match("reaction");
 
 
 
@@ -1720,7 +1720,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__131"
@@ -1733,7 +1733,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:75:8: ( 'ribo' )
             // BELScript_v1.g:75:10: 'ribo'
             {
-            match("ribo"); 
+            match("ribo");
 
 
 
@@ -1743,7 +1743,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__132"
@@ -1756,7 +1756,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:76:8: ( 'ribosylationActivity' )
             // BELScript_v1.g:76:10: 'ribosylationActivity'
             {
-            match("ribosylationActivity"); 
+            match("ribosylationActivity");
 
 
 
@@ -1766,7 +1766,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__133"
@@ -1779,7 +1779,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:77:8: ( 'rnaAbundance' )
             // BELScript_v1.g:77:10: 'rnaAbundance'
             {
-            match("rnaAbundance"); 
+            match("rnaAbundance");
 
 
 
@@ -1789,7 +1789,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__134"
@@ -1802,7 +1802,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:78:8: ( 'rxn' )
             // BELScript_v1.g:78:10: 'rxn'
             {
-            match("rxn"); 
+            match("rxn");
 
 
 
@@ -1812,7 +1812,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__135"
@@ -1825,7 +1825,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:79:8: ( 'sec' )
             // BELScript_v1.g:79:10: 'sec'
             {
-            match("sec"); 
+            match("sec");
 
 
 
@@ -1835,7 +1835,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__136"
@@ -1848,7 +1848,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:80:8: ( 'sub' )
             // BELScript_v1.g:80:10: 'sub'
             {
-            match("sub"); 
+            match("sub");
 
 
 
@@ -1858,7 +1858,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__137"
@@ -1871,7 +1871,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:81:8: ( 'subProcessOf' )
             // BELScript_v1.g:81:10: 'subProcessOf'
             {
-            match("subProcessOf"); 
+            match("subProcessOf");
 
 
 
@@ -1881,7 +1881,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__138"
@@ -1894,7 +1894,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:82:8: ( 'substitution' )
             // BELScript_v1.g:82:10: 'substitution'
             {
-            match("substitution"); 
+            match("substitution");
 
 
 
@@ -1904,7 +1904,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__139"
@@ -1917,7 +1917,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:83:8: ( 'surf' )
             // BELScript_v1.g:83:10: 'surf'
             {
-            match("surf"); 
+            match("surf");
 
 
 
@@ -1927,7 +1927,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__140"
@@ -1940,7 +1940,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:84:8: ( 'tloc' )
             // BELScript_v1.g:84:10: 'tloc'
             {
-            match("tloc"); 
+            match("tloc");
 
 
 
@@ -1950,7 +1950,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__141"
@@ -1963,7 +1963,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:85:8: ( 'tport' )
             // BELScript_v1.g:85:10: 'tport'
             {
-            match("tport"); 
+            match("tport");
 
 
 
@@ -1973,7 +1973,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__142"
@@ -1986,7 +1986,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:86:8: ( 'transcribedTo' )
             // BELScript_v1.g:86:10: 'transcribedTo'
             {
-            match("transcribedTo"); 
+            match("transcribedTo");
 
 
 
@@ -1996,7 +1996,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__143"
@@ -2009,7 +2009,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:87:8: ( 'transcriptionalActivity' )
             // BELScript_v1.g:87:10: 'transcriptionalActivity'
             {
-            match("transcriptionalActivity"); 
+            match("transcriptionalActivity");
 
 
 
@@ -2019,7 +2019,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__144"
@@ -2032,7 +2032,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:88:8: ( 'translatedTo' )
             // BELScript_v1.g:88:10: 'translatedTo'
             {
-            match("translatedTo"); 
+            match("translatedTo");
 
 
 
@@ -2042,7 +2042,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__145"
@@ -2055,7 +2055,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:89:8: ( 'translocation' )
             // BELScript_v1.g:89:10: 'translocation'
             {
-            match("translocation"); 
+            match("translocation");
 
 
 
@@ -2065,7 +2065,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__146"
@@ -2078,7 +2078,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:90:8: ( 'transportActivity' )
             // BELScript_v1.g:90:10: 'transportActivity'
             {
-            match("transportActivity"); 
+            match("transportActivity");
 
 
 
@@ -2088,7 +2088,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__147"
@@ -2101,7 +2101,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:91:8: ( 'trunc' )
             // BELScript_v1.g:91:10: 'trunc'
             {
-            match("trunc"); 
+            match("trunc");
 
 
 
@@ -2111,7 +2111,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__148"
@@ -2124,7 +2124,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:92:8: ( 'truncation' )
             // BELScript_v1.g:92:10: 'truncation'
             {
-            match("truncation"); 
+            match("truncation");
 
 
 
@@ -2134,7 +2134,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__149"
@@ -2147,7 +2147,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:93:8: ( 'tscript' )
             // BELScript_v1.g:93:10: 'tscript'
             {
-            match("tscript"); 
+            match("tscript");
 
 
 
@@ -2157,7 +2157,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__150"
@@ -2170,7 +2170,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:278:5: ( '#' (~ ( '\\n' | '\\r' ) )* )
             // BELScript_v1.g:278:9: '#' (~ ( '\\n' | '\\r' ) )*
             {
-            match('#'); 
+            match('#');
 
             // BELScript_v1.g:278:13: (~ ( '\\n' | '\\r' ) )*
             loop1:
@@ -2184,24 +2184,24 @@ public class BELScript_v1Lexer extends Lexer {
 
 
                 switch (alt1) {
-            	case 1 :
-            	    // BELScript_v1.g:
-            	    {
-            	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // BELScript_v1.g:
+                    {
+                    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop1;
+                default :
+                    break loop1;
                 }
             } while (true);
 
@@ -2212,7 +2212,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DOCUMENT_COMMENT"
@@ -2225,7 +2225,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:282:5: ( '//' ( ( '\\\\\\n' ) | ( '\\\\\\r\\n' ) |~ ( '\\n' | '\\r' ) )* )
             // BELScript_v1.g:282:9: '//' ( ( '\\\\\\n' ) | ( '\\\\\\r\\n' ) |~ ( '\\n' | '\\r' ) )*
             {
-            match("//"); 
+            match("//");
 
 
 
@@ -2261,54 +2261,54 @@ public class BELScript_v1Lexer extends Lexer {
 
 
                 switch (alt2) {
-            	case 1 :
-            	    // BELScript_v1.g:282:15: ( '\\\\\\n' )
-            	    {
-            	    // BELScript_v1.g:282:15: ( '\\\\\\n' )
-            	    // BELScript_v1.g:282:16: '\\\\\\n'
-            	    {
-            	    match("\\\n"); 
+                case 1 :
+                    // BELScript_v1.g:282:15: ( '\\\\\\n' )
+                    {
+                    // BELScript_v1.g:282:15: ( '\\\\\\n' )
+                    // BELScript_v1.g:282:16: '\\\\\\n'
+                    {
+                    match("\\\n");
 
 
 
-            	    }
+                    }
 
 
-            	    }
-            	    break;
-            	case 2 :
-            	    // BELScript_v1.g:282:26: ( '\\\\\\r\\n' )
-            	    {
-            	    // BELScript_v1.g:282:26: ( '\\\\\\r\\n' )
-            	    // BELScript_v1.g:282:27: '\\\\\\r\\n'
-            	    {
-            	    match("\\\r\n"); 
+                    }
+                    break;
+                case 2 :
+                    // BELScript_v1.g:282:26: ( '\\\\\\r\\n' )
+                    {
+                    // BELScript_v1.g:282:26: ( '\\\\\\r\\n' )
+                    // BELScript_v1.g:282:27: '\\\\\\r\\n'
+                    {
+                    match("\\\r\n");
 
 
 
-            	    }
+                    }
 
 
-            	    }
-            	    break;
-            	case 3 :
-            	    // BELScript_v1.g:282:39: ~ ( '\\n' | '\\r' )
-            	    {
-            	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                    }
+                    break;
+                case 3 :
+                    // BELScript_v1.g:282:39: ~ ( '\\n' | '\\r' )
+                    {
+                    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop2;
+                default :
+                    break loop2;
                 }
             } while (true);
 
@@ -2319,7 +2319,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "STATEMENT_COMMENT"
@@ -2332,9 +2332,9 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:286:5: ( '{' OBJECT_IDENT ( COMMA OBJECT_IDENT )* '}' )
             // BELScript_v1.g:286:9: '{' OBJECT_IDENT ( COMMA OBJECT_IDENT )* '}'
             {
-            match('{'); 
+            match('{');
 
-            mOBJECT_IDENT(); 
+            mOBJECT_IDENT();
 
 
             // BELScript_v1.g:286:26: ( COMMA OBJECT_IDENT )*
@@ -2349,25 +2349,25 @@ public class BELScript_v1Lexer extends Lexer {
 
 
                 switch (alt3) {
-            	case 1 :
-            	    // BELScript_v1.g:286:27: COMMA OBJECT_IDENT
-            	    {
-            	    mCOMMA(); 
+                case 1 :
+                    // BELScript_v1.g:286:27: COMMA OBJECT_IDENT
+                    {
+                    mCOMMA();
 
 
-            	    mOBJECT_IDENT(); 
+                    mOBJECT_IDENT();
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop3;
+                default :
+                    break loop3;
                 }
             } while (true);
 
 
-            match('}'); 
+            match('}');
 
             }
 
@@ -2375,7 +2375,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "IDENT_LIST"
@@ -2388,7 +2388,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:290:5: ( '{' ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? ( COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? )* '}' )
             // BELScript_v1.g:290:9: '{' ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? ( COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )? )* '}'
             {
-            match('{'); 
+            match('{');
 
             // BELScript_v1.g:290:13: ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
             int alt4=4;
@@ -2476,7 +2476,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 1 :
                     // BELScript_v1.g:290:14: OBJECT_IDENT
                     {
-                    mOBJECT_IDENT(); 
+                    mOBJECT_IDENT();
 
 
                     }
@@ -2484,7 +2484,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 2 :
                     // BELScript_v1.g:290:29: QUOTED_VALUE
                     {
-                    mQUOTED_VALUE(); 
+                    mQUOTED_VALUE();
 
 
                     }
@@ -2492,7 +2492,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 3 :
                     // BELScript_v1.g:290:44: VALUE_LIST
                     {
-                    mVALUE_LIST(); 
+                    mVALUE_LIST();
 
 
                     }
@@ -2513,159 +2513,159 @@ public class BELScript_v1Lexer extends Lexer {
 
 
                 switch (alt7) {
-            	case 1 :
-            	    // BELScript_v1.g:290:58: COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
-            	    {
-            	    mCOMMA(); 
+                case 1 :
+                    // BELScript_v1.g:290:58: COMMA ( ' ' )* ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
+                    {
+                    mCOMMA();
 
 
-            	    // BELScript_v1.g:290:64: ( ' ' )*
-            	    loop5:
-            	    do {
-            	        int alt5=2;
-            	        int LA5_0 = input.LA(1);
+                    // BELScript_v1.g:290:64: ( ' ' )*
+                    loop5:
+                    do {
+                        int alt5=2;
+                        int LA5_0 = input.LA(1);
 
-            	        if ( (LA5_0==' ') ) {
-            	            alt5=1;
-            	        }
-
-
-            	        switch (alt5) {
-            	    	case 1 :
-            	    	    // BELScript_v1.g:290:65: ' '
-            	    	    {
-            	    	    match(' '); 
-
-            	    	    }
-            	    	    break;
-
-            	    	default :
-            	    	    break loop5;
-            	        }
-            	    } while (true);
+                        if ( (LA5_0==' ') ) {
+                            alt5=1;
+                        }
 
 
-            	    // BELScript_v1.g:290:71: ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
-            	    int alt6=4;
-            	    switch ( input.LA(1) ) {
-            	        case '0':
-            	        case '1':
-            	        case '2':
-            	        case '3':
-            	        case '4':
-            	        case '5':
-            	        case '6':
-            	        case '7':
-            	        case '8':
-            	        case '9':
-            	        case 'A':
-            	        case 'B':
-            	        case 'C':
-            	        case 'D':
-            	        case 'E':
-            	        case 'F':
-            	        case 'G':
-            	        case 'H':
-            	        case 'I':
-            	        case 'J':
-            	        case 'K':
-            	        case 'L':
-            	        case 'M':
-            	        case 'N':
-            	        case 'O':
-            	        case 'P':
-            	        case 'Q':
-            	        case 'R':
-            	        case 'S':
-            	        case 'T':
-            	        case 'U':
-            	        case 'V':
-            	        case 'W':
-            	        case 'X':
-            	        case 'Y':
-            	        case 'Z':
-            	        case '_':
-            	        case 'a':
-            	        case 'b':
-            	        case 'c':
-            	        case 'd':
-            	        case 'e':
-            	        case 'f':
-            	        case 'g':
-            	        case 'h':
-            	        case 'i':
-            	        case 'j':
-            	        case 'k':
-            	        case 'l':
-            	        case 'm':
-            	        case 'n':
-            	        case 'o':
-            	        case 'p':
-            	        case 'q':
-            	        case 'r':
-            	        case 's':
-            	        case 't':
-            	        case 'u':
-            	        case 'v':
-            	        case 'w':
-            	        case 'x':
-            	        case 'y':
-            	        case 'z':
-            	            {
-            	            alt6=1;
-            	            }
-            	            break;
-            	        case '\"':
-            	            {
-            	            alt6=2;
-            	            }
-            	            break;
-            	        case '{':
-            	            {
-            	            alt6=3;
-            	            }
-            	            break;
-            	    }
+                        switch (alt5) {
+                        case 1 :
+                            // BELScript_v1.g:290:65: ' '
+                            {
+                            match(' ');
 
-            	    switch (alt6) {
-            	        case 1 :
-            	            // BELScript_v1.g:290:72: OBJECT_IDENT
-            	            {
-            	            mOBJECT_IDENT(); 
+                            }
+                            break;
+
+                        default :
+                            break loop5;
+                        }
+                    } while (true);
 
 
-            	            }
-            	            break;
-            	        case 2 :
-            	            // BELScript_v1.g:290:87: QUOTED_VALUE
-            	            {
-            	            mQUOTED_VALUE(); 
+                    // BELScript_v1.g:290:71: ( OBJECT_IDENT | QUOTED_VALUE | VALUE_LIST )?
+                    int alt6=4;
+                    switch ( input.LA(1) ) {
+                        case '0':
+                        case '1':
+                        case '2':
+                        case '3':
+                        case '4':
+                        case '5':
+                        case '6':
+                        case '7':
+                        case '8':
+                        case '9':
+                        case 'A':
+                        case 'B':
+                        case 'C':
+                        case 'D':
+                        case 'E':
+                        case 'F':
+                        case 'G':
+                        case 'H':
+                        case 'I':
+                        case 'J':
+                        case 'K':
+                        case 'L':
+                        case 'M':
+                        case 'N':
+                        case 'O':
+                        case 'P':
+                        case 'Q':
+                        case 'R':
+                        case 'S':
+                        case 'T':
+                        case 'U':
+                        case 'V':
+                        case 'W':
+                        case 'X':
+                        case 'Y':
+                        case 'Z':
+                        case '_':
+                        case 'a':
+                        case 'b':
+                        case 'c':
+                        case 'd':
+                        case 'e':
+                        case 'f':
+                        case 'g':
+                        case 'h':
+                        case 'i':
+                        case 'j':
+                        case 'k':
+                        case 'l':
+                        case 'm':
+                        case 'n':
+                        case 'o':
+                        case 'p':
+                        case 'q':
+                        case 'r':
+                        case 's':
+                        case 't':
+                        case 'u':
+                        case 'v':
+                        case 'w':
+                        case 'x':
+                        case 'y':
+                        case 'z':
+                            {
+                            alt6=1;
+                            }
+                            break;
+                        case '\"':
+                            {
+                            alt6=2;
+                            }
+                            break;
+                        case '{':
+                            {
+                            alt6=3;
+                            }
+                            break;
+                    }
+
+                    switch (alt6) {
+                        case 1 :
+                            // BELScript_v1.g:290:72: OBJECT_IDENT
+                            {
+                            mOBJECT_IDENT();
 
 
-            	            }
-            	            break;
-            	        case 3 :
-            	            // BELScript_v1.g:290:102: VALUE_LIST
-            	            {
-            	            mVALUE_LIST(); 
+                            }
+                            break;
+                        case 2 :
+                            // BELScript_v1.g:290:87: QUOTED_VALUE
+                            {
+                            mQUOTED_VALUE();
 
 
-            	            }
-            	            break;
+                            }
+                            break;
+                        case 3 :
+                            // BELScript_v1.g:290:102: VALUE_LIST
+                            {
+                            mVALUE_LIST();
 
-            	    }
+
+                            }
+                            break;
+
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop7;
+                default :
+                    break loop7;
                 }
             } while (true);
 
 
-            match('}'); 
+            match('}');
 
             }
 
@@ -2673,7 +2673,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "VALUE_LIST"
@@ -2686,7 +2686,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:294:5: ( '\"' ( ESCAPE_SEQUENCE | '\\\\\\n' | '\\\\\\r\\n' |~ ( '\\\\' | '\"' ) )* '\"' )
             // BELScript_v1.g:294:9: '\"' ( ESCAPE_SEQUENCE | '\\\\\\n' | '\\\\\\r\\n' |~ ( '\\\\' | '\"' ) )* '\"'
             {
-            match('\"'); 
+            match('\"');
 
             // BELScript_v1.g:294:13: ( ESCAPE_SEQUENCE | '\\\\\\n' | '\\\\\\r\\n' |~ ( '\\\\' | '\"' ) )*
             loop8:
@@ -2737,55 +2737,55 @@ public class BELScript_v1Lexer extends Lexer {
 
 
                 switch (alt8) {
-            	case 1 :
-            	    // BELScript_v1.g:294:15: ESCAPE_SEQUENCE
-            	    {
-            	    mESCAPE_SEQUENCE(); 
+                case 1 :
+                    // BELScript_v1.g:294:15: ESCAPE_SEQUENCE
+                    {
+                    mESCAPE_SEQUENCE();
 
 
-            	    }
-            	    break;
-            	case 2 :
-            	    // BELScript_v1.g:294:33: '\\\\\\n'
-            	    {
-            	    match("\\\n"); 
-
-
-
-            	    }
-            	    break;
-            	case 3 :
-            	    // BELScript_v1.g:294:42: '\\\\\\r\\n'
-            	    {
-            	    match("\\\r\n"); 
+                    }
+                    break;
+                case 2 :
+                    // BELScript_v1.g:294:33: '\\\\\\n'
+                    {
+                    match("\\\n");
 
 
 
-            	    }
-            	    break;
-            	case 4 :
-            	    // BELScript_v1.g:294:53: ~ ( '\\\\' | '\"' )
-            	    {
-            	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                    }
+                    break;
+                case 3 :
+                    // BELScript_v1.g:294:42: '\\\\\\r\\n'
+                    {
+                    match("\\\r\n");
 
 
-            	    }
-            	    break;
 
-            	default :
-            	    break loop8;
+                    }
+                    break;
+                case 4 :
+                    // BELScript_v1.g:294:53: ~ ( '\\\\' | '\"' )
+                    {
+                    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
+
+
+                    }
+                    break;
+
+                default :
+                    break loop8;
                 }
             } while (true);
 
 
-            match('\"'); 
+            match('\"');
 
             }
 
@@ -2793,7 +2793,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "QUOTED_VALUE"
@@ -2806,7 +2806,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:297:3: ( '(' )
             // BELScript_v1.g:297:5: '('
             {
-            match('('); 
+            match('(');
 
             }
 
@@ -2814,7 +2814,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LP"
@@ -2827,7 +2827,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:298:3: ( ')' )
             // BELScript_v1.g:298:5: ')'
             {
-            match(')'); 
+            match(')');
 
             }
 
@@ -2835,7 +2835,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "RP"
@@ -2848,7 +2848,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:299:3: ( '=' )
             // BELScript_v1.g:299:5: '='
             {
-            match('='); 
+            match('=');
 
             }
 
@@ -2856,7 +2856,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "EQ"
@@ -2869,7 +2869,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:300:6: ( ':' )
             // BELScript_v1.g:300:8: ':'
             {
-            match(':'); 
+            match(':');
 
             }
 
@@ -2877,7 +2877,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "COLON"
@@ -2890,7 +2890,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:301:6: ( ',' )
             // BELScript_v1.g:301:8: ','
             {
-            match(','); 
+            match(',');
 
             }
 
@@ -2898,7 +2898,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "COMMA"
@@ -2947,7 +2947,7 @@ public class BELScript_v1Lexer extends Lexer {
                         case 1 :
                             // BELScript_v1.g:304:9: '\\u000d'
                             {
-                            match('\r'); 
+                            match('\r');
 
                             }
                             break;
@@ -2955,14 +2955,14 @@ public class BELScript_v1Lexer extends Lexer {
                     }
 
 
-                    match('\n'); 
+                    match('\n');
 
                     }
                     break;
                 case 2 :
                     // BELScript_v1.g:304:30: '\\u000d'
                     {
-                    match('\r'); 
+                    match('\r');
 
                     }
                     break;
@@ -2972,7 +2972,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "NEWLINE"
@@ -3034,62 +3034,62 @@ public class BELScript_v1Lexer extends Lexer {
                 }
 
                 switch (alt11) {
-            	case 1 :
-            	    // BELScript_v1.g:307:6: ' '
-            	    {
-            	    match(' '); 
+                case 1 :
+                    // BELScript_v1.g:307:6: ' '
+                    {
+                    match(' ');
 
-            	    }
-            	    break;
-            	case 2 :
-            	    // BELScript_v1.g:307:12: '\\t'
-            	    {
-            	    match('\t'); 
+                    }
+                    break;
+                case 2 :
+                    // BELScript_v1.g:307:12: '\\t'
+                    {
+                    match('\t');
 
-            	    }
-            	    break;
-            	case 3 :
-            	    // BELScript_v1.g:307:19: '\\n'
-            	    {
-            	    match('\n'); 
+                    }
+                    break;
+                case 3 :
+                    // BELScript_v1.g:307:19: '\\n'
+                    {
+                    match('\n');
 
-            	    }
-            	    break;
-            	case 4 :
-            	    // BELScript_v1.g:307:26: '\\r'
-            	    {
-            	    match('\r'); 
+                    }
+                    break;
+                case 4 :
+                    // BELScript_v1.g:307:26: '\\r'
+                    {
+                    match('\r');
 
-            	    }
-            	    break;
-            	case 5 :
-            	    // BELScript_v1.g:307:32: '\\f'
-            	    {
-            	    match('\f'); 
+                    }
+                    break;
+                case 5 :
+                    // BELScript_v1.g:307:32: '\\f'
+                    {
+                    match('\f');
 
-            	    }
-            	    break;
-            	case 6 :
-            	    // BELScript_v1.g:307:39: '\\\\\\n'
-            	    {
-            	    match("\\\n"); 
-
-
-
-            	    }
-            	    break;
-            	case 7 :
-            	    // BELScript_v1.g:307:48: '\\\\\\r\\n'
-            	    {
-            	    match("\\\r\n"); 
+                    }
+                    break;
+                case 6 :
+                    // BELScript_v1.g:307:39: '\\\\\\n'
+                    {
+                    match("\\\n");
 
 
 
-            	    }
-            	    break;
+                    }
+                    break;
+                case 7 :
+                    // BELScript_v1.g:307:48: '\\\\\\r\\n'
+                    {
+                    match("\\\r\n");
 
-            	default :
-            	    if ( cnt11 >= 1 ) break loop11;
+
+
+                    }
+                    break;
+
+                default :
+                    if ( cnt11 >= 1 ) break loop11;
                         EarlyExitException eee =
                             new EarlyExitException(11, input);
                         throw eee;
@@ -3098,7 +3098,7 @@ public class BELScript_v1Lexer extends Lexer {
             } while (true);
 
 
-             skip(); 
+             skip();
 
             }
 
@@ -3106,7 +3106,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "WS"
@@ -3225,7 +3225,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_ANNO"
@@ -3264,7 +3264,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_AS"
@@ -3353,7 +3353,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_AUTHORS"
@@ -3482,7 +3482,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_CONTACTINFO"
@@ -3591,7 +3591,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_COPYRIGHT"
@@ -3680,7 +3680,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_DFLT"
@@ -3759,7 +3759,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_DEFINE"
@@ -3888,7 +3888,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_DESC"
@@ -4007,7 +4007,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_DISCLAIMER"
@@ -4106,7 +4106,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_DOCUMENT"
@@ -4205,7 +4205,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_LICENSES"
@@ -4264,7 +4264,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_LIST"
@@ -4323,7 +4323,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_NAME"
@@ -4432,7 +4432,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_NS"
@@ -4521,7 +4521,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_PATTERN"
@@ -4570,7 +4570,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_SET"
@@ -4676,7 +4676,7 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:376:90: ( '_' )
             // BELScript_v1.g:376:91: '_'
             {
-            match('_'); 
+            match('_');
 
             }
 
@@ -4737,7 +4737,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_STMT_GROUP"
@@ -4806,7 +4806,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_UNSET"
@@ -4855,7 +4855,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_URL"
@@ -4944,7 +4944,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KWRD_VERSION"
@@ -4970,24 +4970,24 @@ public class BELScript_v1Lexer extends Lexer {
 
 
                 switch (alt12) {
-            	case 1 :
-            	    // BELScript_v1.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // BELScript_v1.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt12 >= 1 ) break loop12;
+                default :
+                    if ( cnt12 >= 1 ) break loop12;
                         EarlyExitException eee =
                             new EarlyExitException(12, input);
                         throw eee;
@@ -5002,7 +5002,7 @@ public class BELScript_v1Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "OBJECT_IDENT"
@@ -5028,7 +5028,7 @@ public class BELScript_v1Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LETTER"
@@ -5054,7 +5054,7 @@ public class BELScript_v1Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DIGIT"
@@ -5117,7 +5117,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 1 :
                     // BELScript_v1.g:408:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
-                    match('\\'); 
+                    match('\\');
 
                     if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
                         input.consume();
@@ -5134,7 +5134,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 2 :
                     // BELScript_v1.g:409:9: UNICODE_ESCAPE
                     {
-                    mUNICODE_ESCAPE(); 
+                    mUNICODE_ESCAPE();
 
 
                     }
@@ -5142,7 +5142,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 3 :
                     // BELScript_v1.g:410:9: OCTAL_ESCAPE
                     {
-                    mOCTAL_ESCAPE(); 
+                    mOCTAL_ESCAPE();
 
 
                     }
@@ -5152,7 +5152,7 @@ public class BELScript_v1Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "ESCAPE_SEQUENCE"
@@ -5213,7 +5213,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 1 :
                     // BELScript_v1.g:414:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
-                    match('\\'); 
+                    match('\\');
 
                     if ( (input.LA(1) >= '0' && input.LA(1) <= '3') ) {
                         input.consume();
@@ -5250,7 +5250,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 2 :
                     // BELScript_v1.g:415:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
-                    match('\\'); 
+                    match('\\');
 
                     if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
                         input.consume();
@@ -5277,7 +5277,7 @@ public class BELScript_v1Lexer extends Lexer {
                 case 3 :
                     // BELScript_v1.g:416:9: '\\\\' ( '0' .. '7' )
                     {
-                    match('\\'); 
+                    match('\\');
 
                     if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
                         input.consume();
@@ -5296,7 +5296,7 @@ public class BELScript_v1Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "OCTAL_ESCAPE"
@@ -5307,20 +5307,20 @@ public class BELScript_v1Lexer extends Lexer {
             // BELScript_v1.g:420:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
             // BELScript_v1.g:420:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
             {
-            match('\\'); 
+            match('\\');
 
-            match('u'); 
+            match('u');
 
-            mHEX_DIGIT(); 
-
-
-            mHEX_DIGIT(); 
+            mHEX_DIGIT();
 
 
-            mHEX_DIGIT(); 
+            mHEX_DIGIT();
 
 
-            mHEX_DIGIT(); 
+            mHEX_DIGIT();
+
+
+            mHEX_DIGIT();
 
 
             }
@@ -5328,7 +5328,7 @@ public class BELScript_v1Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "UNICODE_ESCAPE"
@@ -5354,7 +5354,7 @@ public class BELScript_v1Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "HEX_DIGIT"
@@ -5367,7 +5367,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 1 :
                 // BELScript_v1.g:1:10: T__64
                 {
-                mT__64(); 
+                mT__64();
 
 
                 }
@@ -5375,7 +5375,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 2 :
                 // BELScript_v1.g:1:16: T__65
                 {
-                mT__65(); 
+                mT__65();
 
 
                 }
@@ -5383,7 +5383,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 3 :
                 // BELScript_v1.g:1:22: T__66
                 {
-                mT__66(); 
+                mT__66();
 
 
                 }
@@ -5391,7 +5391,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 4 :
                 // BELScript_v1.g:1:28: T__67
                 {
-                mT__67(); 
+                mT__67();
 
 
                 }
@@ -5399,7 +5399,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 5 :
                 // BELScript_v1.g:1:34: T__68
                 {
-                mT__68(); 
+                mT__68();
 
 
                 }
@@ -5407,7 +5407,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 6 :
                 // BELScript_v1.g:1:40: T__69
                 {
-                mT__69(); 
+                mT__69();
 
 
                 }
@@ -5415,7 +5415,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 7 :
                 // BELScript_v1.g:1:46: T__70
                 {
-                mT__70(); 
+                mT__70();
 
 
                 }
@@ -5423,7 +5423,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 8 :
                 // BELScript_v1.g:1:52: T__71
                 {
-                mT__71(); 
+                mT__71();
 
 
                 }
@@ -5431,7 +5431,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 9 :
                 // BELScript_v1.g:1:58: T__72
                 {
-                mT__72(); 
+                mT__72();
 
 
                 }
@@ -5439,7 +5439,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 10 :
                 // BELScript_v1.g:1:64: T__73
                 {
-                mT__73(); 
+                mT__73();
 
 
                 }
@@ -5447,7 +5447,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 11 :
                 // BELScript_v1.g:1:70: T__74
                 {
-                mT__74(); 
+                mT__74();
 
 
                 }
@@ -5455,7 +5455,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 12 :
                 // BELScript_v1.g:1:76: T__75
                 {
-                mT__75(); 
+                mT__75();
 
 
                 }
@@ -5463,7 +5463,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 13 :
                 // BELScript_v1.g:1:82: T__76
                 {
-                mT__76(); 
+                mT__76();
 
 
                 }
@@ -5471,7 +5471,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 14 :
                 // BELScript_v1.g:1:88: T__77
                 {
-                mT__77(); 
+                mT__77();
 
 
                 }
@@ -5479,7 +5479,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 15 :
                 // BELScript_v1.g:1:94: T__78
                 {
-                mT__78(); 
+                mT__78();
 
 
                 }
@@ -5487,7 +5487,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 16 :
                 // BELScript_v1.g:1:100: T__79
                 {
-                mT__79(); 
+                mT__79();
 
 
                 }
@@ -5495,7 +5495,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 17 :
                 // BELScript_v1.g:1:106: T__80
                 {
-                mT__80(); 
+                mT__80();
 
 
                 }
@@ -5503,7 +5503,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 18 :
                 // BELScript_v1.g:1:112: T__81
                 {
-                mT__81(); 
+                mT__81();
 
 
                 }
@@ -5511,7 +5511,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 19 :
                 // BELScript_v1.g:1:118: T__82
                 {
-                mT__82(); 
+                mT__82();
 
 
                 }
@@ -5519,7 +5519,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 20 :
                 // BELScript_v1.g:1:124: T__83
                 {
-                mT__83(); 
+                mT__83();
 
 
                 }
@@ -5527,7 +5527,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 21 :
                 // BELScript_v1.g:1:130: T__84
                 {
-                mT__84(); 
+                mT__84();
 
 
                 }
@@ -5535,7 +5535,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 22 :
                 // BELScript_v1.g:1:136: T__85
                 {
-                mT__85(); 
+                mT__85();
 
 
                 }
@@ -5543,7 +5543,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 23 :
                 // BELScript_v1.g:1:142: T__86
                 {
-                mT__86(); 
+                mT__86();
 
 
                 }
@@ -5551,7 +5551,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 24 :
                 // BELScript_v1.g:1:148: T__87
                 {
-                mT__87(); 
+                mT__87();
 
 
                 }
@@ -5559,7 +5559,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 25 :
                 // BELScript_v1.g:1:154: T__88
                 {
-                mT__88(); 
+                mT__88();
 
 
                 }
@@ -5567,7 +5567,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 26 :
                 // BELScript_v1.g:1:160: T__89
                 {
-                mT__89(); 
+                mT__89();
 
 
                 }
@@ -5575,7 +5575,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 27 :
                 // BELScript_v1.g:1:166: T__90
                 {
-                mT__90(); 
+                mT__90();
 
 
                 }
@@ -5583,7 +5583,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 28 :
                 // BELScript_v1.g:1:172: T__91
                 {
-                mT__91(); 
+                mT__91();
 
 
                 }
@@ -5591,7 +5591,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 29 :
                 // BELScript_v1.g:1:178: T__92
                 {
-                mT__92(); 
+                mT__92();
 
 
                 }
@@ -5599,7 +5599,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 30 :
                 // BELScript_v1.g:1:184: T__93
                 {
-                mT__93(); 
+                mT__93();
 
 
                 }
@@ -5607,7 +5607,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 31 :
                 // BELScript_v1.g:1:190: T__94
                 {
-                mT__94(); 
+                mT__94();
 
 
                 }
@@ -5615,7 +5615,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 32 :
                 // BELScript_v1.g:1:196: T__95
                 {
-                mT__95(); 
+                mT__95();
 
 
                 }
@@ -5623,7 +5623,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 33 :
                 // BELScript_v1.g:1:202: T__96
                 {
-                mT__96(); 
+                mT__96();
 
 
                 }
@@ -5631,7 +5631,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 34 :
                 // BELScript_v1.g:1:208: T__97
                 {
-                mT__97(); 
+                mT__97();
 
 
                 }
@@ -5639,7 +5639,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 35 :
                 // BELScript_v1.g:1:214: T__98
                 {
-                mT__98(); 
+                mT__98();
 
 
                 }
@@ -5647,7 +5647,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 36 :
                 // BELScript_v1.g:1:220: T__99
                 {
-                mT__99(); 
+                mT__99();
 
 
                 }
@@ -5655,7 +5655,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 37 :
                 // BELScript_v1.g:1:226: T__100
                 {
-                mT__100(); 
+                mT__100();
 
 
                 }
@@ -5663,7 +5663,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 38 :
                 // BELScript_v1.g:1:233: T__101
                 {
-                mT__101(); 
+                mT__101();
 
 
                 }
@@ -5671,7 +5671,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 39 :
                 // BELScript_v1.g:1:240: T__102
                 {
-                mT__102(); 
+                mT__102();
 
 
                 }
@@ -5679,7 +5679,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 40 :
                 // BELScript_v1.g:1:247: T__103
                 {
-                mT__103(); 
+                mT__103();
 
 
                 }
@@ -5687,7 +5687,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 41 :
                 // BELScript_v1.g:1:254: T__104
                 {
-                mT__104(); 
+                mT__104();
 
 
                 }
@@ -5695,7 +5695,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 42 :
                 // BELScript_v1.g:1:261: T__105
                 {
-                mT__105(); 
+                mT__105();
 
 
                 }
@@ -5703,7 +5703,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 43 :
                 // BELScript_v1.g:1:268: T__106
                 {
-                mT__106(); 
+                mT__106();
 
 
                 }
@@ -5711,7 +5711,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 44 :
                 // BELScript_v1.g:1:275: T__107
                 {
-                mT__107(); 
+                mT__107();
 
 
                 }
@@ -5719,7 +5719,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 45 :
                 // BELScript_v1.g:1:282: T__108
                 {
-                mT__108(); 
+                mT__108();
 
 
                 }
@@ -5727,7 +5727,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 46 :
                 // BELScript_v1.g:1:289: T__109
                 {
-                mT__109(); 
+                mT__109();
 
 
                 }
@@ -5735,7 +5735,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 47 :
                 // BELScript_v1.g:1:296: T__110
                 {
-                mT__110(); 
+                mT__110();
 
 
                 }
@@ -5743,7 +5743,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 48 :
                 // BELScript_v1.g:1:303: T__111
                 {
-                mT__111(); 
+                mT__111();
 
 
                 }
@@ -5751,7 +5751,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 49 :
                 // BELScript_v1.g:1:310: T__112
                 {
-                mT__112(); 
+                mT__112();
 
 
                 }
@@ -5759,7 +5759,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 50 :
                 // BELScript_v1.g:1:317: T__113
                 {
-                mT__113(); 
+                mT__113();
 
 
                 }
@@ -5767,7 +5767,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 51 :
                 // BELScript_v1.g:1:324: T__114
                 {
-                mT__114(); 
+                mT__114();
 
 
                 }
@@ -5775,7 +5775,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 52 :
                 // BELScript_v1.g:1:331: T__115
                 {
-                mT__115(); 
+                mT__115();
 
 
                 }
@@ -5783,7 +5783,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 53 :
                 // BELScript_v1.g:1:338: T__116
                 {
-                mT__116(); 
+                mT__116();
 
 
                 }
@@ -5791,7 +5791,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 54 :
                 // BELScript_v1.g:1:345: T__117
                 {
-                mT__117(); 
+                mT__117();
 
 
                 }
@@ -5799,7 +5799,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 55 :
                 // BELScript_v1.g:1:352: T__118
                 {
-                mT__118(); 
+                mT__118();
 
 
                 }
@@ -5807,7 +5807,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 56 :
                 // BELScript_v1.g:1:359: T__119
                 {
-                mT__119(); 
+                mT__119();
 
 
                 }
@@ -5815,7 +5815,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 57 :
                 // BELScript_v1.g:1:366: T__120
                 {
-                mT__120(); 
+                mT__120();
 
 
                 }
@@ -5823,7 +5823,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 58 :
                 // BELScript_v1.g:1:373: T__121
                 {
-                mT__121(); 
+                mT__121();
 
 
                 }
@@ -5831,7 +5831,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 59 :
                 // BELScript_v1.g:1:380: T__122
                 {
-                mT__122(); 
+                mT__122();
 
 
                 }
@@ -5839,7 +5839,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 60 :
                 // BELScript_v1.g:1:387: T__123
                 {
-                mT__123(); 
+                mT__123();
 
 
                 }
@@ -5847,7 +5847,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 61 :
                 // BELScript_v1.g:1:394: T__124
                 {
-                mT__124(); 
+                mT__124();
 
 
                 }
@@ -5855,7 +5855,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 62 :
                 // BELScript_v1.g:1:401: T__125
                 {
-                mT__125(); 
+                mT__125();
 
 
                 }
@@ -5863,7 +5863,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 63 :
                 // BELScript_v1.g:1:408: T__126
                 {
-                mT__126(); 
+                mT__126();
 
 
                 }
@@ -5871,7 +5871,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 64 :
                 // BELScript_v1.g:1:415: T__127
                 {
-                mT__127(); 
+                mT__127();
 
 
                 }
@@ -5879,7 +5879,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 65 :
                 // BELScript_v1.g:1:422: T__128
                 {
-                mT__128(); 
+                mT__128();
 
 
                 }
@@ -5887,7 +5887,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 66 :
                 // BELScript_v1.g:1:429: T__129
                 {
-                mT__129(); 
+                mT__129();
 
 
                 }
@@ -5895,7 +5895,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 67 :
                 // BELScript_v1.g:1:436: T__130
                 {
-                mT__130(); 
+                mT__130();
 
 
                 }
@@ -5903,7 +5903,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 68 :
                 // BELScript_v1.g:1:443: T__131
                 {
-                mT__131(); 
+                mT__131();
 
 
                 }
@@ -5911,7 +5911,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 69 :
                 // BELScript_v1.g:1:450: T__132
                 {
-                mT__132(); 
+                mT__132();
 
 
                 }
@@ -5919,7 +5919,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 70 :
                 // BELScript_v1.g:1:457: T__133
                 {
-                mT__133(); 
+                mT__133();
 
 
                 }
@@ -5927,7 +5927,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 71 :
                 // BELScript_v1.g:1:464: T__134
                 {
-                mT__134(); 
+                mT__134();
 
 
                 }
@@ -5935,7 +5935,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 72 :
                 // BELScript_v1.g:1:471: T__135
                 {
-                mT__135(); 
+                mT__135();
 
 
                 }
@@ -5943,7 +5943,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 73 :
                 // BELScript_v1.g:1:478: T__136
                 {
-                mT__136(); 
+                mT__136();
 
 
                 }
@@ -5951,7 +5951,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 74 :
                 // BELScript_v1.g:1:485: T__137
                 {
-                mT__137(); 
+                mT__137();
 
 
                 }
@@ -5959,7 +5959,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 75 :
                 // BELScript_v1.g:1:492: T__138
                 {
-                mT__138(); 
+                mT__138();
 
 
                 }
@@ -5967,7 +5967,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 76 :
                 // BELScript_v1.g:1:499: T__139
                 {
-                mT__139(); 
+                mT__139();
 
 
                 }
@@ -5975,7 +5975,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 77 :
                 // BELScript_v1.g:1:506: T__140
                 {
-                mT__140(); 
+                mT__140();
 
 
                 }
@@ -5983,7 +5983,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 78 :
                 // BELScript_v1.g:1:513: T__141
                 {
-                mT__141(); 
+                mT__141();
 
 
                 }
@@ -5991,7 +5991,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 79 :
                 // BELScript_v1.g:1:520: T__142
                 {
-                mT__142(); 
+                mT__142();
 
 
                 }
@@ -5999,7 +5999,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 80 :
                 // BELScript_v1.g:1:527: T__143
                 {
-                mT__143(); 
+                mT__143();
 
 
                 }
@@ -6007,7 +6007,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 81 :
                 // BELScript_v1.g:1:534: T__144
                 {
-                mT__144(); 
+                mT__144();
 
 
                 }
@@ -6015,7 +6015,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 82 :
                 // BELScript_v1.g:1:541: T__145
                 {
-                mT__145(); 
+                mT__145();
 
 
                 }
@@ -6023,7 +6023,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 83 :
                 // BELScript_v1.g:1:548: T__146
                 {
-                mT__146(); 
+                mT__146();
 
 
                 }
@@ -6031,7 +6031,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 84 :
                 // BELScript_v1.g:1:555: T__147
                 {
-                mT__147(); 
+                mT__147();
 
 
                 }
@@ -6039,7 +6039,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 85 :
                 // BELScript_v1.g:1:562: T__148
                 {
-                mT__148(); 
+                mT__148();
 
 
                 }
@@ -6047,7 +6047,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 86 :
                 // BELScript_v1.g:1:569: T__149
                 {
-                mT__149(); 
+                mT__149();
 
 
                 }
@@ -6055,7 +6055,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 87 :
                 // BELScript_v1.g:1:576: T__150
                 {
-                mT__150(); 
+                mT__150();
 
 
                 }
@@ -6063,7 +6063,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 88 :
                 // BELScript_v1.g:1:583: DOCUMENT_COMMENT
                 {
-                mDOCUMENT_COMMENT(); 
+                mDOCUMENT_COMMENT();
 
 
                 }
@@ -6071,7 +6071,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 89 :
                 // BELScript_v1.g:1:600: STATEMENT_COMMENT
                 {
-                mSTATEMENT_COMMENT(); 
+                mSTATEMENT_COMMENT();
 
 
                 }
@@ -6079,7 +6079,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 90 :
                 // BELScript_v1.g:1:618: IDENT_LIST
                 {
-                mIDENT_LIST(); 
+                mIDENT_LIST();
 
 
                 }
@@ -6087,7 +6087,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 91 :
                 // BELScript_v1.g:1:629: VALUE_LIST
                 {
-                mVALUE_LIST(); 
+                mVALUE_LIST();
 
 
                 }
@@ -6095,7 +6095,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 92 :
                 // BELScript_v1.g:1:640: QUOTED_VALUE
                 {
-                mQUOTED_VALUE(); 
+                mQUOTED_VALUE();
 
 
                 }
@@ -6103,7 +6103,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 93 :
                 // BELScript_v1.g:1:653: LP
                 {
-                mLP(); 
+                mLP();
 
 
                 }
@@ -6111,7 +6111,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 94 :
                 // BELScript_v1.g:1:656: RP
                 {
-                mRP(); 
+                mRP();
 
 
                 }
@@ -6119,7 +6119,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 95 :
                 // BELScript_v1.g:1:659: EQ
                 {
-                mEQ(); 
+                mEQ();
 
 
                 }
@@ -6127,7 +6127,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 96 :
                 // BELScript_v1.g:1:662: COLON
                 {
-                mCOLON(); 
+                mCOLON();
 
 
                 }
@@ -6135,7 +6135,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 97 :
                 // BELScript_v1.g:1:668: COMMA
                 {
-                mCOMMA(); 
+                mCOMMA();
 
 
                 }
@@ -6143,7 +6143,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 98 :
                 // BELScript_v1.g:1:674: NEWLINE
                 {
-                mNEWLINE(); 
+                mNEWLINE();
 
 
                 }
@@ -6151,7 +6151,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 99 :
                 // BELScript_v1.g:1:682: WS
                 {
-                mWS(); 
+                mWS();
 
 
                 }
@@ -6159,7 +6159,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 100 :
                 // BELScript_v1.g:1:685: KWRD_ANNO
                 {
-                mKWRD_ANNO(); 
+                mKWRD_ANNO();
 
 
                 }
@@ -6167,7 +6167,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 101 :
                 // BELScript_v1.g:1:695: KWRD_AS
                 {
-                mKWRD_AS(); 
+                mKWRD_AS();
 
 
                 }
@@ -6175,7 +6175,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 102 :
                 // BELScript_v1.g:1:703: KWRD_AUTHORS
                 {
-                mKWRD_AUTHORS(); 
+                mKWRD_AUTHORS();
 
 
                 }
@@ -6183,7 +6183,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 103 :
                 // BELScript_v1.g:1:716: KWRD_CONTACTINFO
                 {
-                mKWRD_CONTACTINFO(); 
+                mKWRD_CONTACTINFO();
 
 
                 }
@@ -6191,7 +6191,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 104 :
                 // BELScript_v1.g:1:733: KWRD_COPYRIGHT
                 {
-                mKWRD_COPYRIGHT(); 
+                mKWRD_COPYRIGHT();
 
 
                 }
@@ -6199,7 +6199,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 105 :
                 // BELScript_v1.g:1:748: KWRD_DFLT
                 {
-                mKWRD_DFLT(); 
+                mKWRD_DFLT();
 
 
                 }
@@ -6207,7 +6207,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 106 :
                 // BELScript_v1.g:1:758: KWRD_DEFINE
                 {
-                mKWRD_DEFINE(); 
+                mKWRD_DEFINE();
 
 
                 }
@@ -6215,7 +6215,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 107 :
                 // BELScript_v1.g:1:770: KWRD_DESC
                 {
-                mKWRD_DESC(); 
+                mKWRD_DESC();
 
 
                 }
@@ -6223,7 +6223,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 108 :
                 // BELScript_v1.g:1:780: KWRD_DISCLAIMER
                 {
-                mKWRD_DISCLAIMER(); 
+                mKWRD_DISCLAIMER();
 
 
                 }
@@ -6231,7 +6231,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 109 :
                 // BELScript_v1.g:1:796: KWRD_DOCUMENT
                 {
-                mKWRD_DOCUMENT(); 
+                mKWRD_DOCUMENT();
 
 
                 }
@@ -6239,7 +6239,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 110 :
                 // BELScript_v1.g:1:810: KWRD_LICENSES
                 {
-                mKWRD_LICENSES(); 
+                mKWRD_LICENSES();
 
 
                 }
@@ -6247,7 +6247,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 111 :
                 // BELScript_v1.g:1:824: KWRD_LIST
                 {
-                mKWRD_LIST(); 
+                mKWRD_LIST();
 
 
                 }
@@ -6255,7 +6255,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 112 :
                 // BELScript_v1.g:1:834: KWRD_NAME
                 {
-                mKWRD_NAME(); 
+                mKWRD_NAME();
 
 
                 }
@@ -6263,7 +6263,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 113 :
                 // BELScript_v1.g:1:844: KWRD_NS
                 {
-                mKWRD_NS(); 
+                mKWRD_NS();
 
 
                 }
@@ -6271,7 +6271,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 114 :
                 // BELScript_v1.g:1:852: KWRD_PATTERN
                 {
-                mKWRD_PATTERN(); 
+                mKWRD_PATTERN();
 
 
                 }
@@ -6279,7 +6279,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 115 :
                 // BELScript_v1.g:1:865: KWRD_SET
                 {
-                mKWRD_SET(); 
+                mKWRD_SET();
 
 
                 }
@@ -6287,7 +6287,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 116 :
                 // BELScript_v1.g:1:874: KWRD_STMT_GROUP
                 {
-                mKWRD_STMT_GROUP(); 
+                mKWRD_STMT_GROUP();
 
 
                 }
@@ -6295,7 +6295,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 117 :
                 // BELScript_v1.g:1:890: KWRD_UNSET
                 {
-                mKWRD_UNSET(); 
+                mKWRD_UNSET();
 
 
                 }
@@ -6303,7 +6303,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 118 :
                 // BELScript_v1.g:1:901: KWRD_URL
                 {
-                mKWRD_URL(); 
+                mKWRD_URL();
 
 
                 }
@@ -6311,7 +6311,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 119 :
                 // BELScript_v1.g:1:910: KWRD_VERSION
                 {
-                mKWRD_VERSION(); 
+                mKWRD_VERSION();
 
 
                 }
@@ -6319,7 +6319,7 @@ public class BELScript_v1Lexer extends Lexer {
             case 120 :
                 // BELScript_v1.g:1:923: OBJECT_IDENT
                 {
-                mOBJECT_IDENT(); 
+                mOBJECT_IDENT();
 
 
                 }
@@ -7490,6 +7490,6 @@ public class BELScript_v1Lexer extends Lexer {
             return "1:1: Tokens : ( T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | T__127 | T__128 | T__129 | T__130 | T__131 | T__132 | T__133 | T__134 | T__135 | T__136 | T__137 | T__138 | T__139 | T__140 | T__141 | T__142 | T__143 | T__144 | T__145 | T__146 | T__147 | T__148 | T__149 | T__150 | DOCUMENT_COMMENT | STATEMENT_COMMENT | IDENT_LIST | VALUE_LIST | QUOTED_VALUE | LP | RP | EQ | COLON | COMMA | NEWLINE | WS | KWRD_ANNO | KWRD_AS | KWRD_AUTHORS | KWRD_CONTACTINFO | KWRD_COPYRIGHT | KWRD_DFLT | KWRD_DEFINE | KWRD_DESC | KWRD_DISCLAIMER | KWRD_DOCUMENT | KWRD_LICENSES | KWRD_LIST | KWRD_NAME | KWRD_NS | KWRD_PATTERN | KWRD_SET | KWRD_STMT_GROUP | KWRD_UNSET | KWRD_URL | KWRD_VERSION | OBJECT_IDENT );";
         }
     }
- 
+
 
 }
